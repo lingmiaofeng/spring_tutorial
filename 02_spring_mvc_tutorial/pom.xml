@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-tutorial</artifactId>
+        <groupId>com.journaldev</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>02_spring_mvc_tutorial</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>01_spring_mvc_tutorial_for_beginners_with_spring_tool_suite  </module>
+        <module>02_spring_restful_web_service_example_with_json</module>              
+        <module>03_spring_mvc_file_upload_example</module>                            
+        <module>04_spring_mvc_internationalization_and_localization_example</module>
+        <module>05_spring_mvc_form_validation_example</module>
+        <module>06_spring_mvc_exception_handling</module>
+        <module>07_spring_mvc_interceptors_example</module>
+        <module>08_spring_mvc_requestmapping_example</module>
+    </modules>
+
+
+</project>
