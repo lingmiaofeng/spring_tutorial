@@ -12,14 +12,14 @@
     <artifactId>02_spring_mvc_tutorial</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>01_spring_mvc_tutorial_for_beginners_with_spring_tool_suite  </module>
-        <module>02_spring_restful_web_service_example_with_json</module>              
-        <module>03_spring_mvc_file_upload_example</module>                            
-        <module>04_spring_mvc_internationalization_and_localization_example</module>
-        <module>05_spring_mvc_form_validation_example</module>
-        <module>06_spring_mvc_exception_handling</module>
-        <module>07_spring_mvc_interceptors_example</module>
-        <module>08_spring_mvc_requestmapping_example</module>
+        <module>02_01_spring_mvc_tutorial_for_beginners_with_spring_tool_suite  </module>
+        <module>02_02_spring_restful_web_service_example_with_json</module>              
+        <module>02_03_spring_mvc_file_upload_example</module>                            
+        <module>02_04_spring_mvc_internationalization_and_localization_example</module>
+        <module>02_05_spring_mvc_form_validation_example</module>
+        <module>02_06_spring_mvc_exception_handling</module>
+        <module>02_07_spring_mvc_interceptors_example</module>
+        <module>02_08_spring_mvc_requestmapping_example</module>
     </modules>
 
 

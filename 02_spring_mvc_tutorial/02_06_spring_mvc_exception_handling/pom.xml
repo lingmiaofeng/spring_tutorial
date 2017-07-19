@@ -3,19 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>spring-tutorial</artifactId>
+        <artifactId>02_spring_mvc_tutorial</artifactId>
         <groupId>com.journaldev</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>03_spring_jdbc_tutorial</artifactId>
     <packaging>pom</packaging>
-    <modules>
-        <module>03_01_spring_jdbc_and_jdbctemplate_crud_with_datasource_example</module>
-        <module>03_02_spring_datasource_jndi_with_tomcat_example</module>
-        <module>03_03_spring_transaction_management_example_with_jdbc</module>
-    </modules>
+    <artifactId>02_06_spring_mvc_exception_handling</artifactId>
 
-
+    
 </project>

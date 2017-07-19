@@ -12,9 +12,9 @@
     <artifactId>06_spring_integration_tutorials</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>01_jsf_integration_example_tutorial</module>
-        <module>02_primefaces_spring_</module>
-        <module>03_primefaces_hibernate_springroo_integration_example</module>
+        <module>06_01_jsf_integration_example_tutorial</module>
+        <module>06_02_primefaces_spring</module>
+        <module>06_03_primefaces_hibernate_springroo_integration_example</module>
     </modules>
 
 

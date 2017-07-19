@@ -12,12 +12,12 @@
     <artifactId>01_spring_core_tutorial</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>01_dependency_injection_java_example</module>
-        <module>02_spring_dependency_injection</module>
-        <module>03_spring_aop_example</module>
-        <module>04_spring_ioc_container_and_spring_bean_example_tutorial</module>
-        <module>05_spring_bean_autowiring_example</module>
-        <module>06_spring_bean_life_cycle</module>
+        <module>01_01_dependency_injection_java_example</module>
+        <module>01_02_spring_dependency_injection</module>
+        <module>01_03_spring_aop_example</module>
+        <module>01_04_spring_ioc_container_and_spring_bean_example_tutorial</module>
+        <module>01_05_spring_bean_autowiring_example</module>
+        <module>01_06_spring_bean_life_cycle</module>
     </modules>
 
 

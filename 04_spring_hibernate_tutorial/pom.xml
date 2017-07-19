@@ -12,7 +12,7 @@
     <artifactId>04_spring_hibernate_tutorial</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>01_spring_hibernate_integration_example</module>
-        <module>02_spring_mvc_hibernate_crud_example</module>
+        <module>04_01_spring_hibernate_integration_example</module>
+        <module>04_02_spring_mvc_hibernate_crud_example</module>
     </modules>
 </project>

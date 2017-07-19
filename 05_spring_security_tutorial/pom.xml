@@ -12,8 +12,8 @@
     <artifactId>05_spring_security_tutorial</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>01_spring_security_in_servlet_web_application</module>
-        <module>02_spring_mvc_security_example</module>
+        <module>05_01_spring_security_in_servlet_web_application</module>
+        <module>05_02_spring_mvc_security_example</module>
     </modules>
 
 
