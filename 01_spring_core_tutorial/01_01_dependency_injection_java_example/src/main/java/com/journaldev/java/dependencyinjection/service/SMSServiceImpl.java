@@ -1,11 +1,19 @@
 package com.journaldev.java.dependencyinjection.service;
 
+import org.jetbrains.common.Utils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class SMSServiceImpl implements MessageService {
 
-	@Override
-	public void sendMessage(String msg, String rec) {
-		//logic to send SMS
-		System.out.println("SMS sent to "+rec+ " with Message="+msg);
+	private Logger logger = LoggerFactory.getLogger(SMSServiceImpl.class);
+
+
+	public void sendMessage(String message, String receiver) {
+		//logic to send email
+		String msg = Utils.getMsg("SMS",message, receiver);
+		logger.debug (msg);
+
 	}
 
 }

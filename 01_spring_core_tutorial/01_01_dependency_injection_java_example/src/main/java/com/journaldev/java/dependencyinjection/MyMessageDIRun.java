@@ -1,18 +1,18 @@
-package com.journaldev.java.dependencyinjection.test;
+package com.journaldev.java.dependencyinjection;
 
 import com.journaldev.java.dependencyinjection.consumer.Consumer;
 import com.journaldev.java.dependencyinjection.injector.EmailServiceInjector;
 import com.journaldev.java.dependencyinjection.injector.MessageServiceInjector;
 import com.journaldev.java.dependencyinjection.injector.SMSServiceInjector;
 
-public class MyMessageDITest {
+public class MyMessageDIRun {
 
 	public static void main(String[] args) {
 		String msg = "Hi Pankaj";
 		String email = "pankaj@abc.com";
 		String phone = "4088888888";
-		MessageServiceInjector injector = null;
-		Consumer app = null;
+		MessageServiceInjector injector;
+		Consumer app;
 		
 		//Send email
 		injector = new EmailServiceInjector();

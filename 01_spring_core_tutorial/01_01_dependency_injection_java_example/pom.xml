@@ -12,22 +12,5 @@
     <artifactId>01_01_dependency_injection_java_example</artifactId>
 
 
-    <build>
-        <plugins>
-         </plugins>
-    </build>
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-        </dependency>
-    </dependencies>
-
 
 </project>
