@@ -7,6 +7,9 @@ import com.journaldev.java.dependencyinjection.injector.SMSServiceInjector;
 
 public class MyMessageDIRun {
 
+	private MyMessageDIRun() {
+	}
+
 	public static void main(String[] args) {
 		String msg = "Hi Pankaj";
 		String email = "pankaj@abc.com";
