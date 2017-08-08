@@ -1,0 +1,1122 @@
+<!DOCTYPE html><html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"><head><meta charset="UTF-8">
+<script data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.evt={};__ez.ck={};__ez.dot={};__ez.template={};__ez.template.isOrig=false;__ez.evt.add=function(el,evt,handler){if(el.addEventListener){el.addEventListener(evt,handler,false)}else if(el.attachEvent){el.attachEvent('on'+evt,handler)}else{el['on'+evt]=handler()}};__ez.ck.get=function(n,e){null!==e&&(n=n+"_"+e);for(var t=n+"=",r=decodeURIComponent(document.cookie),o=r.split(";"),i=0;i<o.length;i++){for(var u=o[i];" "===u.charAt(0);)u=u.substring(1);if(0===u.indexOf(t))return u.substring(t.length,u.length)}return""};__ez.queue=function(){function g(a,b,g,h,j,k,l,m){var n=new f.file(a,b,g,h,j,k,l);!0===m?d[a]=n:e[a]=n,c[a]=n,i(n)}function h(a,g,h,j,k,l,m,n,o){!0===l&&(a=a+"_"+b++);var p=new f.func(a,g,h,j,k,m,n);!0===o?d[a]=p:e[a]=p,c[a]=p,i(p)}function i(a){!0!==j(a)&&a.process()}function j(a){if(a.blockedBy instanceof Array)for(var b=0;b<a.blockedBy.length;b++){var d=a.blockedBy[b];if(!1===c.hasOwnProperty(d))return k(a.name+" blocked = "+d),!0;if(!0===a.proceedIfError&&!0===c[d].isError)return!1;if(!1===c[d].isComplete)return k(a.name+" blocked = "+d),!0}return!1}function k(a){var b=window.location.href,c=new RegExp("[?&]ezq=([^&#]*)","i"),d=c.exec(b);"1"===(d?d[1]:null)&&console.debug(a)}function l(){++a>20||(k("let's go"),m(d),m(e))}function m(a){for(var b in a)if(!1!==a.hasOwnProperty(b)){var c=a[b];!0===c.isComplete||j(c)||!0===c.isInitialized||!0===c.isError?!0===c.isError?k(c.name+": error"):!0===c.isComplete?k(c.name+": complete already"):!0===c.isInitialized&&k(c.name+": initialized already"):c.process()}}var a=0,b=0,c=[],d=[],e=[],f={func:function(a,b,d,e,f,g,h){var i=this;this.name=a,this.funcName=b,this.parameters=null===d?null:d instanceof Array?d:[d],this.isBlock=e,this.blockedBy=f,this.deleteWhenComplete=g,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=h,this.process=function(){k("... func = "+a),i.isInitialized=!0,i.isComplete=!0;var b=i.funcName.split(".");b.length>3||(3===b.length?window[b[0]][b[1]][b[2]].apply(null,this.parameters):2===b.length?window[b[0]][b[1]].apply(null,this.parameters):window[i.funcName].apply(null,this.parameters)),!0===i.deleteWhenComplete&&delete c[a],!0===i.isBlock&&(k("----- F'D: "+i.name),l())}},file:function(a,b,c,d,e,f,g){var h=this;this.name=a,this.path=b,this.async=e,this.defer=f,this.isBlock=c,this.blockedBy=d,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=g,this.process=function(){h.isInitialized=!0,k("... file = "+a);var c=document.createElement("script");c.src=b,!0===e?c.async=!0:!0===f&&(c.defer=!0),c.onerror=function(){k("----- ERR'D: "+h.name),h.isError=!0,!0===h.isBlock&&l()},c.onreadystatechange=c.onload=function(){var a=c.readyState;k("----- F'D: "+h.name),a&&!/loaded|complete/.test(a)||(h.isComplete=!0,!0===h.isBlock&&l())},document.getElementsByTagName("head")[0].appendChild(c)}}};return{addFile:g,addFunc:h,items:c}}();var __ezDotData=function(a,b){this.name=a,this.val=b};__ez.dot.b64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=Base64._utf8_encode(a);j<a.length;)c=a.charCodeAt(j++),d=a.charCodeAt(j++),e=a.charCodeAt(j++),f=c>>2,g=(3&c)<<4|d>>4,h=(15&d)<<2|e>>6,i=63&e,isNaN(d)?h=i=64:isNaN(e)&&(i=64),b=b+this._keyStr.charAt(f)+this._keyStr.charAt(g)+this._keyStr.charAt(h)+this._keyStr.charAt(i);return b},decode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=a.replace(/[^A-Za-z0-9+\/=]/g,"");j<a.length;)f=this._keyStr.indexOf(a.charAt(j++)),g=this._keyStr.indexOf(a.charAt(j++)),h=this._keyStr.indexOf(a.charAt(j++)),i=this._keyStr.indexOf(a.charAt(j++)),c=f<<2|g>>4,d=(15&g)<<4|h>>2,e=(3&h)<<6|i,b+=String.fromCharCode(c),64!=h&&(b+=String.fromCharCode(d)),64!=i&&(b+=String.fromCharCode(e));return b=Base64._utf8_decode(b)},_utf8_encode:function(a){a=a.replace(/rn/g,"n");for(var b="",c=0;c<a.length;c++){var d=a.charCodeAt(c);d<128?b+=String.fromCharCode(d):d>127&&d<2048?(b+=String.fromCharCode(d>>6|192),b+=String.fromCharCode(63&d|128)):(b+=String.fromCharCode(d>>12|224),b+=String.fromCharCode(d>>6&63|128),b+=String.fromCharCode(63&d|128))}return b},_utf8_decode:function(a){for(var b="",c=0,d=c1=c2=0;c<a.length;)d=a.charCodeAt(c),d<128?(b+=String.fromCharCode(d),c++):d>191&&d<224?(c2=a.charCodeAt(c+1),b+=String.fromCharCode((31&d)<<6|63&c2),c+=2):(c2=a.charCodeAt(c+1),c3=a.charCodeAt(c+2),b+=String.fromCharCode((15&d)<<12|(63&c2)<<6|63&c3),c+=3);return b}},__ez.dot.dataToStr=function(a){if(void 0===a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},__ez.dot.getCC=function(){var a="XX";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(a=_ezaq.country),a},__ez.dot.getDID=function(){var a="0";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(a=_ezaq.domain_id.toString()),a},__ez.dot.getEpoch=function(a){return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(a=_ezaq.t_epoch),a},__ez.dot.getURL=function(a){return("undefined"!=typeof ezJsu&&1==ezJsu||"undefined"!=typeof _ez_sa&&1==_ez_sa||"undefined"!=typeof isAmp&&!0===isAmp)&&(a="//g.ezoic.net"+a),a},__ez.dot.isValid=function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof __ezDotData==!1)return console.error("Invalid data. ",a[b]),!1;return!0},__ez.dot.isDefined=function(){for(var a=0;a<arguments.length;a++)if(void 0===arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0};__ez.bit=function(){function c(a,b){d(a,b),e()}function d(b,c){__ez.dot.isDefined(b)&&__ez.dot.isValid(c)&&a.push({type:"pageview",pageview_id:b,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}function e(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&ds="+btoa(JSON.stringify(a))),a=[])}var a=[],b="/detroitchicago/greenoaks.gif";return{Add:d,AddAndFire:c,Fire:e}}();</script><script data-cfasync='false' data-pagespeed-no-defer>__ez.pel=function(){function c(a,b){d(a,b,0,0,0,0,0),f()}function d(b,c,d,e,f,h,i){if(__ez.dot.isDefined(b,b.getSlotElementId)){var j=parseInt(b.getTargeting("ap")[0]),k=b.getSizes()[0],l=k.l.toString()+"x"+k.j.toString(),m=g(b),n=b.getSlotElementId();__ez.dot.isDefined(m,n)&&__ez.dot.isValid(c)&&a.push({type:"impression",impression_id:m,domain_id:__ez.dot.getDID(),unit:n,t_epoch:__ez.dot.getEpoch(0),revenue:d,est_revenue:e,ad_position:j,ad_size:l,bid_floor_filled:f,bid_floor_prev:h,stat_source_id:i,country_code:__ez.dot.getCC(),data:__ez.dot.dataToStr(c)})}}function e(b,c){var d=b.split("/");if(__ez.dot.isDefined(b)&&3===d.length&&__ez.dot.isValid(c)){var e=d[0],f=d[2];a.push({type:"impression",impression_id:f,domain_id:__ez.dot.getDID(),unit:e,t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}}function f(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&sts="+btoa(JSON.stringify(a))),a=[])}function g(a){var b=0;try{var c=a.getTargetingMap();if(-1===a.getSlotElementId().indexOf("div-gpt-ad"))return b;if(void 0!==c)for(var e in c)if(-1!==e.indexOf("iid")&&void 0!==c[e][0]){b=c[e][0];break}}catch(a){}return b}var a=[],b="/porpoiseant/army.gif";return{Add:d,AddAndFire:c,AddById:e,Fire:f}}();var EzoicPixel=function(){this.pixels=[],this.pixelUrl="/ezoic/e.gif",("undefined"!=typeof ezJsu&&ezJsu===!0||"undefined"!=typeof _ez_sa&&_ez_sa===!0||"undefined"!=typeof window.isAmp&&isAmp===!0)&&(this.pixelUrl="//g.ezoic.net"+this.pixelUrl),this.tEpoch=0,"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(this.tEpoch=_ezaq.t_epoch)},EzoicPixelData=function(a,b){this.name=a,this.val=b};EzoicPixel.prototype={constructor:EzoicPixel,AddAndFireImpPixel:function(a,b){this.AddImpPixel(a,b,0,0,0,0,0),this.FirePixels()},AddAndFirePVPixel:function(a,b){this.AddPVPixel(a,b),this.FirePixels()},AddImpPixel:function(a,b,c,d,e,f,g){if(this.isDefined(a,a.getSlotElementId)){var h=parseInt(a.getTargeting("ap")[0]),i=a.getSizes()[0],j=i.l.toString()+"x"+i.j.toString(),k="0",l="XX";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(k=_ezaq.domain_id.toString()),"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(l=_ezaq.country);var m=this.getSlotIID(a),n=a.getSlotElementId();this.isDefined(m,n)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:m,domain_id:k,unit:n,t_epoch:this.tEpoch,revenue:c,est_revenue:d,ad_position:h,ad_size:j,bid_floor_filled:e,bid_floor_prev:f,stat_source_id:g,country_code:l,data:b}))}},AddImpPixelById:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString());var d=a.split("/");if(this.isDefined(a)&&3===d.length&&this.validateData(b)){var e=d[0],f=d[2];b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:f,domain_id:c,unit:e,t_epoch:this.tEpoch,data:b})}},AddPVPixel:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString()),this.isDefined(a)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"pageview",pageview_id:a,domain_id:c,t_epoch:this.tEpoch,data:b}))},FirePixels:function(){"undefined"!=typeof document.visibilityState&&"prerender"===document.visibilityState||(this.isDefined(this.pixels)&&this.pixels.length>0&&((new Image).src=this.pixelUrl+"?orig="+(__ez.template.isOrig===!0?1:0)+"&pixels="+encodeURIComponent(JSON.stringify(this.pixels))),this.pixels=[])},NewData:function(a,b){return new EzoicPixelData(a,b)},convertDataToStr:function(a){if("undefined"==typeof a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},getSlotIID:function(a){var b=0;try{var c=a.getTargetingMap(),d=a.getSlotElementId();if(d.indexOf("div-gpt-ad")===-1)return b;if("undefined"!=typeof c)for(var e in c)if(e.indexOf("iid")!==-1&&"undefined"!=typeof c[e][0]){b=c[e][0];break}}catch(a){}return b},isDefined:function(){for(var a=0;a<arguments.length;a++)if("undefined"==typeof arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0},validateData:function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof EzoicPixelData==!1)return console.error("Invalid pixelData. ",a[b]),!1;return!0}};</script>
+<script type="text/javascript">
+	var __banger_pmp_deals=[{"SlotName":"/1254144/journaldev_com-medrectangle-3","Deals":[]},{"SlotName":"/1254144/journaldev_com-box-2","Deals":[]},{"SlotName":"/1254144/journaldev_com-large-leaderboard-1","Deals":[]},{"SlotName":"/1254144/journaldev_com-box-4","Deals":[]},{"SlotName":"/1254144/journaldev_com-banner-1","Deals":[]},{"SlotName":"/1254144/journaldev_com-medrectangle-4","Deals":[{"DealId":18,"Floor":25}]},{"SlotName":"/1254144/journaldev_com-box-3","Deals":[]},{"SlotName":"/1254144/journaldev_com-box-1","Deals":[]},{"SlotName":"/1254144/journaldev_com-large-billboard-2","Deals":[]}];
+</script>
+<script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
+function ez_isclean( data ) {
+    if (typeof data === 'undefined') { data = document.URL; }
+    var re = /(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))(@|%2540|%40)((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/;
+    var isClean = !re.test(data);
+    return isClean;
+}
+
+var ez_queue = new Array();
+function sort_queue(a, b)
+{
+  if( a.priority < b.priority ) return -1;
+  else if( a.priority == b.priority ) return 0;
+  else return 1;
+}
+function execute_ez_queue()
+{
+  ez_queue.sort( sort_queue );
+
+  for( var i in ez_queue )
+  {
+        if(typeof ez_queue[i].method != "undefined")
+        {
+            try{
+                ez_queue[i].method.call( null );
+            }
+            catch (err) {
+
+            }
+        }
+  }
+}
+
+window.ez_ad_units = new Array();
+window.ezslots = new Array();
+function ez_write_tag(d) {
+    if(ez_isclean() && d instanceof Array) {
+
+		ez_ad_units[ez_ad_units.length] = d;
+        var ezcmd = "googletag.cmd.push(function() {var divid = 'div-gpt-ad-"+d[1]+"-0';if(typeof ezlrarn == 'function'){ezlrarn(divid);}googletag.display(divid);var to = 0;if("+d[2]+".getTargeting('ga')[0] == '0'){to = 500;console.log('"+d[2]+" - no google');}if(window.ezDisableInitialLoad==true){setTimeout(function(){googletag.pubads().refresh(["+d[2]+"])},to);}});";
+		return ezcmd;
+    }
+    else {
+        return "1+1";
+    }
+}
+function in_array(needle, haystack) {
+    var length = haystack.length;
+    for(var i = 0; i < length; i++) {
+        if(haystack[i] == needle) return true;
+    }
+    return false;
+}
+</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>var ezrpos = new Array();var ez_current_interval;var ez_current_load = 0;</script>
+<script data-cfasync="false" type="text/javascript" data-pagespeed-no-defer src="//go.ezoic.net/porpoiseant/dall.js" async></script>
+<script data-cfasync="false" type="text/javascript" data-pagespeed-no-defer>
+function epbjsRefreshSlot(e){epbjs.que.push(function(){epbjs.requestBids({adUnitCodes:[e.getSlotElementId()],bidsBackHandler:function(){epbjs.setTargetingForGPTAsync([e.getSlotElementId()])}})})}var epbjs=epbjs||{};epbjs.bidderTimeout=2000,epbjs.useAdj=true,epbjs.que=epbjs.que||[],epbjs.ezdss=epbjs.ezdss||[],epbjs.ezobid=epbjs.ezobid||[],epbjs.que.push(function(){var e=[{code: 'div-gpt-ad-journaldev_com-medrectangle-3-0', sizes: [[300,250]], bids: [{bidder: 'districtm', params: { placementId: '11629436' }},{bidder: 'pulsepoint', params: { cf: '300X250', cp: 560269, ct: 472597 }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }},{bidder: 'criteo', params: { zoneId: '739917' }}] },{code: 'div-gpt-ad-journaldev_com-box-2-0', sizes: [[468,60]], bids: [{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }},{bidder: 'criteo', params: { zoneId: '739923' }}] },{code: 'div-gpt-ad-journaldev_com-large-leaderboard-1-0', sizes: [[300,250]], bids: [{bidder: 'districtm', params: { placementId: '11629436' }},{bidder: 'pulsepoint', params: { cf: '300X250', cp: 560269, ct: 472597 }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }},{bidder: 'criteo', params: { zoneId: '739917' }}] },{code: 'div-gpt-ad-journaldev_com-box-4-0', sizes: [[250,250]], bids: [{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }}] },{code: 'div-gpt-ad-journaldev_com-banner-1-0', sizes: [[336,280],[300,250]], bids: [{bidder: 'districtm', params: { placementId: '11629436' }},{bidder: 'pulsepoint', params: { cf: '300X250', cp: 560269, ct: 472597 }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }},{bidder: 'criteo', params: { zoneId: '739917' }}] },{code: 'div-gpt-ad-journaldev_com-medrectangle-4-0', sizes: [[250,250]], bids: [{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }}] },{code: 'div-gpt-ad-journaldev_com-box-3-0', sizes: [[580,400],[336,280],[300,250]], bids: [{bidder: 'districtm', params: { placementId: '11629436' }},{bidder: 'pulsepoint', params: { cf: '300X250', cp: 560269, ct: 472597 }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }},{bidder: 'criteo', params: { zoneId: '739917' }}] },{code: 'div-gpt-ad-journaldev_com-box-1-0', sizes: [[336,280],[300,250]], bids: [{bidder: 'districtm', params: { placementId: '11629436' }},{bidder: 'pulsepoint', params: { cf: '300X250', cp: 560269, ct: 472597 }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }},{bidder: 'criteo', params: { zoneId: '739917' }}] },{code: 'div-gpt-ad-journaldev_com-large-billboard-2-0', sizes: [[250,250]], bids: [{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }}] }];epbjs.addAdUnits(e);epbjs.aliasBidder('appnexus', 'districtm');epbjs.SS={"criteo":10050,"districtm":10035,"pulsepoint":10019,"sonobi":10048},epbjs.bidderSettings={districtm: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.850000; var adj2 = adj1 * 1.200000; return adj2; }},pulsepoint: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.750000; var adj2 = adj1 * 1.200000; return adj2; }},sonobi: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.700000; var adj2 = adj1 * 1.200000; return adj2; }},criteo: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.720000; var adj2 = adj1 * 1.200000; return adj2; }},standard:{adserverTargeting:[{key:"hb_bidder",val:function(e){return e.bidderCode}},{key:"hb_adid",val:function(e){return e.adId}},{key:"hb_pb",val:function(e){var s=e.cpm;return 5>s?(Math.floor(100*s)/100).toFixed(2):(Math.floor(10*s)/10).toFixed(2)}},{key:"hb_ssid",val:function(e){return"ehb"==e.bidder?0:"undefined"!=typeof epbjs.SS[e.bidder]?epbjs.SS[e.bidder]:(console.error("epbjs: NO MATCH"),0)}}]}},epbjs.onEvent("bidWon",function(e){"ehb"==e.bidder?epbjs.ezdss[e.adUnitCode]=e.ss:"undefined"!=typeof epbjs.SS[e.bidder]?(epbjs.ezdss[e.adUnitCode]=epbjs.SS[e.bidder],1==epbjs.useAdj&&["sovrn","openx","pulsepoint","defymedia","aol","conversant","districtm","admedia","brealtime","sonobi","criteo"].indexOf(e.bidder)>-1&&(epbjs.ezobid[e.adUnitCode]=e.cpm/1.200000)):console.error("epbjs: NO MATCH")}),epbjs.requestBids({bidsBackHandler:function(e){epbjs.setTargetingForGPTAsync()}})});
+</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.isEZABL=false;window.ezmadspc=300;</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.ezDisableInitialLoad=false;</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
+window.googletag = window.googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+
+
+
+</script>
+<script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
+googletag.cmd.push(function() {if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {ezslot_0 = googletag.defineSlot('/1254144/journaldev_com-medrectangle-3',[300,250],'div-gpt-ad-journaldev_com-medrectangle-3-0').addService(googletag.pubads()).setTargeting('iid15','1406083').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','31').setTargeting('ap','1104').setTargeting('sap','1104').setTargeting('a','|254|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','n').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','8').setTargeting('al','1021').setTargeting('compid','0').setTargeting('tap','journaldev_com-medrectangle-3-1406083').setTargeting('bv','3').setCollapseEmptyDiv(false).setTargeting('br1','0').setTargeting('br2','0').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_0.set('adsense_ad_types','text_image').set('adsense_background_color','001DAD').set('adsense_border_color','001DAD').set('adsense_channel_ids','4459013723').set('adsense_link_color','FFFFFF').set('adsense_text_color','FFFFFF').set('adsense_url_color','EEFF00');ezrpos[0]="0";ezslot_1 = googletag.defineSlot('/1254144/journaldev_com-box-2',[468,60],'div-gpt-ad-journaldev_com-box-2-0').addService(googletag.pubads()).setTargeting('iid15','1409832').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','31').setTargeting('ap','1100').setTargeting('sap','1100').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','7').setTargeting('al','1001').setTargeting('compid','0').setTargeting('tap','journaldev_com-box-2-1409832').setTargeting('bv','9').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('br1','20').setTargeting('br2','10').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_1.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4459013723').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[1]="1";ezslot_2 = googletag.defineSlot('/1254144/journaldev_com-large-leaderboard-1',[300,250],'div-gpt-ad-journaldev_com-large-leaderboard-1-0').addService(googletag.pubads()).setTargeting('iid15','1405182').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','31').setTargeting('ap','1109').setTargeting('sap','1109').setTargeting('a','|253|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','tf').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','0').setTargeting('al','1035').setTargeting('compid','0').setTargeting('tap','journaldev_com-large-leaderboard-1-1405182').setTargeting('bv','15').setCollapseEmptyDiv(false).setTargeting('br1','0').setTargeting('br2','0').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_2.set('adsense_ad_types','text_image').set('adsense_background_color','EEFF00').set('adsense_border_color','EEFF00').set('adsense_channel_ids','4459013723').set('adsense_link_color','000000').set('adsense_text_color','000000').set('adsense_url_color','000000');ezrpos[2]="2";ezslot_3 = googletag.defineSlot('/1254144/journaldev_com-box-4',[250,250],'div-gpt-ad-journaldev_com-box-4-0').addService(googletag.pubads()).setTargeting('iid15','1406233').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','31').setTargeting('ap','1106').setTargeting('sap','1106').setTargeting('a','|253|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','n').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','6').setTargeting('al','1003').setTargeting('compid','0').setTargeting('tap','journaldev_com-box-4-1406233').setTargeting('bv','12').setCollapseEmptyDiv(false).setTargeting('br1','20').setTargeting('br2','10').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_3.set('adsense_ad_types','text_image').set('adsense_background_color','EEFF00').set('adsense_border_color','EEFF00').set('adsense_channel_ids','4459013723').set('adsense_link_color','000000').set('adsense_text_color','000000').set('adsense_url_color','000000');ezrpos[3]="3";ezslot_4 = googletag.defineSlot('/1254144/journaldev_com-banner-1',[336,280],'div-gpt-ad-journaldev_com-banner-1-0').addService(googletag.pubads()).setTargeting('iid15','1404733').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','31').setTargeting('ap','1107').setTargeting('sap','1107').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','n').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','5').setTargeting('al','1030').setTargeting('compid','0').setTargeting('tap','journaldev_com-banner-1-1404733').setTargeting('bv','2').setCollapseEmptyDiv(false).setTargeting('br1','0').setTargeting('br2','0').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_4.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4459013723').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[4]="4";ezslot_5 = googletag.defineSlot('/1254144/journaldev_com-medrectangle-4',[250,250],'div-gpt-ad-journaldev_com-medrectangle-4-0').addService(googletag.pubads()).setTargeting('iid14','1373681').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','31').setTargeting('ap','1105').setTargeting('sap','1105').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','tf').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','9').setTargeting('al','1022').setTargeting('compid','0').setTargeting('tap','journaldev_com-medrectangle-4-1373681').setTargeting('bv','17').setCollapseEmptyDiv(false).setTargeting('br1','60').setTargeting('br2','30').setTargeting('ezoic','1').setTargeting('deal1',[17,19,20,21,22,23,24,25,26]);ezslot_5.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4459013723').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[5]="5";ezslot_6 = googletag.defineSlot('/1254144/journaldev_com-box-3',[580,400],'div-gpt-ad-journaldev_com-box-3-0').addService(googletag.pubads()).setTargeting('iid15','1405783').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','31').setTargeting('ap','1101').setTargeting('sap','1101').setTargeting('a','|2|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','n').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','2').setTargeting('al','1002').setTargeting('compid','0').setTargeting('tap','journaldev_com-box-3-1405783').setTargeting('bv','9').setCollapseEmptyDiv(false).setTargeting('br1','20').setTargeting('br2','10').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_6.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4459013723').set('adsense_link_color','37a5d7').set('adsense_text_color','000000').set('adsense_url_color','F0F0F0');ezrpos[6]="6";ezslot_7 = googletag.defineSlot('/1254144/journaldev_com-box-1',[336,280],'div-gpt-ad-journaldev_com-box-1-0').addService(googletag.pubads()).setTargeting('iid15','1409082').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','31').setTargeting('ap','1102').setTargeting('sap','1102').setTargeting('a','|124|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','tf').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','1').setTargeting('al','1000').setTargeting('compid','0').setTargeting('tap','journaldev_com-box-1-1409082').setTargeting('bv','1').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('br1','10').setTargeting('br2','10').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_7.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4459013723').set('adsense_link_color','FF0000').set('adsense_text_color','000000').set('adsense_url_color','FF0000');ezrpos[7]="7";ezslot_8 = googletag.defineSlot('/1254144/journaldev_com-large-billboard-2',[250,250],'div-gpt-ad-journaldev_com-large-billboard-2-0').addService(googletag.pubads()).setTargeting('iid14','1349080').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','31').setTargeting('ap','1108').setTargeting('sap','1108').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','0').setTargeting('al','1034').setTargeting('compid','0').setTargeting('tap','journaldev_com-large-billboard-2-1349080').setTargeting('bv','12').setCollapseEmptyDiv(false).setTargeting('br1','0').setTargeting('br2','0').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_8.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4459013723').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[8]="8";}else{window.ezHideLocations=[];window.ezHideLocations.push('div-gpt-ad-journaldev_com-medrectangle-3-0');ezslot_1 = googletag.defineSlot('/1254144/journaldev_com-box-2',[468,60],'div-gpt-ad-journaldev_com-box-2-0').addService(googletag.pubads()).setTargeting('iid15','1409832').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','31').setTargeting('ap','1100').setTargeting('sap','1100').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','7').setTargeting('al','1001').setTargeting('compid','0').setTargeting('tap','journaldev_com-box-2-1409832').setTargeting('bv','9').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('br1','20').setTargeting('br2','10').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_1.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4459013723').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[1]="1";window.ezHideLocations.push('div-gpt-ad-journaldev_com-large-leaderboard-1-0');window.ezHideLocations.push('div-gpt-ad-journaldev_com-box-4-0');window.ezHideLocations.push('div-gpt-ad-journaldev_com-banner-1-0');window.ezHideLocations.push('div-gpt-ad-journaldev_com-medrectangle-4-0');window.ezHideLocations.push('div-gpt-ad-journaldev_com-box-3-0');ezslot_7 = googletag.defineSlot('/1254144/journaldev_com-box-1',[336,280],'div-gpt-ad-journaldev_com-box-1-0').addService(googletag.pubads()).setTargeting('iid15','1409082').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','31').setTargeting('ap','1102').setTargeting('sap','1102').setTargeting('a','|124|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','tf').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','1').setTargeting('al','1000').setTargeting('compid','0').setTargeting('tap','journaldev_com-box-1-1409082').setTargeting('bv','1').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('br1','10').setTargeting('br2','10').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_7.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4459013723').set('adsense_link_color','FF0000').set('adsense_text_color','000000').set('adsense_url_color','FF0000');ezrpos[7]="7";window.ezHideLocations.push('div-gpt-ad-journaldev_com-large-billboard-2-0');}googletag.pubads().addEventListener('slotRenderEnded', function(event) { __ez.queue.addFunc("ezbanger", "ezbanger", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('impressionViewable', function(event) { __ez.queue.addFunc("ezvb", "ezvb", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('slotVisibilityChanged', function(event) { __ez.queue.addFunc("ezvbc", "ezvbc", event, false, ['banger.js'], true, true, false, true); });googletag.enableServices();});if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {ezslots.push("ezslot_0");ezslots.push("ezslot_1");ezslots.push("ezslot_2");ezslots.push("ezslot_3");ezslots.push("ezslot_4");ezslots.push("ezslot_5");ezslots.push("ezslot_6");ezslots.push("ezslot_7");ezslots.push("ezslot_8");}else{ezslots.push("ezslot_1");ezslots.push("ezslot_7");}</script>
+<script>(function(){function a(g,h,i){var j=new Date;j.setTime(j.getTime()+1e3*(60*(60*(24*i))));var k="expires="+j.toUTCString(),l=g+"="+h+";"+k+";path=/;";"undefined"!=typeof ezdomain&&(l+="domain="+ezdomain),document.cookie=l}var b=window.addEventListener?"addEventListener":"attachEvent",c=window[b],f="attachEvent"==b?"onmessage":"message";c(f,function(g){"undefined"!=typeof g.data.ezstatus&&(__ez.bit.AddAndFire(_ezaq.page_view_id,[new __ezDotData("dg",g.data.ezstatus)]),a("ezdg",g.data.ezstatus,730))})})();</script>
+<script type="text/javascript" data-cfasync="false">var _ezaq = {"ad_cache_level":1,"ad_location_ids":"21,1,35,3,30,22,2,0,34","adx_ad_count":9,"bidder_version":3,"city":"Kostelec nad Labem","country":"CZ","days_since_last_visit":-1,"display_ad_count":9,"domain_id":47402,"ds_adsize_opt_id":-1,"engaged_time_visit":17,"ezcache_level":0,"forensiq_score":-1,"form_factor_id":1,"has_bad_words":0,"iab_category":"","is_bot":0,"is_return_visitor":false,"last_page_load":"1499979536684","last_pageview_id":"db35d8e7-e85c-461f-4b87-fdee0674cd67","lt_cache_level":0,"max_ads":10,"metro_code":0,"page_ad_positions":"1100,1101,1102,1104,1105,1106,1107,1108,1109","page_view_count":31,"page_view_id":"91439955-1fa5-4768-408e-3ec38d781b1a","pv_event_count":0,"response_time_orig":314,"serverid":"52.51.153.137:10574","sub_page_ad_positions":"1100,1101,1102,1104,1105,1106,1107,1108,1109","t_epoch":1499981764,"template_id":134,"time_on_site_visit":25,"url":"http://www.journaldev.com/2736/spring-security-example-userdetailsservice","user_id":1038073899,"weather_precipitation":0,"weather_summary":"","weather_temperature":0,"word_count":3833};var _ezim_d = {"journaldev_com-banner-1":{"adx_ad_count":9,"full_id":"journaldev_com-banner-1/2017-07-13/1404733","height":"280","position_id":1107,"sub_position_id":1107,"width":"336"},"journaldev_com-box-1":{"adx_ad_count":9,"full_id":"journaldev_com-box-1/2017-07-13/1409082","height":"280","position_id":1102,"sub_position_id":1102,"width":"336"},"journaldev_com-box-2":{"adx_ad_count":9,"full_id":"journaldev_com-box-2/2017-07-13/1409832","height":"60","position_id":1100,"sub_position_id":1100,"width":"468"},"journaldev_com-box-3":{"adx_ad_count":9,"full_id":"journaldev_com-box-3/2017-07-13/1405783","height":"400","position_id":1101,"sub_position_id":1101,"width":"580"},"journaldev_com-box-4":{"adx_ad_count":9,"full_id":"journaldev_com-box-4/2017-07-13/1406233","height":"250","position_id":1106,"sub_position_id":1106,"width":"250"},"journaldev_com-large-billboard-2":{"adx_ad_count":9,"full_id":"journaldev_com-large-billboard-2/2017-07-13/1349080","height":"250","position_id":1108,"sub_position_id":1108,"width":"250"},"journaldev_com-large-leaderboard-1":{"adx_ad_count":9,"full_id":"journaldev_com-large-leaderboard-1/2017-07-13/1405182","height":"250","position_id":1109,"sub_position_id":1109,"width":"300"},"journaldev_com-medrectangle-3":{"adx_ad_count":9,"full_id":"journaldev_com-medrectangle-3/2017-07-13/1406083","height":"250","position_id":1104,"sub_position_id":1104,"width":"300"},"journaldev_com-medrectangle-4":{"adx_ad_count":9,"full_id":"journaldev_com-medrectangle-4/2017-07-13/1373681","height":"250","position_id":1105,"sub_position_id":1105,"width":"250"}};var _ezat = {"domain_id":47402,"form_factor_id":1,"pageview_date":"2017-07-13","pageview_id":"91439955-1fa5-4768-408e-3ec38d781b1a","template_id":134,"url":"http://www.journaldev.com/2736/spring-security-example-userdetailsservice","visit_uuid":"b476384b-0ec5-4d8c-5f4a-3897b8ead7d6"};</script><script data-cfasync='false' type="text/javascript" src="/detroitchicago/rochester.js?cb=167-0&v=7" async></script><script data-pagespeed-no-defer data-cfasync='false' type="text/javascript">__ez.queue.addFile('banger.js', '/porpoiseant/banger.js?cb=167-0&bv=2&v=14&PageSpeed=off', true, [], true, false, false, true);</script><script data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl() {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = "ezux_lpl_47402=" + new Date().getTime() + "|91439955-1fa5-4768-408e-3ec38d781b1a; " + expires;
+}
+function attach_ezolpl() {
+    if(window.attachEvent) {
+        window.attachEvent('onload', create_ezolpl);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl();
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl;
+        }
+    }
+}
+attach_ezolpl();
+</script><title>Spring Security Example UserDetailsService - JournalDev</title><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Spring Security Example. Spring UserDetailsService Example. Spring MVC Security Authentication JDBC example. UserDetailsService loadUserByUsername example."><link rel="canonical" href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice"><link rel="publisher" href="https://plus.google.com/+Journaldev"><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="Spring Security Example UserDetailsService - JournalDev"><meta property="og:description" content="Spring Security Example. Spring UserDetailsService Example. Spring MVC Security Authentication JDBC example. UserDetailsService loadUserByUsername example."><meta property="og:url" content="http://www.journaldev.com/2736/spring-security-example-userdetailsservice"><meta property="og:site_name" content="JournalDev"><meta property="article:publisher" content="https://www.facebook.com/JournalDev"><meta property="article:section" content="Spring"><meta property="article:published_time" content="2014-04-15T00:14:05-07:00"><meta property="article:modified_time" content="2016-07-30T10:42:46-07:00"><meta property="og:updated_time" content="2016-07-30T10:42:46-07:00"><meta property="fb:admins" content="592894892"><meta property="og:image" content="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-security-example-userdetailsservice.jpg"><meta property="og:image" content="http://cdn.journaldev.com/wp-content/uploads/2014/04/Spring-MVC-Security-Project1-309x450.png"><meta property="og:image" content="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-permitAll-450x211.png"><meta property="og:image" content="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-authentication-login-450x184.png"><meta property="og:image" content="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-security-authenticated-450x269.png"><meta property="og:image" content="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-access-denied-450x188.png"><meta name="twitter:card" content="summary"><meta name="twitter:description" content="Spring Security Example. Spring UserDetailsService Example. Spring MVC Security Authentication JDBC example. UserDetailsService loadUserByUsername example."><meta name="twitter:title" content="Spring Security Example UserDetailsService - JournalDev"><meta name="twitter:site" content="@JournalDev"><meta name="twitter:image" content="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-security-example-userdetailsservice.jpg"><meta name="twitter:creator" content="@JournalDev"><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="dns-prefetch" href="//s.w.org"><link rel="alternate" type="application/rss+xml" title="JournalDev » Feed" href="http://www.journaldev.com/feed"><link rel="alternate" type="application/rss+xml" title="JournalDev » Comments Feed" href="http://www.journaldev.com/comments/feed"><link rel="alternate" type="application/rss+xml" title="JournalDev » Spring Security Example UserDetailsService Comments Feed" href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice/feed"> <script type="text/javascript">window._wpemojiSettings={"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.journaldev.com\/wp-includes\/js\/wp-emoji-release.min.js"}};!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b===c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);</script> <style type="text/css">img.wp-smiley,img.emoji{display:inline !important;border:none !important;box-shadow:none !important;height:1em !important;width:1em !important;margin:0
+.07em !important;vertical-align:-0.1em !important;background:none !important;padding:0
+!important}</style><link rel="stylesheet" id="news-pro-theme-css" href="http://cdn.journaldev.com/wp-content/themes/news-pro/style.css" type="text/css" media="all"><link rel="stylesheet" id="dashicons-css" href="http://cdn.journaldev.com/wp-includes/css/dashicons.min.css" type="text/css" media="all"><link rel="stylesheet" id="thickbox-css" href="http://cdn.journaldev.com/wp-includes/js/thickbox/thickbox.css" type="text/css" media="all"><link rel="stylesheet" id="jcorgcr_css-css" href="http://cdn.journaldev.com/wp-content/plugins/jaspreetchahals-coupons-lite/css/jcorgcr.min.css" type="text/css" media="all"><link rel="stylesheet" id="google-fonts-css" href="//fonts.googleapis.com/css?family=Raleway%3A400%2C700%7CPathway+Gothic+One" type="text/css" media="all"><link rel="stylesheet" id="scroll-triggered-boxes-css" href="http://cdn.journaldev.com/wp-content/plugins/scroll-triggered-boxes/assets/css/styles.min.css" type="text/css" media="all"><link rel="stylesheet" id="forget-about-shortcode-buttons-css" href="http://cdn.journaldev.com/wp-content/plugins/forget-about-shortcode-buttons/public/css/button-styles.css" type="text/css" media="all"> <script type='text/javascript' src='http://cdn.journaldev.com/wp-includes/js/jquery/jquery.js'></script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-includes/js/jquery/jquery-migrate.min.js'></script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/top-bar/js/jquery.cookie.js'></script> <script type='text/javascript'>var tpbr_settings={"fixed":"fixed","message":"{Flash Sale} - Best Java Course at $10 Only (Original Price $195). Hurry, offer expires soon!","status":"inactive","yn_button":"button","color":"#B63233","button_text":"Check it Out Now","button_url":"http:\/\/click.linksynergy.com\/fs-bin\/click?id=CXSHbEvJ*Hk&subid=&offerid=323058.1&type=10&tmpid=14537&RD_PARM1=https%3A%2F%2Fwww.udemy.com%2Fjava-the-complete-java-developer-course%2F%3FcouponCode=ARC2202","close_image":null,"is_admin_bar":"no"};</script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/top-bar/js/tpbr_front.min.js'></script> <!--[if lt IE 9]> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/themes/genesis/lib/js/html5shiv.js'></script> <![endif]--> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/themes/news-pro/js/responsive-menu.js'></script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/simple-social-icons/svgxuse.js'></script> <link rel="https://api.w.org/" href="http://www.journaldev.com/wp-json/"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.journaldev.com/xmlrpc.php?rsd"><link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://cdn.journaldev.com/wp-includes/wlwmanifest.xml"><meta name="generator" content="WordPress 4.8"><link rel="shortlink" href="http://www.journaldev.com/?p=2736"><link rel="alternate" type="application/json+oembed" href="http://www.journaldev.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.journaldev.com%2F2736%2Fspring-security-example-userdetailsservice"><link rel="alternate" type="text/xml+oembed" href="http://www.journaldev.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.journaldev.com%2F2736%2Fspring-security-example-userdetailsservice&amp;format=xml"> <script language="JavaScript">jQuery(function(){jQuery('.wpdm-popup').click(function(){tb_show(jQuery(this).html(),this.href+'&modal=1&width=600&height=400');return false;});jQuery('.haspass').click(function(){var url=jQuery(this).attr('href');var id=jQuery(this).attr('rel');var password=jQuery('#pass_'+id).val();jQuery.post('http://www.journaldev.com/',{download:id,password:password},function(res){if(res=='error'){jQuery('#wpdm_file_'+id+' .perror').html('Wrong Password');setTimeout("jQuery('#wpdm_file_"+id+" .perror').html('');",3000);return false;}else{location.href='http://www.journaldev.com/?wpdmact=process&did='+res;}});return false;});})</script> <style type="text/css">.enews
+.screenread{height:1px;left:-1000em;overflow:hidden;position:absolute;top:-1000em;width:1px}</style><style>.k7c387{font-size:18px}.close-btn{position:absolute;right:5px;top:-15px;background:#333;border-radius:50%;height:25px;width:25px;text-align:center;cursor:pointer}.k7c387-hide{display:none}.k7c387-1{width:100%;background:#e84206;color:#fff;text-align:center;position:fixed;bottom:0px;padding:10px;z-index:100000}.k7c387-2{width:100%;height:100%;background:rgba(0, 0, 0, .95);z-index:100000;position:fixed;top:0;right:0}.k7c387-2 .k7c387-body,.k7c387-3 .k7c387-body{background:#fff;color:#666;text-align:center;position:fixed;margin:auto;top:200px;right:10%;width:80%;padding:20px;z-index:100001;border-radius:10px}.k7c387-2 .close-btn,.k7c387-3 .close-btn{background:#e84206;color:#fff}.k7c387-3 .k7c387-body{box-shadow:2px 2px 2px #333}</style> <script>(function(window){var KillAdBlock=function(options){this._options={checkOnLoad:false,resetOnEnd:false,loopCheckTime:50,loopMaxNumber:5,baitClass:'pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links',baitStyle:'width: 1px !important; height: 1px !important; position: absolute !important; left: -10000px !important; top: -1000px !important;',debug:false};this._var={version:'1.2.0',bait:null,checking:false,loop:null,loopNumber:0,event:{detected:[],notDetected:[]}};if(options!==undefined){this.setOption(options);}
+var self=this;var eventCallback=function(){setTimeout(function(){if(self._options.checkOnLoad===true){if(self._options.debug===true){self._log('onload->eventCallback','A check loading is launched');}
+if(self._var.bait===null){self._creatBait();}
+setTimeout(function(){self.check();},1);}},1);};if(window.addEventListener!==undefined){window.addEventListener('load',eventCallback,false);}else{window.attachEvent('onload',eventCallback);}};KillAdBlock.prototype._options=null;KillAdBlock.prototype._var=null;KillAdBlock.prototype._bait=null;KillAdBlock.prototype._log=function(method,message){console.log('[KillAdBlock]['+method+'] '+message);};KillAdBlock.prototype.setOption=function(options,value){if(value!==undefined){var key=options;options={};options[key]=value;}
+for(var option in options){this._options[option]=options[option];if(this._options.debug===true){this._log('setOption','The option "'+option+'" he was assigned to "'+options[option]+'"');}}
+return this;};KillAdBlock.prototype._creatBait=function(){var bait=document.createElement('div');bait.setAttribute('class',this._options.baitClass);bait.setAttribute('style',this._options.baitStyle);this._var.bait=window.document.body.appendChild(bait);this._var.bait.offsetParent;this._var.bait.offsetHeight;this._var.bait.offsetLeft;this._var.bait.offsetTop;this._var.bait.offsetWidth;this._var.bait.clientHeight;this._var.bait.clientWidth;if(this._options.debug===true){this._log('_creatBait','Bait has been created');}};KillAdBlock.prototype._destroyBait=function(){window.document.body.removeChild(this._var.bait);this._var.bait=null;if(this._options.debug===true){this._log('_destroyBait','Bait has been removed');}};KillAdBlock.prototype.check=function(loop){if(loop===undefined){loop=true;}
+if(this._options.debug===true){this._log('check','An audit was requested '+(loop===true?'with a':'without')+' loop');}
+if(this._var.checking===true){if(this._options.debug===true){this._log('check','A check was canceled because there is already an ongoing');}
+return false;}
+this._var.checking=true;if(this._var.bait===null){this._creatBait();}
+var self=this;this._var.loopNumber=0;if(loop===true){this._var.loop=setInterval(function(){self._checkBait(loop);},this._options.loopCheckTime);}
+setTimeout(function(){self._checkBait(loop);},1);if(this._options.debug===true){this._log('check','A check is in progress ...');}
+return true;};KillAdBlock.prototype._checkBait=function(loop){var detected=false;if(this._var.bait===null){this._creatBait();}
+if(window.document.body.getAttribute('abp')!==null||this._var.bait.offsetParent===null||this._var.bait.offsetHeight==0||this._var.bait.offsetLeft==0||this._var.bait.offsetTop==0||this._var.bait.offsetWidth==0||this._var.bait.clientHeight==0||this._var.bait.clientWidth==0){detected=true;}
+if(window.getComputedStyle!==undefined){var baitTemp=window.getComputedStyle(this._var.bait,null);if(baitTemp.getPropertyValue('display')=='none'||baitTemp.getPropertyValue('visibility')=='hidden'){detected=true;}}
+if(this._options.debug===true){this._log('_checkBait','A check ('+(this._var.loopNumber+1)+'/'+this._options.loopMaxNumber+' ~'+(1+this._var.loopNumber*this._options.loopCheckTime)+'ms) was conducted and detection is '+(detected===true?'positive':'negative'));}
+if(loop===true){this._var.loopNumber++;if(this._var.loopNumber>=this._options.loopMaxNumber){this._stopLoop();}}
+if(detected===true){this._stopLoop();this._destroyBait();this.emitEvent(true);if(loop===true){this._var.checking=false;}}else if(this._var.loop===null||loop===false){this._destroyBait();this.emitEvent(false);if(loop===true){this._var.checking=false;}}};KillAdBlock.prototype._stopLoop=function(detected){clearInterval(this._var.loop);this._var.loop=null;this._var.loopNumber=0;if(this._options.debug===true){this._log('_stopLoop','A loop has been stopped');}};KillAdBlock.prototype.emitEvent=function(detected){if(this._options.debug===true){this._log('emitEvent','An event with a '+(detected===true?'positive':'negative')+' detection was called');}
+var fns=this._var.event[(detected===true?'detected':'notDetected')];for(var i in fns){if(this._options.debug===true){this._log('emitEvent','Call function '+(parseInt(i)+1)+'/'+fns.length);}
+if(fns.hasOwnProperty(i)){fns[i]();}}
+if(this._options.resetOnEnd===true){this.clearEvent();}
+return this;};KillAdBlock.prototype.clearEvent=function(){this._var.event.detected=[];this._var.event.notDetected=[];if(this._options.debug===true){this._log('clearEvent','The event list has been cleared');}};KillAdBlock.prototype.on=function(detected,fn){this._var.event[(detected===true?'detected':'notDetected')].push(fn);if(this._options.debug===true){this._log('on','A type of event "'+(detected===true?'detected':'notDetected')+'" was added');}
+return this;};KillAdBlock.prototype.onDetected=function(fn){return this.on(true,fn);};KillAdBlock.prototype.onNotDetected=function(fn){return this.on(false,fn);};window.KillAdBlock=KillAdBlock;if(window.killAdBlock===undefined){window.killAdBlock=new KillAdBlock({checkOnLoad:true,resetOnEnd:true});}})(window);function show_message()
+{kill_adBlock_message_delay=kill_adBlock_message_delay*1000;kill_adBlock_close_automatically_delay=kill_adBlock_close_automatically_delay*1000;setTimeout(function(){jQuery('.k7c387').html(kill_adBlock_message);jQuery('.k7c387-container').fadeIn();},kill_adBlock_message_delay);if(kill_adBlock_close_automatically_delay>0&&kill_adBlock_close_automatically==1)
+{setTimeout(function(){jQuery('.close-btn').trigger('click');},kill_adBlock_close_automatically_delay);}}
+function adBlockNotDetected(){}
+jQuery(document).ready(function(){jQuery('.close-btn').click(function(){jQuery('.k7c387-container').fadeOut('k7c387-hide');});});var kill_adBlock_status=1;var kill_adBlock_message='We thrive to provide you the best content totally free. Advertisement is the only source of our income to run this site and paying our bills. Please whitelist our website or disable AdBlocker and reload to continue reading the top quality article for free.';var kill_adBlock_message_delay=3;var kill_adBlock_close_btn=0;var kill_adBlock_close_automatically=0;var kill_adBlock_close_automatically_delay=0;var kill_adBlock_message_type=2;function adBlockDetected(){show_message();}
+if(typeof killAdBlock==='undefined'){adBlockDetected();}else{killAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);}</script> <script data-cfasync="false" src="//load.sumome.com/" data-sumo-platform="wordpress" data-sumo-site-id="698353846a267a100ea055220d594fa90eff8892a405d778a1382db0c2b84c39" async></script> <link rel="icon" type="image/png" href="http://cdn.journaldev.com/fav.png"><link rel="pingback" href="http://www.journaldev.com/xmlrpc.php"> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-12171637-4','auto');ga('send','pageview');</script> <script type="text/javascript">window._mNHandle=window._mNHandle||{};window._mNHandle.queue=window._mNHandle.queue||[];medianet_versionId="121199";(function(){var sct=document.createElement("script"),sctHl=document.getElementsByTagName("script")[0],isSSL='https:'==document.location.protocol;sct.type="text/javascript";sct.src=(isSSL?'https:':'http:')+'//contextual.media.net/dmedianet.js?cid=8CUSP8IK6'+(isSSL?'&https=1':'')+'';sct.async="async";sctHl.parentNode.insertBefore(sct,sctHl);})();</script>  <style type="text/css">.site-title
+a{background:url(http://cdn.journaldev.com/wp-content/uploads/2014/05/cropped-Final-JD-Logo.png) no-repeat !important}</style><link rel="amphtml" href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice/amp"><style type="text/css" id="syntaxhighlighteranchor"></style><style type="text/css">.mctb-bar,.mctb-response,.mctb-close{background:#f7682c !important}.mctb-bar,.mctb-label,.mctb-close{color:#fff !important}.mctb-button{background:#096abf !important;border-color:#096abf !important}.mctb-email:focus{outline-color:#096abf !important}.mctb-button{color:#fff !important}</style><style type="text/css">.stb-4065{border-width:0px !important;@media ( max-width: 700px ){#stb-4065{display:none !important}}}</style><link rel="icon" href="http://cdn.journaldev.com/wp-content/uploads/2015/08/jd-site-img-150x150.png" sizes="32x32"><link rel="icon" href="http://cdn.journaldev.com/wp-content/uploads/2015/08/jd-site-img-268x268.png" sizes="192x192"><link rel="apple-touch-icon-precomposed" href="http://cdn.journaldev.com/wp-content/uploads/2015/08/jd-site-img-268x268.png"><meta name="msapplication-TileImage" content="http://cdn.journaldev.com/wp-content/uploads/2015/08/jd-site-img-300x300.png"><style>.ezoic-ad.medrectangle-3 { display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:300px; }
+.ezoic-ad.box-2 { display:inline-block;float:right !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:80px;min-width:468px; }
+.ezoic-ad.large-leaderboard-1 { display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:300px;text-align:center !important; }
+.ezoic-ad.box-4 { display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:250px; }
+.ezoic-ad.banner-1 { display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:300px;min-width:336px; }
+.ezoic-ad.medrectangle-4 { display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:250px; }
+.ezoic-ad.box-3 { display:block !important;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:420px;min-width:580px;text-align:center !important; }
+.ezoic-ad.box-1 { display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:300px;min-width:336px; }
+.ezoic-ad.large-billboard-2 { display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:250px;text-align:center !important; }
+.ezoic-ad{display:inline-block;}
+.ezoic-floating-bottom { display: none!important; }</style>
+<script data-cfasync="false" type="text/javascript">window.google_analytics_uacct = "UA-97838217-35";</script>
+<script data-cfasync="false" type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['e._setAccount', 'UA-97838217-35']);
+_gaq.push(['f._setAccount', 'UA-38339005-1']);
+_gaq.push(['e._setDomainName', 'journaldev.com']);
+_gaq.push(['f._setDomainName', 'journaldev.com']);
+_gaq.push(['e._setCustomVar',1,'template','pub_site',3]);
+_gaq.push(['e._setCustomVar',2,'t','134',3]);
+_gaq.push(['e._setCustomVar',3,'rid','0',2]);
+_gaq.push(['e._setCustomVar',4,'bra','mod6',3]);
+_gaq.push(['e._setAllowAnchor',true]);
+_gaq.push(['e._setSiteSpeedSampleRate', 10]);
+_gaq.push(['f._setCustomVar',1,'template','pub_site',3]);
+_gaq.push(['f._setCustomVar',2,'domain','journaldev.com',3]);
+_gaq.push(['f._setSiteSpeedSampleRate', 20]);
+_gaq.push(['e._trackPageview']);
+_gaq.push(['f._trackPageview']);
+
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">var ezouid = "1038073899";</script><base href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice"><script type='text/javascript'>
+var ezoTemplate = 'pub_site';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script><!-- START EZHEAD -->
+<script type='text/javascript'>
+var soc_app_id = '0';
+var did = 47402;
+var ezdomain = 'journaldev.com';
+var ezoicSearchable = 1;
+</script>
+<!--{jquery}-->
+<!-- END EZHEAD -->
+<script pagespeed_no_defer="" data-cfasync="false" type="text/javascript">
+        window.cookieconsent_options = {
+            "message":"We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners.",
+            "dismiss":"Got it!",
+            "learnMore":"See details",
+            "link":'/privacy.html',
+            "theme":"/ezoic/styles/dark-bottom.css",
+			"domain":"journaldev.com"
+        };
+    </script>
+<script pagespeed_no_defer="" data-cfasync="false" type="text/javascript" src="/ezoic/cookieconsent.min.js"></script>
+<script data-pagespeed-no-defer data-cfasync='false' type='text/javascript' style='display:none'>__ez.queue.addFile('__ezf_ezosuigeneris', '//g.ezoic.net/ezosuigeneris.js?i=4e0f5bea403ac70480b1e8b9505e2948', true, [], true, false, false, false);</script><script data-pagespeed-no-defer data-cfasync='false' type='text/javascript' style='display:none'>__ez.queue.addFile('__ezf_ezosuigenerisc', '//g.ezoic.net/ezosuigenerisc.js?i=6ae2b23840d0aceb806edb8f896f4313', true, [], true, false, false, false);</script></head><body class="post-template-default single single-post postid-2736 single-format-standard custom-header header-image content-sidebar" itemscope="" itemtype="https://schema.org/WebPage"><div class="site-container"><header class="site-header" itemscope="" itemtype="https://schema.org/WPHeader"><div class="wrap"><div class="title-area"><p class="site-title" itemprop="headline"><a href="http://www.journaldev.com/">JournalDev</a></p><p class="site-description" itemprop="description">Java, Java EE, Android, Web Development Tutorials</p></div><div class="widget-area header-widget-area"><section id="adswidget7-quick-adsense" class="widget �lambda_2"><div class="widget-wrap"><span id='ezoic-pub-ad-placeholder-100'></span><span style='display:none;float:right !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:80px;min-width:468px;' class='ezoic-ad box-2 adtester-container adtester-container-100' data-ez-name='journaldev_com-box-2'><span id='div-gpt-ad-journaldev_com-box-2-0' ezaw='468' ezah='60' style='position:relative;z-index:0;display:none;' class='ezoic-ad'><!--script-placeholder--></span></span><script>var ezzns1 = {2.20:505285,3.00:505289,1.10:505275,1.20:505276,11.00:512980,2.00:505284,15.00:512996,5.50:512958,1.80:505282,10.00:512975,14.00:512993,1.50:505279,7.50:512965,0.35:504906,0.70:504911,14.50:512995,0.45:504908,8.50:512970,9.00:512971,0.05:504900,1.60:505280,3.50:505290,4.50:505292,13.00:512989,0.40:504907,9.50:512973,11.50:512981,0.10:504901,0.20:504903,1.30:505277,2.60:505287,4.00:505291,1.40:505278,0.80:504912,13.50:512991,5.00:505293,1.90:505283,10.50:512978,12.50:512987,2.40:505286,12.00:512984,7.00:512964,0.60:504910,0.90:504913,1.00:505274,1.70:505281,0.15:504902,0.25:504904,0.30:504905,0.50:504909,2.80:505288,6.00:512960,6.50:512962,8.00:512967,};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js" ></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="journaldev_com-box-2" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() { __ez.queue.addFunc('ReloadFromP_1100', 'IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP', 1100, false, ['banger.js'], false, false, false, true); };
+var ezoflbf_1 = function() { eval(ez_write_tag([[468,60],'journaldev_com-box-2','ezslot_1']));
+		};</script><script type="text/javascript">Criteo.DisplayAd({
+    zoneid: 504903, containerid: 'crt-1', passbackcode: ezoflbf_1
+});
+</script></div>
+<script type='text/javascript'>
+	var __ezfl_sss_1100 = function() {
+		setTimeout(function(){
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1100);
+			if (typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if (typeof ez_ad_units != undefined) {
+					for (i = 0; i < ez_ad_units.length; i++) {
+						if (ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.20);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+		}, 4000);
+	};
+	__ez.queue.addFunc('__ezfl_sss_1100', '__ezfl_sss_1100', null, false, ['banger.js'], false, false, false, true);
+</script><!--ezoicfl--></div></section></div></div></header><nav class="nav-primary" itemscope="" itemtype="https://schema.org/SiteNavigationElement"><div class="wrap"><ul id="menu-new-headermenu" class="menu genesis-nav-menu menu-primary"><li id="menu-item-7610" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7610"><a href="http://www.journaldev.com/java-tutorial-java-ee-tutorials" itemprop="url"><span itemprop="name">Java Tutorial</span></a></li><li id="menu-item-7611" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7611"><a href="#" itemprop="url"><span itemprop="name">#Index Posts</span></a><ul class="sub-menu"><li id="menu-item-7612" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7612"><a href="http://www.journaldev.com/7153/core-java-tutorial" itemprop="url"><span itemprop="name">Core Java Tutorial</span></a></li><li id="menu-item-7613" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7613"><a href="http://www.journaldev.com/1827/java-design-patterns-example-tutorial" itemprop="url"><span itemprop="name">Java Design Patterns</span></a></li><li id="menu-item-7614" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7614"><a href="http://www.journaldev.com/2114/servlet-jsp-tutorial" itemprop="url"><span itemprop="name">Servlet JSP Tutorial</span></a></li><li id="menu-item-7615" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7615"><a href="http://www.journaldev.com/2310/struts2-tutorial-with-example-projects" itemprop="url"><span itemprop="name">Struts 2 Tutorial</span></a></li><li id="menu-item-7616" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7616"><a href="http://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial" itemprop="url"><span itemprop="name">Spring Tutorial</span></a></li><li id="menu-item-7638" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7638"><a href="http://www.journaldev.com/7635/jsf-tutorial" itemprop="url"><span itemprop="name">JSF Tutorial</span></a></li><li id="menu-item-7620" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7620"><a href="http://www.journaldev.com/5516/primefaces-tutorial-with-example-projects" itemprop="url"><span itemprop="name">Primefaces Tutorial</span></a></li><li id="menu-item-7619" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7619"><a href="http://www.journaldev.com/2681/jdbc-tutorial" itemprop="url"><span itemprop="name">JDBC Tutorial</span></a></li><li id="menu-item-7617" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7617"><a href="http://www.journaldev.com/3793/hibernate-tutorial" itemprop="url"><span itemprop="name">Hibernate Tutorial</span></a></li><li id="menu-item-7618" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7618"><a href="http://www.journaldev.com/6672/mongodb-tutorial-installation-example-projects-integration-with-servlet-spring-jsf" itemprop="url"><span itemprop="name">MongoDB Tutorial</span></a></li></ul></li><li id="menu-item-7621" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7621"><a href="#" itemprop="url"><span itemprop="name">#Interview Questions</span></a><ul class="sub-menu"><li id="menu-item-7622" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7622"><a href="http://www.journaldev.com/java-interview-questions" itemprop="url"><span itemprop="name">Java Interview Questions</span></a></li><li id="menu-item-7623" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7623"><a href="http://www.journaldev.com/2529/jdbc-interview-questions-and-answers" itemprop="url"><span itemprop="name">JDBC Interview Questions</span></a></li><li id="menu-item-7624" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7624"><a href="http://www.journaldev.com/2015/servlet-interview-questions-and-answers" itemprop="url"><span itemprop="name">Servlet Interview Questions</span></a></li><li id="menu-item-7625" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7625"><a href="http://www.journaldev.com/2110/jsp-interview-questions-and-answers" itemprop="url"><span itemprop="name">JSP Interview Questions</span></a></li><li id="menu-item-7626" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7626"><a href="http://www.journaldev.com/2354/struts2-interview-questions-and-answers" itemprop="url"><span itemprop="name">Struts2 Interview Questions</span></a></li><li id="menu-item-7627" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7627"><a href="http://www.journaldev.com/2696/spring-interview-questions-and-answers" itemprop="url"><span itemprop="name">Spring Interview Questions</span></a></li><li id="menu-item-7628" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7628"><a href="http://www.journaldev.com/3633/hibernate-interview-questions-and-answers" itemprop="url"><span itemprop="name">Hibernate Interview Questions</span></a></li><li id="menu-item-7629" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7629"><a href="http://www.journaldev.com/7261/jsf-interview-questions-and-answers" itemprop="url"><span itemprop="name">JSF Interview Questions</span></a></li></ul></li><li id="menu-item-7759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7759"><a href="http://www.journaldev.com/resources" itemprop="url"><span itemprop="name">Resources</span></a></li><li id="menu-item-10352" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10352"><a href="https://store.journaldev.com" itemprop="url"><span itemprop="name">Store</span></a></li></ul></div></nav><div class="site-inner"><div class="content-sidebar-wrap"><main class="content"><div class="breadcrumb" itemscope="" itemtype="https://schema.org/BreadcrumbList"><span xmlns:v="http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb"><a href="http://www.journaldev.com/" rel="v:url" property="v:title">Home</a> » <span rel="v:child" typeof="v:Breadcrumb"><a href="http://www.journaldev.com/dev/spring" rel="v:url" property="v:title">Spring</a> » <span class="breadcrumb_last">Spring Security Example UserDetailsService</span></span></span></span></div><article class="post-2736 post type-post status-publish format-standard category-spring entry" itemscope="" itemtype="https://schema.org/CreativeWork"><header class="entry-header"><h1 class="entry-title" itemprop="headline">Spring Security Example UserDetailsService</h1><p class="entry-meta"><time class="entry-modified-time" itemprop="dateModified" datetime="2016-07-30T10:42:46+00:00">July 30, 2016</time> by <span class="entry-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><a href="http://www.journaldev.com/author/pankaj" class="entry-author-link" itemprop="url" rel="author"><span class="entry-author-name" itemprop="name">Pankaj</span></a></span> <span class="entry-comments-link"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comments">20 Comments</a></span></p></header><div class="entry-content" itemprop="text"><div style="float:none;margin:10px 0 10px 0;text-align:center;"><span id='ezoic-pub-ad-placeholder-101'></span><span style='display:none !important;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:420px;min-width:580px;text-align:center !important;' class='ezoic-ad box-3 adtester-container adtester-container-101' data-ez-name='journaldev_com-box-3'><span id='div-gpt-ad-journaldev_com-box-3-0' ezaw='580' ezah='400' style='position:relative;z-index:0;display:none;' class='ezoic-ad'><!--script-placeholder--></span></span><script>var ezzns2 = {};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js" ></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="journaldev_com-box-3" id="crt-2">
+<script type="text/javascript">
+var ezoflbf_2_2 = function() { __ez.queue.addFunc('ReloadFromP_1101', 'IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP', 1101, false, ['banger.js'], false, false, false, true); };
+var ezoflbf_2 = function() { eval(ez_write_tag([[580,400],'journaldev_com-box-3','ezslot_6']));
+		};</script><script type="text/javascript">ezoflbf_2();
+</script></div>
+<script type='text/javascript'>
+	var __ezfl_sss_1101 = function() {
+		setTimeout(function(){
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1101);
+			if (typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if (typeof ez_ad_units != undefined) {
+					for (i = 0; i < ez_ad_units.length; i++) {
+						if (ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.20);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+		}, 4000);
+	};
+	__ez.queue.addFunc('__ezfl_sss_1101', '__ezfl_sss_1101', null, false, ['banger.js'], false, false, false, true);
+</script><!--ezoicfl--></div><p>Welcome to Spring Security Example using UserDetailsService. In the last post we learned how to use <a href="http://www.journaldev.com/2715/spring-security-example-tutorial" title="Spring Security in Servlet Web Application using DAO, JDBC, In-Memory authentication">Spring Security in Web Application</a>. Today we will look into how we can integrate Spring Security in Spring MVC Projects for authentication purposes.</p><h2>Spring Security Example</h2><p><a href="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-security-example-userdetailsservice.jpg"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-security-example-userdetailsservice.jpg" alt="spring security example, UserDetailsService, spring mvc security, spring UserDetailsService" width="560" height="315" class="lazy lazy-hidden aligncenter size-full wp-image-11997" data-lazy-srcset="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-security-example-userdetailsservice.jpg 560w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-security-example-userdetailsservice-450x253.jpg 450w" sizes="(max-width: 560px) 100vw, 560px"><noscript><img
+src="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-security-example-userdetailsservice.jpg" alt="spring security example, UserDetailsService, spring mvc security, spring UserDetailsService" width="560" height="315" class="aligncenter size-full wp-image-11997" srcset="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-security-example-userdetailsservice.jpg 560w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-security-example-userdetailsservice-450x253.jpg 450w" sizes="(max-width: 560px) 100vw, 560px" /></noscript></a><span id='ezoic-pub-ad-placeholder-110' class="ezoic-adpicker-ad"></span><span id='ezoic-pub-ad-placeholder-'null" class="ezoic-adpicker-ad"></span><!-- placeholder  blocked.  Reason : inactive --></p><p>Integrating Spring Security with Spring MVC Framework is very easy, because we already have Spring Beans configuration file. All we need is to create spring security authentication related changes to get it working. Today we will look into how we can implement authentication in Spring MVC application using in-memory, <code>UserDetailsService</code> DAO implementation and JDBC based authentication.</p><div style="float:none;margin:10px 0 10px 0;text-align:center;"><span id='ezoic-pub-ad-placeholder-104'></span><span style='display:none;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:300px;' class='ezoic-ad medrectangle-3 adtester-container adtester-container-104' data-ez-name='journaldev_com-medrectangle-3'><span id='div-gpt-ad-journaldev_com-medrectangle-3-0' ezaw='300' ezah='250' style='position:relative;z-index:0;display:none;' class='ezoic-ad'><!--script-placeholder--></span></span><script>var ezzns21 = {0.10:504141,0.20:504145,0.50:504556,0.90:504560,1.90:504656,3.00:504664,0.05:504099,0.40:504554,0.70:504558,0.80:504559,2.60:504660,2.80:504661,0.45:504555,1.00:504647,1.30:504650,2.40:504659,4.00:504666,4.50:504667,0.15:504144,0.30:504551,1.20:504649,1.40:504651,1.50:504652,2.20:504658,1.60:504653,1.80:504655,0.25:504548,0.60:504557,1.10:504648,2.00:504657,5.00:504669,1.70:504654,3.50:504665,0.35:504552,};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js" ></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="journaldev_com-medrectangle-3" id="crt-21">
+<script type="text/javascript">
+var ezoflbf_2_21 = function() { __ez.queue.addFunc('ReloadFromP_1104', 'IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP', 1104, false, ['banger.js'], false, false, false, true); };
+var ezoflbf_21 = function() { eval(ez_write_tag([[300,250],'journaldev_com-medrectangle-3','ezslot_0']));
+		};</script><script type="text/javascript">Criteo.DisplayAd({
+    zoneid: 504141, containerid: 'crt-21', passbackcode: ezoflbf_21
+});
+</script></div>
+<script type='text/javascript'>
+	var __ezfl_sss_1104 = function() {
+		setTimeout(function(){
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1104);
+			if (typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if (typeof ez_ad_units != undefined) {
+					for (i = 0; i < ez_ad_units.length; i++) {
+						if (ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.05);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+		}, 4000);
+	};
+	__ez.queue.addFunc('__ezfl_sss_1104', '__ezfl_sss_1104', null, false, ['banger.js'], false, false, false, true);
+</script><!--ezoicfl--></div><p>First create a simple Spring MVC project in the Spring Tool Suite, that will give us the base spring MVC application to build our Spring security example application. Once we will be done with all the changes, our application will look like below image.</p><p><a href="http://cdn.journaldev.com/wp-content/uploads/2014/04/Spring-MVC-Security-Project1.png"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://cdn.journaldev.com/wp-content/uploads/2014/04/Spring-MVC-Security-Project1-309x450.png" alt="Spring MVC Security, Spring Security Example, UserDetailsService" width="309" height="450" class="lazy lazy-hidden aligncenter size-medium wp-image-2738" data-lazy-srcset="http://cdn.journaldev.com/wp-content/uploads/2014/04/Spring-MVC-Security-Project1-309x450.png 309w, http://cdn.journaldev.com/wp-content/uploads/2014/04/Spring-MVC-Security-Project1.png 684w" sizes="(max-width: 309px) 100vw, 309px"><noscript><img
+src="http://cdn.journaldev.com/wp-content/uploads/2014/04/Spring-MVC-Security-Project1-309x450.png" alt="Spring MVC Security, Spring Security Example, UserDetailsService" width="309" height="450" class="aligncenter size-medium wp-image-2738" srcset="http://cdn.journaldev.com/wp-content/uploads/2014/04/Spring-MVC-Security-Project1-309x450.png 309w, http://cdn.journaldev.com/wp-content/uploads/2014/04/Spring-MVC-Security-Project1.png 684w" sizes="(max-width: 309px) 100vw, 309px" /></noscript></a></p><p>Let’s look into each of the components of our Spring security example project.</p><div style="float:none;margin:10px 0 10px 0;text-align:center;"><span id='ezoic-pub-ad-placeholder-105'></span><span style='display:none;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:250px;' class='ezoic-ad medrectangle-4 adtester-container adtester-container-105' data-ez-name='journaldev_com-medrectangle-4'><span id='div-gpt-ad-journaldev_com-medrectangle-4-0' ezaw='250' ezah='250' style='position:relative;z-index:0;display:none;' class='ezoic-ad'><!--script-placeholder--></span></span><script>var ezzns22 = {};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js" ></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="journaldev_com-medrectangle-4" id="crt-22">
+<script type="text/javascript">
+var ezoflbf_2_22 = function() { __ez.queue.addFunc('ReloadFromP_1105', 'IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP', 1105, false, ['banger.js'], false, false, false, true); };
+var ezoflbf_22 = function() { eval(ez_write_tag([[250,250],'journaldev_com-medrectangle-4','ezslot_5']));
+		};</script><script type="text/javascript">ezoflbf_22();
+</script></div>
+<script type='text/javascript'>
+	var __ezfl_sss_1105 = function() {
+		setTimeout(function(){
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1105);
+			if (typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if (typeof ez_ad_units != undefined) {
+					for (i = 0; i < ez_ad_units.length; i++) {
+						if (ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.50);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+		}, 4000);
+	};
+	__ez.queue.addFunc('__ezfl_sss_1105', '__ezfl_sss_1105', null, false, ['banger.js'], false, false, false, true);
+</script><!--ezoicfl--></div><h3>Spring Security Maven Dependencies</h3><p>Our final pom.xml file looks like below.</p><pre class="prettyprint">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"&gt;
+	&lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+	&lt;groupId&gt;com.journaldev.spring&lt;/groupId&gt;
+	&lt;artifactId&gt;SpringMVCSecurity&lt;/artifactId&gt;
+	&lt;name&gt;SpringMVCSecurity&lt;/name&gt;
+	&lt;packaging&gt;war&lt;/packaging&gt;
+	&lt;version&gt;1.0.0-BUILD-SNAPSHOT&lt;/version&gt;
+	&lt;properties&gt;
+		&lt;java-version&gt;1.6&lt;/java-version&gt;
+		&lt;org.springframework-version&gt;4.0.2.RELEASE&lt;/org.springframework-version&gt;
+		&lt;org.aspectj-version&gt;1.7.4&lt;/org.aspectj-version&gt;
+		&lt;org.slf4j-version&gt;1.7.5&lt;/org.slf4j-version&gt;
+	&lt;/properties&gt;
+	&lt;dependencies&gt;
+		&lt;!-- Spring --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
+			&lt;artifactId&gt;spring-context&lt;/artifactId&gt;
+			&lt;version&gt;${org.springframework-version}&lt;/version&gt;
+			&lt;exclusions&gt;
+				&lt;!-- Exclude Commons Logging in favor of SLF4j --&gt;
+				&lt;exclusion&gt;
+					&lt;groupId&gt;commons-logging&lt;/groupId&gt;
+					&lt;artifactId&gt;commons-logging&lt;/artifactId&gt;
+				 &lt;/exclusion&gt;
+			&lt;/exclusions&gt;
+		&lt;/dependency&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
+			&lt;artifactId&gt;spring-webmvc&lt;/artifactId&gt;
+			&lt;version&gt;${org.springframework-version}&lt;/version&gt;
+		&lt;/dependency&gt;
+		&lt;!-- Spring Security --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.springframework.security&lt;/groupId&gt;
+			&lt;artifactId&gt;spring-security-config&lt;/artifactId&gt;
+			&lt;version&gt;3.2.3.RELEASE&lt;/version&gt;
+		&lt;/dependency&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.springframework.security&lt;/groupId&gt;
+			&lt;artifactId&gt;spring-security-web&lt;/artifactId&gt;
+			&lt;version&gt;3.2.3.RELEASE&lt;/version&gt;
+		&lt;/dependency&gt;
+	
+		&lt;!-- AspectJ --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.aspectj&lt;/groupId&gt;
+			&lt;artifactId&gt;aspectjrt&lt;/artifactId&gt;
+			&lt;version&gt;${org.aspectj-version}&lt;/version&gt;
+		&lt;/dependency&gt;	
+		
+		&lt;!-- Logging --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.slf4j&lt;/groupId&gt;
+			&lt;artifactId&gt;slf4j-api&lt;/artifactId&gt;
+			&lt;version&gt;${org.slf4j-version}&lt;/version&gt;
+		&lt;/dependency&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.slf4j&lt;/groupId&gt;
+			&lt;artifactId&gt;jcl-over-slf4j&lt;/artifactId&gt;
+			&lt;version&gt;${org.slf4j-version}&lt;/version&gt;
+			&lt;scope&gt;runtime&lt;/scope&gt;
+		&lt;/dependency&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.slf4j&lt;/groupId&gt;
+			&lt;artifactId&gt;slf4j-log4j12&lt;/artifactId&gt;
+			&lt;version&gt;${org.slf4j-version}&lt;/version&gt;
+			&lt;scope&gt;runtime&lt;/scope&gt;
+		&lt;/dependency&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;log4j&lt;/groupId&gt;
+			&lt;artifactId&gt;log4j&lt;/artifactId&gt;
+			&lt;version&gt;1.2.15&lt;/version&gt;
+			&lt;exclusions&gt;
+				&lt;exclusion&gt;
+					&lt;groupId&gt;javax.mail&lt;/groupId&gt;
+					&lt;artifactId&gt;mail&lt;/artifactId&gt;
+				&lt;/exclusion&gt;
+				&lt;exclusion&gt;
+					&lt;groupId&gt;javax.jms&lt;/groupId&gt;
+					&lt;artifactId&gt;jms&lt;/artifactId&gt;
+				&lt;/exclusion&gt;
+				&lt;exclusion&gt;
+					&lt;groupId&gt;com.sun.jdmk&lt;/groupId&gt;
+					&lt;artifactId&gt;jmxtools&lt;/artifactId&gt;
+				&lt;/exclusion&gt;
+				&lt;exclusion&gt;
+					&lt;groupId&gt;com.sun.jmx&lt;/groupId&gt;
+					&lt;artifactId&gt;jmxri&lt;/artifactId&gt;
+				&lt;/exclusion&gt;
+			&lt;/exclusions&gt;
+			&lt;scope&gt;runtime&lt;/scope&gt;
+		&lt;/dependency&gt;
+
+		&lt;!-- @Inject --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;javax.inject&lt;/groupId&gt;
+			&lt;artifactId&gt;javax.inject&lt;/artifactId&gt;
+			&lt;version&gt;1&lt;/version&gt;
+		&lt;/dependency&gt;
+				
+		&lt;!-- Servlet --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;javax.servlet&lt;/groupId&gt;
+			&lt;artifactId&gt;servlet-api&lt;/artifactId&gt;
+			&lt;version&gt;2.5&lt;/version&gt;
+			&lt;scope&gt;provided&lt;/scope&gt;
+		&lt;/dependency&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;javax.servlet.jsp&lt;/groupId&gt;
+			&lt;artifactId&gt;jsp-api&lt;/artifactId&gt;
+			&lt;version&gt;2.1&lt;/version&gt;
+			&lt;scope&gt;provided&lt;/scope&gt;
+		&lt;/dependency&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;javax.servlet&lt;/groupId&gt;
+			&lt;artifactId&gt;jstl&lt;/artifactId&gt;
+			&lt;version&gt;1.2&lt;/version&gt;
+		&lt;/dependency&gt;
+	
+		&lt;!-- Test --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;junit&lt;/groupId&gt;
+			&lt;artifactId&gt;junit&lt;/artifactId&gt;
+			&lt;version&gt;4.7&lt;/version&gt;
+			&lt;scope&gt;test&lt;/scope&gt;
+		&lt;/dependency&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
+			&lt;artifactId&gt;spring-jdbc&lt;/artifactId&gt;
+			&lt;version&gt;4.0.2.RELEASE&lt;/version&gt;
+		&lt;/dependency&gt;
+	&lt;/dependencies&gt;
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;artifactId&gt;maven-eclipse-plugin&lt;/artifactId&gt;
+                &lt;version&gt;2.9&lt;/version&gt;
+                &lt;configuration&gt;
+                    &lt;additionalProjectnatures&gt;
+                        &lt;projectnature&gt;org.springframework.ide.eclipse.core.springnature&lt;/projectnature&gt;
+                    &lt;/additionalProjectnatures&gt;
+                    &lt;additionalBuildcommands&gt;
+                        &lt;buildcommand&gt;org.springframework.ide.eclipse.core.springbuilder&lt;/buildcommand&gt;
+                    &lt;/additionalBuildcommands&gt;
+                    &lt;downloadSources&gt;true&lt;/downloadSources&gt;
+                    &lt;downloadJavadocs&gt;true&lt;/downloadJavadocs&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+                &lt;version&gt;2.5.1&lt;/version&gt;
+                &lt;configuration&gt;
+                    &lt;source&gt;1.6&lt;/source&gt;
+                    &lt;target&gt;1.6&lt;/target&gt;
+                    &lt;compilerArgument&gt;-Xlint:all&lt;/compilerArgument&gt;
+                    &lt;showWarnings&gt;true&lt;/showWarnings&gt;
+                    &lt;showDeprecation&gt;true&lt;/showDeprecation&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+                &lt;artifactId&gt;exec-maven-plugin&lt;/artifactId&gt;
+                &lt;version&gt;1.2.1&lt;/version&gt;
+                &lt;configuration&gt;
+                    &lt;mainClass&gt;org.test.int1.Main&lt;/mainClass&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+&lt;/project&gt;
+</pre><p>We have included <code>spring-security-config</code> and <code>spring-security-web</code> dependencies for Spring Security. Apart from that we have <code>spring-jdbc</code> dependency because we will be using Spring JDBC authentication too.</p><p>Rest of the dependencies are related to Spring MVC, logging, AOP etc.</p><div style="float:none;margin:10px 0 10px 0;text-align:center;"><span id='ezoic-pub-ad-placeholder-106'></span><span style='display:none;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:250px;' class='ezoic-ad box-4 adtester-container adtester-container-106' data-ez-name='journaldev_com-box-4'><span id='div-gpt-ad-journaldev_com-box-4-0' ezaw='250' ezah='250' style='position:relative;z-index:0;display:none;' class='ezoic-ad'><!--script-placeholder--></span></span><script>var ezzns3 = {};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js" ></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="journaldev_com-box-4" id="crt-3">
+<script type="text/javascript">
+var ezoflbf_2_3 = function() { __ez.queue.addFunc('ReloadFromP_1106', 'IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP', 1106, false, ['banger.js'], false, false, false, true); };
+var ezoflbf_3 = function() { eval(ez_write_tag([[250,250],'journaldev_com-box-4','ezslot_3']));
+		};</script><script type="text/javascript">ezoflbf_3();
+</script></div>
+<script type='text/javascript'>
+	var __ezfl_sss_1106 = function() {
+		setTimeout(function(){
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1106);
+			if (typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if (typeof ez_ad_units != undefined) {
+					for (i = 0; i < ez_ad_units.length; i++) {
+						if (ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.20);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+		}, 4000);
+	};
+	__ez.queue.addFunc('__ezfl_sss_1106', '__ezfl_sss_1106', null, false, ['banger.js'], false, false, false, true);
+</script><!--ezoicfl--></div><h3>Spring Security Example Deployment Descriptor</h3><p>Our web.xml file looks like below.</p><pre class="prettyprint">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"&gt;
+
+	&lt;!-- Spring Security Configuration File --&gt;
+	&lt;context-param&gt;
+		&lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;
+		&lt;param-value&gt;/WEB-INF/spring/appServlet/spring-security.xml&lt;/param-value&gt;
+	&lt;/context-param&gt;
+
+	&lt;!-- Creates the Spring Container shared by all Servlet and Filters --&gt;
+	&lt;listener&gt;
+		&lt;listener-class&gt;org.springframework.web.context.ContextLoaderListener&lt;/listener-class&gt;
+	&lt;/listener&gt;
+	&lt;listener&gt;
+		&lt;listener-class&gt;org.springframework.security.web.session.HttpSessionEventPublisher&lt;/listener-class&gt;
+	&lt;/listener&gt;
+	
+	&lt;session-config&gt;
+		&lt;session-timeout&gt;15&lt;/session-timeout&gt;
+	&lt;/session-config&gt;
+
+	&lt;!-- Spring Security Filter --&gt;
+	&lt;filter&gt;
+		&lt;filter-name&gt;springSecurityFilterChain&lt;/filter-name&gt;
+		&lt;filter-class&gt;org.springframework.web.filter.DelegatingFilterProxy&lt;/filter-class&gt;
+	&lt;/filter&gt;
+
+	&lt;filter-mapping&gt;
+		&lt;filter-name&gt;springSecurityFilterChain&lt;/filter-name&gt;
+		&lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+	&lt;/filter-mapping&gt;
+	
+	&lt;!-- Spring MVC - START --&gt;
+	&lt;servlet&gt;
+		&lt;servlet-name&gt;appServlet&lt;/servlet-name&gt;
+		&lt;servlet-class&gt;org.springframework.web.servlet.DispatcherServlet&lt;/servlet-class&gt;
+		&lt;init-param&gt;
+			&lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;
+			&lt;param-value&gt;
+			/WEB-INF/spring/appServlet/servlet-context.xml
+			&lt;/param-value&gt;
+		&lt;/init-param&gt;
+		&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
+	&lt;/servlet&gt;
+
+	&lt;servlet-mapping&gt;
+		&lt;servlet-name&gt;appServlet&lt;/servlet-name&gt;
+		&lt;url-pattern&gt;/&lt;/url-pattern&gt;
+	&lt;/servlet-mapping&gt;
+	&lt;!-- Spring MVC - END --&gt;
+
+&lt;/web-app&gt;
+</pre><p><code>contextConfigLocation</code> is the context parameter where we provide the spring security beans configuration file name. It is used by <code>ContextLoaderListener</code> to configure authentication in our application.</p><p>We have also added <code>HttpSessionEventPublisher</code> listener to publish session created/destroyed events to the Spring Root WebApplicationContext.</p><p>I am also setting <code>session-timeout</code> to 15 minutes, this is used for auto timeout when user is inactive for 15 minutes.</p><p><code>DelegatingFilterProxy</code> is the application filter defined, it is used for intercepting the HTTP requests and performing authentication related tasks.</p><p><code>DispatcherServlet</code> servlet is the front controller for the Spring MVC application.</p><h2>UserDetailsService</h2><p>If we want to use any DAO class for authentication, we need to implement <code>UserDetailsService</code> interface. Once the DAO is configured, it’s <code>loadUserByUsername()</code> is used to validate the user.</p><pre class="prettyprint">package com.journaldev.spring.security.dao;
+
+import java.util.Collection;
+import java.util.List;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
+public class AppUserDetailsServiceDAO implements UserDetailsService {
+
+	protected final Log logger = LogFactory.getLog(getClass());
+	
+	@Override
+	public UserDetails loadUserByUsername(final String username)
+			throws UsernameNotFoundException {
+		
+		logger.info("loadUserByUsername username="+username);
+		
+		if(!username.equals("pankaj")){
+			throw new UsernameNotFoundException(username + " not found");
+		}
+		
+		//creating dummy user details, should do JDBC operations
+		return new UserDetails() {
+			
+			private static final long serialVersionUID = 2059202961588104658L;
+
+			@Override
+			public boolean isEnabled() {
+				return true;
+			}
+			
+			@Override
+			public boolean isCredentialsNonExpired() {
+				return true;
+			}
+			
+			@Override
+			public boolean isAccountNonLocked() {
+				return true;
+			}
+			
+			@Override
+			public boolean isAccountNonExpired() {
+				return true;
+			}
+			
+			@Override
+			public String getUsername() {
+				return username;
+			}
+			
+			@Override
+			public String getPassword() {
+				return "pankaj123";
+			}
+			
+			@Override
+			public Collection&lt;? extends GrantedAuthority&gt; getAuthorities() {
+				List&lt;SimpleGrantedAuthority&gt; auths = new java.util.ArrayList&lt;SimpleGrantedAuthority&gt;();
+				auths.add(new SimpleGrantedAuthority("Admin"));
+				return auths;
+			}
+		};
+	}
+
+}
+</pre><p>Note that I am returning <code>UserDetails</code> instance by using anonymous inner class implementation. Ideally, we should have an implementation class for <code>UserDetails</code> that can have other user data also, such as emailID, user name, address etc.</p><p>Notice that the only combination that will work is when user name is “pankaj” and password is “pankaj123”.</p><h3>Spring Security Example Controller Class</h3><p>Here is our controller class that defines two URIs that we can access.</p><pre class="prettyprint">package com.journaldev.spring.controller;
+
+import java.text.DateFormat;
+import java.util.Date;
+import java.util.Locale;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+public class HomeController {
+	
+	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	
+	@RequestMapping(value = "/home", method = RequestMethod.GET)
+	public String home(Locale locale, Model model) {
+		logger.info("Welcome home! The client locale is {}.", locale);
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "home";
+	}
+	
+	@RequestMapping(value = "/emp/get/{id}", method = RequestMethod.GET)
+	public String getEmployee(Locale locale, Model model,@PathVariable("id") int id) {
+		logger.info("Welcome user! Requested Emp ID is: "+id);
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		model.addAttribute("id", id);
+		model.addAttribute("name", "Pankaj");
+		
+		return "employee";
+	}
+	
+	@RequestMapping(value="/login")
+	public String login(HttpServletRequest request, Model model){
+		return "login";
+	}
+	
+	@RequestMapping(value="/logout")
+	public String logout(){
+		return "logout";
+	}
+	
+	@RequestMapping(value="/denied")
+	public String denied(){
+		return "denied";
+	}
+}
+</pre><p>In our example, we will apply authentication to URI “/emp/get/{id}” only. All other URIs will be accessible without any authentication. login, logout and denied URIs are used to send corresponding response pages when secured URL is requested.</p><div style="float:none;margin:10px 0 10px 0;text-align:center;"><span id='ezoic-pub-ad-placeholder-107'></span><span style='display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:300px;min-width:336px;' class='ezoic-ad banner-1 adtester-container adtester-container-107' data-ez-name='journaldev_com-banner-1'><span id='div-gpt-ad-journaldev_com-banner-1-0' ezaw='336' ezah='280' style='position:relative;z-index:0;display:inline-block;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[336,280],'journaldev_com-banner-1','ezslot_4']));</script></span></span></div><h3>Spring Security Example Bean Configuration File</h3><pre class="prettyprint">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;beans:beans xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"&gt;
+
+	&lt;!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure --&gt;
+	
+	&lt;!-- Enables the Spring MVC @Controller programming model --&gt;
+	&lt;annotation-driven /&gt;
+
+	&lt;!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory --&gt;
+	&lt;resources mapping="/resources/**" location="/resources/" /&gt;
+
+	&lt;!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory --&gt;
+	&lt;beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"&gt;
+		&lt;beans:property name="prefix" value="/WEB-INF/views/" /&gt;
+		&lt;beans:property name="suffix" value=".jsp" /&gt;
+	&lt;/beans:bean&gt;
+	
+	&lt;context:component-scan base-package="com.journaldev.spring.controller" /&gt;
+	
+&lt;/beans:beans&gt;
+</pre><p>Our spring bean configuration file is simple, it has configurations related to Spring MVC application only.</p><h3>Spring MVC Security Configuration</h3><p>This is the most important part of our tutorial, let’s have a look at our file. We will understand each of the parts one by one.</p><p><code>spring-security.xml</code></p><pre class="prettyprint">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"&gt;
+
+	&lt;!-- Configuring RoleVoter bean to use custom access roles, by default roles 
+		should be in the form ROLE_{XXX} --&gt;
+	&lt;beans:bean id="roleVoter"
+		class="org.springframework.security.access.vote.RoleVoter"&gt;
+		&lt;beans:property name="rolePrefix" value=""&gt;&lt;/beans:property&gt;
+	&lt;/beans:bean&gt;
+
+	&lt;beans:bean id="accessDecisionManager"
+		class="org.springframework.security.access.vote.AffirmativeBased"&gt;
+		&lt;beans:constructor-arg name="decisionVoters"
+			ref="roleVoter" /&gt;
+	&lt;/beans:bean&gt;
+
+	&lt;http authentication-manager-ref="jdbc-auth"
+		access-decision-manager-ref="accessDecisionManager"&gt;	
+		&lt;intercept-url pattern="/emp/**" access="Admin" /&gt;
+		&lt;form-login login-page="/login" authentication-failure-url="/denied"
+			username-parameter="username" password-parameter="password"
+			default-target-url="/home" /&gt;
+		&lt;logout invalidate-session="true" logout-success-url="/login"
+			logout-url="/j_spring_security_logout" /&gt;
+		&lt;access-denied-handler error-page="/denied"/&gt;
+		&lt;session-management invalid-session-url="/login"&gt;
+			&lt;concurrency-control max-sessions="1"
+				expired-url="/login" /&gt;
+		&lt;/session-management&gt;
+	&lt;/http&gt;
+
+	&lt;authentication-manager id="in-memory-auth"&gt;
+		&lt;authentication-provider&gt;
+			&lt;user-service&gt;
+				&lt;user name="pankaj" password="pankaj123" authorities="Admin" /&gt;
+			&lt;/user-service&gt;
+		&lt;/authentication-provider&gt;
+	&lt;/authentication-manager&gt;
+
+	&lt;authentication-manager id="dao-auth"&gt;
+		&lt;authentication-provider user-service-ref="userDetailsService"&gt;
+		&lt;/authentication-provider&gt;
+	&lt;/authentication-manager&gt;
+
+	&lt;beans:bean id="userDetailsService"
+		class="com.journaldev.spring.security.dao.AppUserDetailsServiceDAO" /&gt;
+
+	&lt;authentication-manager id="jdbc-auth"&gt;
+		&lt;authentication-provider&gt;
+			&lt;jdbc-user-service data-source-ref="dataSource"
+				users-by-username-query="select username,password,enabled from Employees where username = ?"
+				authorities-by-username-query="select username,role from Roles where username = ?" /&gt;
+		&lt;/authentication-provider&gt;
+	&lt;/authentication-manager&gt;
+
+	&lt;!-- MySQL DB DataSource --&gt;
+	&lt;beans:bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"&gt;
+
+		&lt;beans:property name="driverClassName" value="com.mysql.jdbc.Driver" /&gt;
+		&lt;beans:property name="url"
+			value="jdbc:mysql://localhost:3306/TestDB" /&gt;
+		&lt;beans:property name="username" value="pankaj" /&gt;
+		&lt;beans:property name="password" value="pankaj123" /&gt;
+	&lt;/beans:bean&gt;
+
+	&lt;!-- If DataSource is configured in Tomcat Servlet Container --&gt;
+	&lt;beans:bean id="dbDataSource"
+		class="org.springframework.jndi.JndiObjectFactoryBean"&gt;
+		&lt;beans:property name="jndiName" value="java:comp/env/jdbc/MyLocalDB" /&gt;
+	&lt;/beans:bean&gt;
+&lt;/beans:beans&gt;
+</pre><p><code>accessDecisionManager</code> bean is defined so that we can have our custom roles, by default all the roles should start with ROLE_ and we are overriding this setting in the <code>roleVoter</code> bean property <code>rolePrefix</code>.</p><p>We can have multiple authentication managers defined in the spring security configuration. I have defined <code>in-memory-auth</code> for in-memory authentication, <code>dao-auth</code> for UserDetailsService DAO implementation and <code>jdbc-auth</code> for JDBC authentication. For JDBC authentication, I have provided configuration for DataSource defined in the application as well as if we want to use JNDI resource defined in the servlet container.</p><p>http <code>authentication-manager-ref</code> is used to define the authentication manager that will be used for authenticating the user. Currently it’s configured to use the JDBC based authentication.</p><p>http <code>access-decision-manager-ref</code> is used to specifying the ID of the AccessDecisionManager implementation which should be used for authorizing HTTP requests.</p><p><code>intercept-url</code> is used to define the URL pattern and authorities of the user who can access this page. For example, we have defined that URI “/emp/**” can be accessible only by users having “Admin” access.</p><p><code>form-login</code> defines the login form configuration and we can provide the username and password parameter names. <code>authentication-failure-url</code> is used to define the URL for the authentication failure page. If no login failure URL is specified, Spring Security will automatically create a failure login URL at /spring_security_login?login_error and a corresponding filter to render that login failure URL when requested.</p><p><code>default-target-url</code> is used to define the default  URL that will be redirected to after successful authentication, if the user’s previous action could not be resumed. This generally happens if the user visits a login page without having first requested a secured operation that triggers authentication. If unspecified, it defaults to the root of the application.</p><p><code>logout</code> is used to define the logout processing filter. Here we are invalidating the session and sending the user to login page after successful logout. <code>logout-url</code> is used to define the URL to be used for logout action.</p><p><code>access-denied-handler</code> defines the global error page if the user is denied the access, because he is not authorized to perform the specified action.</p><p><code>session-management</code> will add a SessionManagementFilter filter to the filter stack for Session Management.</p><p>There are some other configurations also, but I have included most of the important ones that we use.</p><h3>Spring Security Example View Pages</h3><p>Let’s have a quick look at our view pages, before we deploy and test our application.</p><p><code>home.jsp</code></p><pre class="prettyprint">&lt;%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%&gt;
+&lt;%@ page session="false"%&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Home&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Hello world!&lt;/h1&gt;
+
+	&lt;P&gt;The time on the server is ${serverTime}.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><p>home.jsp is returned for “/home” URI and it should not require any authentication.</p><p><code>employee.jsp</code></p><pre class="prettyprint">&lt;%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%&gt;
+&lt;%@ page session="false"%&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Get Employee Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Employee Information&lt;/h1&gt;
+	&lt;p&gt;
+		Employee ID:${id}&lt;br&gt; Employee Name:${name}&lt;br&gt;
+	&lt;/p&gt;
+	&lt;c:if test="${pageContext.request.userPrincipal.name != null}"&gt;
+	Hi ${pageContext.request.userPrincipal.name}&lt;br&gt;
+	
+	&lt;c:url var="logoutAction" value="/j_spring_security_logout"&gt;&lt;/c:url&gt;
+	
+	&lt;form action="${logoutAction}" method="post"&gt;
+		&lt;input type="submit" value="Logout" /&gt;
+	&lt;/form&gt;
+	&lt;/c:if&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><p>This page is returned when we are accessing URI that requires authentication. Here I have provided logout option so that user can logout and terminate the session. Once logout is successful, user should be sent back to login page as configured.</p><p><code>login.jsp</code></p><pre class="prettyprint">&lt;%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%&gt;
+
+&lt;html&gt;
+
+&lt;head&gt;
+&lt;title&gt;Login Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h3&gt;Login with Username and Password&lt;/h3&gt;
+	&lt;c:url var="loginUrl" value="/j_spring_security_check"&gt;&lt;/c:url&gt;
+	&lt;form action="${loginUrl}" method="POST"&gt;
+		&lt;table&gt;
+			&lt;tr&gt;
+				&lt;td&gt;User ID:&lt;/td&gt;
+				&lt;td&gt;&lt;input type='text' name='username' /&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;Password:&lt;/td&gt;
+				&lt;td&gt;&lt;input type='password' name='password' /&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td colspan='2'&gt;&lt;input name="submit" type="submit"
+					value="Login" /&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/table&gt;
+	&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><p>There are few important points to note here. The first one is that the login URL is “<strong>/j_spring_security_check</strong>“. This is the default login processing URL, just like the logout-url.</p><p>Another important point is the form parameters name for username and password. They should be same as configured in the spring security configurations.</p><p><code>logout.jsp</code></p><pre class="prettyprint">&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Logout Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;
+	Logout Successful!  
+&lt;/h2&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><p><code>denied.jsp</code></p><pre class="prettyprint">&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Access Denied&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;
+	Access Denied!  
+&lt;/h1&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><p>logout.jsp and denied.jsp pages are simple, but we could have included some information here based on the user details.</p><p>Our spring security example application is ready to test, note that for JDBC authentication I am using the same setup as our previous <a href="http://www.journaldev.com/2715/spring-security-example-tutorial" title="Spring Security in Servlet Web Application using DAO, JDBC, In-Memory authentication">Spring Security Example</a>. So if you have landed directly here, you should check that out.</p><h3>Spring Security MVC Example Testing</h3><p>Just deploy the application in your favorite servlet container, mine is Apache Tomcat 7. Below images show us the different outputs for different URLs.</p><p><strong>Spring Security Example – Home Page without Authentication</strong><br>
+<a href="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-permitAll.png"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-permitAll-450x211.png" alt="spring security example, spring mvc security, spring security" width="450" height="211" class="lazy lazy-hidden aligncenter size-medium wp-image-2741" data-lazy-srcset="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-permitAll-450x211.png 450w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-permitAll-700x329.png 700w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-permitAll.png 828w" sizes="(max-width: 450px) 100vw, 450px"><noscript><img
+src="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-permitAll-450x211.png" alt="spring security example, spring mvc security, spring security" width="450" height="211" class="aligncenter size-medium wp-image-2741" srcset="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-permitAll-450x211.png 450w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-permitAll-700x329.png 700w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-permitAll.png 828w" sizes="(max-width: 450px) 100vw, 450px" /></noscript></a></p><p><strong>Spring Security Example – Login Page when Authentication Enabled Page is requested (/emp/get/{20})</strong><br>
+<a href="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-authentication-login.png"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-authentication-login-450x184.png" alt="spring authentication login, spring mvc security, spring security" width="450" height="184" class="lazy lazy-hidden aligncenter size-medium wp-image-2740" data-lazy-srcset="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-authentication-login-450x184.png 450w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-authentication-login-1024x420.png 1024w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-authentication-login-700x287.png 700w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-authentication-login.png 1144w" sizes="(max-width: 450px) 100vw, 450px"><noscript><img
+src="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-authentication-login-450x184.png" alt="spring authentication login, spring mvc security, spring security" width="450" height="184" class="aligncenter size-medium wp-image-2740" srcset="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-authentication-login-450x184.png 450w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-authentication-login-1024x420.png 1024w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-authentication-login-700x287.png 700w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-authentication-login.png 1144w" sizes="(max-width: 450px) 100vw, 450px" /></noscript></a></p><p><strong>Spring Security Example – Response Page when Authentication is Successful</strong><br>
+<a href="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-security-authenticated.png"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-security-authenticated-450x269.png" alt="spring security example, UserDetailsService, spring mvc security" width="450" height="269" class="lazy lazy-hidden aligncenter size-medium wp-image-2742" data-lazy-srcset="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-security-authenticated-450x269.png 450w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-security-authenticated-700x419.png 700w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-security-authenticated.png 914w" sizes="(max-width: 450px) 100vw, 450px"><noscript><img
+src="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-security-authenticated-450x269.png" alt="spring security example, UserDetailsService, spring mvc security" width="450" height="269" class="aligncenter size-medium wp-image-2742" srcset="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-security-authenticated-450x269.png 450w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-security-authenticated-700x419.png 700w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-security-authenticated.png 914w" sizes="(max-width: 450px) 100vw, 450px" /></noscript></a></p><p><strong>Spring Security Example – Access Denied Page when Authentication is Failed</strong><br>
+<a href="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-access-denied.png"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-access-denied-450x188.png" alt="spring mvc security, UserDetailsService" width="450" height="188" class="lazy lazy-hidden aligncenter size-medium wp-image-2739" data-lazy-srcset="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-access-denied-450x188.png 450w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-access-denied-700x292.png 700w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-access-denied.png 818w" sizes="(max-width: 450px) 100vw, 450px"><noscript><img
+src="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-access-denied-450x188.png" alt="spring mvc security, UserDetailsService" width="450" height="188" class="aligncenter size-medium wp-image-2739" srcset="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-access-denied-450x188.png 450w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-access-denied-700x292.png 700w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-mvc-access-denied.png 818w" sizes="(max-width: 450px) 100vw, 450px" /></noscript></a></p><p>That’s all for the Spring Security Example using UserDetailsService, please download the sample project from below link and explore it to learn more.</p><div id="wpdm_file_9" class="wpdm_file wpdm-only-button"><div class="cont"><div class="btn_outer"><div class="btn_outer_c" style="background-image: url(&quot;http://cdn.journaldev.com/wp-content/plugins/download-manager/icon/system-log-out.png&quot;);"><a class="btn_left  has-counter" rel="9" title="Spring MVC Security Project" href="http://www.journaldev.com/?wpdmact=process&amp;did=OS5ob3RsaW5r">Download Spring MVC Security Project</a><span class="btn_right counter">6645 downloads</span></div></div><div class="clear"></div></div></div><div style="font-size:0px;height:0px;line-height:0px;margin:0;padding:0;clear:both"></div></div><footer class="entry-footer"><p class="entry-meta"><span class="entry-categories">Filed Under: <a href="http://www.journaldev.com/dev/spring" rel="category tag">Spring</a></span></p></footer></article><section class="author-box" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><h4 class="author-box-title">About <span itemprop="name">Pankaj</span></h4><div class="author-box-content" itemprop="description"><p>If you have come this far, it means that you liked what you are reading. Why not reach little more and connect with me directly on <a href="https://plus.google.com/118104420597648001532/posts?rel=author"><strong>Google Plus</strong></a>, <a href="https://www.facebook.com/journaldev"><strong>Facebook</strong></a> or <a href="https://twitter.com/JournalDev"><strong>Twitter</strong></a>. I would love to hear your thoughts and opinions on my articles directly.</p><p>Recently I started creating video tutorials too, so do check out my videos on <a href="https://www.youtube.com/user/JournalDev"><strong>Youtube</strong></a>.</p></div></section><div class="adjacent-entry-pagination pagination"><div class="pagination-previous alignleft"><a href="http://www.journaldev.com/2715/spring-security-example-tutorial" rel="prev">« Spring Security Example Tutorial</a></div><div class="pagination-next alignright"><a href="http://www.journaldev.com/2752/java-8-interface-changes-static-method-default-method" rel="next">Java 8 Interface Changes – static method, default method »</a></div></div><div class="entry-comments" id="comments"><h3>Comments</h3><ol class="comment-list"><li class="comment even thread-even depth-1" id="comment-37824">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">Arvind</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2017-03-30T03:00:27+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-37824" class="comment-time-link" itemprop="url">March 30, 2017 at 3:00 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Hi,</p><p>I want to know , how we can know the use name and his id in case of the say amazon like portal send product recommendation links to e mails to the multiple users different product.. Can we do through Spring security?</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-37824" onclick="return addComment.moveForm( &quot;comment-37824&quot;, &quot;37824&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to Arvind">Reply</a></div>
+</article></li><li class="comment odd alt thread-odd thread-alt depth-1" id="comment-37499">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">Paritosh</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2017-02-16T05:25:10+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-37499" class="comment-time-link" itemprop="url">February 16, 2017 at 5:25 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>I’m always getting error while running this code. Can you please help me regarding this?<br>
+Exception/ Error shown is :</p><p>Error creating bean with name ‘org.springframework.security.filterChains’: Cannot resolve reference to bean ‘org.springframework.security.web.DefaultSecurityFilterChain#0’ while setting bean property ‘sourceList’ with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name ‘org.springframework.security.web.DefaultSecurityFilterChain#0’: Cannot resolve reference to bean ‘org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0’ while setting constructor argument with key [4]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name ‘org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0’: Cannot resolve reference to bean ‘org.springframework.security.authentication.ProviderManager#0’ while setting bean property ‘authenticationManager’; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name ‘org.springframework.security.authentication.ProviderManager#0’: Cannot resolve reference to bean ‘jdbc-auth’ while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name ‘jdbc-auth’: Cannot resolve reference to bean ‘org.springframework.security.authentication.dao.DaoAuthenticationProvider#2’ while setting constructor argument with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name ‘org.springframework.security.authentication.dao.DaoAuthenticationProvider#2’: Cannot resolve reference to bean ‘org.springframework.security.provisioning.JdbcUserDetailsManager#0’ while setting bean property ‘userDetailsService’; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name ‘org.springframework.security.provisioning.JdbcUserDetailsManager#0’: Cannot resolve reference to bean ‘dataSource’ while setting bean property ‘dataSource’; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name ‘dataSource’ defined in ServletContext resource [/WEB-INF/spring/appServlet/spring-security.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-37499" onclick="return addComment.moveForm( &quot;comment-37499&quot;, &quot;37499&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to Paritosh">Reply</a></div>
+</article></li><li class="comment even thread-even depth-1" id="comment-34100">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">tim</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2016-02-15T07:14:30+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-34100" class="comment-time-link" itemprop="url">February 15, 2016 at 7:14 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>OMG When I run this (code unaltered) in eclipse using tomcat 7 it throws 12 exceptions. ?????</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-34100" onclick="return addComment.moveForm( &quot;comment-34100&quot;, &quot;34100&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to tim">Reply</a></div>
+</article></li><li class="comment odd alt thread-odd thread-alt depth-1" id="comment-33305">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">rakesh</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2015-10-05T03:48:05+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-33305" class="comment-time-link" itemprop="url">October 5, 2015 at 3:48 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>nice one.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-33305" onclick="return addComment.moveForm( &quot;comment-33305&quot;, &quot;33305&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to rakesh">Reply</a></div>
+</article></li><li class="comment even thread-even depth-1" id="comment-32786">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">parakarmi</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2015-07-15T04:22:06+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-32786" class="comment-time-link" itemprop="url">July 15, 2015 at 4:22 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>private static final long serialVersionUID = 2059202961588104658L what is used .</p><p>Please provide spring security with rest tutorial for Login module</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-32786" onclick="return addComment.moveForm( &quot;comment-32786&quot;, &quot;32786&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to parakarmi">Reply</a></div>
+</article></li><li class="comment odd alt thread-odd thread-alt depth-1" id="comment-32658">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">deepak</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2015-06-20T02:55:01+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-32658" class="comment-time-link" itemprop="url">June 20, 2015 at 2:55 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Hi Pankaj,</p><p>Many Many Thanks for this tutorial.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-32658" onclick="return addComment.moveForm( &quot;comment-32658&quot;, &quot;32658&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to deepak">Reply</a></div>
+</article></li><li class="comment even thread-even depth-1" id="comment-32459">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">suraj</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2015-05-19T02:36:27+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-32459" class="comment-time-link" itemprop="url">May 19, 2015 at 2:36 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Hi Pankaj,</p><p>Firstly thank you for your excellent document. I met some questions:<br>
+1. After I donwloaded the file, I found there was missed MySQL dependency in pom.xml<br>
+2. I always get “org.springframework.web.servlet.PageNotFound – No mapping found for HTTP request with URI [/SpringMVCSecurity/] in DispatcherServlet with name ‘appServlet’” error. I had to update dispatch part of web.xml</p><p>appServlet<br>
+/SpringMVCSecurity/*</p><p>and input “http://localhost:8080/SpringMVCSecurity/SpringMVCSecurity/login” in browser.</p><p>Could you please help me to find the reason?</p><p>Thanks.<br>
+Michael Liu<br>
+Reply</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-32459" onclick="return addComment.moveForm( &quot;comment-32459&quot;, &quot;32459&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to suraj">Reply</a></div>
+</article></li><li class="comment odd alt thread-odd thread-alt depth-1" id="comment-32298">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">sai mani kiran</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2015-04-26T11:18:31+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-32298" class="comment-time-link" itemprop="url">April 26, 2015 at 11:18 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>thanks boss… good job</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-32298" onclick="return addComment.moveForm( &quot;comment-32298&quot;, &quot;32298&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to sai mani kiran">Reply</a></div>
+</article></li><li class="comment even thread-even depth-1" id="comment-30630">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">justapis</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2014-10-31T02:36:20+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-30630" class="comment-time-link" itemprop="url">October 31, 2014 at 2:36 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Hi Pankaj,</p><p>Can you help me with the problem using MyUserDetailService to get authorized user from DB. I have configured files below, but I can’t get user data from DB via login form. I have crypted password to DB using bcrypt. Actually I can’t see any log events during login process. Only login error page.<br>
+servlet-context<br>
+<code><br></code></p><p></p><p></p><p></p><p><code>                fi.isokaju.webshop.model.User<br>
+fi.isokaju.webshop.model.Product<br>
+fi.isokaju.webshop.model.UserRole</code></p><p><code>                org.hibernate.dialect.MySQLDialect</code></p><p><code>                true</code></p><p></p><p>spring-security<br>
+<code><br></code></p><p></p><p></p><p></p><p><br>
+MyUserDetailService<br>
+<code><br>
+public class MyUserDetailsService implements UserDetailsService {<br>
+/*<br>
+* This class is for getting and transferring User to spring framework<br>
+* userdetailuser<br>
+*<br>
+*<br>
+*/</code></p><p><code>	private UserDao userDao;</code></p><p><code>	@Override<br>
+public UserDetails loadUserByUsername(final String username)<br>
+throws UsernameNotFoundException {</code></p><p><code>		fi.isokaju.webshop.model.User user = userDao.findByUserName(username);<br>
+List authorities = buildUserAuthority(user<br>
+.getRoles());</code></p><p><code>		return buildUserForAuthentication(user, authorities);</code></p><p><code>	}</code></p><p><code>	// Converts fi.webshop.users.model.User user to<br>
+// org.springframework.security.core.userdetails.User<br>
+private User buildUserForAuthentication(fi.isokaju.webshop.model.User user,<br>
+List authorities) {<br>
+return new User(user.getUsername(), user.getPassword(),<br>
+user.isEnabled(), true, true, true, authorities);<br>
+}</code></p><p><code>	private List buildUserAuthority(Set userRoles) {</code></p><p><code>		Set setAuths = new HashSet();</code></p><p><code>		// Build user's authorities<br>
+for (UserRole userRole : userRoles) {<br>
+setAuths.add(new SimpleGrantedAuthority(userRole.getRole()));<br>
+}</code></p><p><code>		List Result = new ArrayList(<br>
+setAuths);</code></p><p><code>		return Result;<br>
+}</code></p><p><code>	public UserDao getUserDao() {<br>
+return userDao;<br>
+}</code></p><p><code>	public void setUserDao(UserDao userDao) {<br>
+this.userDao = userDao;<br>
+}</code></p><p><code>}</code></p><p><br>
+web.xml<br>
+<code><br></code></p><p><code>		contextConfigLocation<br>
+/WEB-INF/spring/root-context.xml<br>
+&lt;!-- /WEB-INF/spring/appServlet/servlet-context.xml<br>
+/WEB-INF/spring/appServlet/spring-security.xml  --&gt;</code></p><p></p><p><code>        org.springframework.web.context.ContextLoaderListener</code></p><p><code>        org.springframework.security.web.session.HttpSessionEventPublisher</code></p><p><code>        15</code></p><p></p><p><code>        contextConfigLocation<br>
+/WEB-INF/spring/appServlet/spring-security.xml</code></p><p></p><p><code>		org.springframework.web.context.ContextLoaderListener</code></p><p></p><p><code>		appServlet<br>
+org.springframework.web.servlet.DispatcherServlet</code></p><p><code>			contextConfigLocation<br>
+/WEB-INF/spring/appServlet/servlet-context.xml</code></p><p><code>		1</code></p><p><code>		appServlet<br>
+/</code></p><p></p><p><code>        springSecurityFilterChain<br>
+org.springframework.web.filter.DelegatingFilterProxy</code></p><p><code>        springSecurityFilterChain<br>
+/*</code></p><p><br>
+Thank in advance!</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-30630" onclick="return addComment.moveForm( &quot;comment-30630&quot;, &quot;30630&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to justapis">Reply</a></div>
+</article><ul class="children"><li class="comment odd alt depth-2" id="comment-30631">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">justapis</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2014-10-31T02:44:05+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-30631" class="comment-time-link" itemprop="url">October 31, 2014 at 2:44 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Hi Pankaj,</p><p>There is tag fails in mys post Can you remove it so I send again 🙂</p><p>Br, justapis</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-30631" onclick="return addComment.moveForm( &quot;comment-30631&quot;, &quot;30631&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to justapis">Reply</a></div>
+</article></li><li class="comment even depth-2" id="comment-32862">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">Antonio Maggiore</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2015-07-28T04:03:34+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-32862" class="comment-time-link" itemprop="url">July 28, 2015 at 4:03 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>I’ve the same problem</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-32862" onclick="return addComment.moveForm( &quot;comment-32862&quot;, &quot;32862&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to Antonio Maggiore">Reply</a></div>
+</article></li></ul></li><li class="comment odd alt thread-odd thread-alt depth-1" id="comment-30390">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">Sateesh Karampoodi</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2014-10-07T00:30:19+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-30390" class="comment-time-link" itemprop="url">October 7, 2014 at 12:30 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Thank you very much Pankaj.</p><p>Its really excellent tutorial and very helpful to us.</p><p>Once again thank you very much.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-30390" onclick="return addComment.moveForm( &quot;comment-30390&quot;, &quot;30390&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to Sateesh Karampoodi">Reply</a></div>
+</article></li><li class="comment even thread-even depth-1" id="comment-30386">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">Peter</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2014-10-06T18:23:22+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-30386" class="comment-time-link" itemprop="url">October 6, 2014 at 6:23 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Hi Pankaj,</p><p>Thanks so much for the tutorial. I was lost trying to implement Spring Security into my Spring MVC app. This was extremely helpful. I have question, though, about csrf. The login page doesn’t include the csrf token:</p><p>Is Spring Security handling this on its own?</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-30386" onclick="return addComment.moveForm( &quot;comment-30386&quot;, &quot;30386&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to Peter">Reply</a></div>
+</article><ul class="children"><li class="comment byuser comment-author-pankaj bypostauthor odd alt depth-2" id="comment-30389">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name"><a href="http://www.journaldev.com" class="comment-author-link" rel="external nofollow" itemprop="url">Pankaj</a></span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2014-10-06T23:03:34+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-30389" class="comment-time-link" itemprop="url">October 6, 2014 at 11:03 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>check out index.jsp in <a href="http://www.journaldev.com/2715/spring-security-in-servlet-web-application-using-dao-jdbc-in-memory-authentication" rel="nofollow">http://www.journaldev.com/2715/spring-security-in-servlet-web-application-using-dao-jdbc-in-memory-authentication</a></p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-30389" onclick="return addComment.moveForm( &quot;comment-30389&quot;, &quot;30389&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to Pankaj">Reply</a></div>
+</article></li></ul></li><li class="comment even thread-odd thread-alt depth-1" id="comment-30219">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">michael</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2014-09-21T19:24:25+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-30219" class="comment-time-link" itemprop="url">September 21, 2014 at 7:24 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Hi Pankaj,</p><p>Firstly thank you for your excellent document. I met some questions:<br>
+1. After I donwloaded the file, I found there was missed MySQL dependency in pom.xml<br>
+2. I always get <strong> “org.springframework.web.servlet.PageNotFound – No mapping found for HTTP request with URI [/SpringMVCSecurity/] in DispatcherServlet with name ‘appServlet'”</strong> error. I had to update dispatch part of web.xml</p><p>		appServlet<br>
+/SpringMVCSecurity/*</p><p>and input “http://localhost:8080/SpringMVCSecurity/SpringMVCSecurity/login” in browser.</p><p>Could you please help me to find the reason?</p><p>Thanks.<br>
+Michael Liu</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-30219" onclick="return addComment.moveForm( &quot;comment-30219&quot;, &quot;30219&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to michael">Reply</a></div>
+</article></li><li class="comment odd alt thread-even depth-1" id="comment-30095">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">Ezhil</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2014-09-10T11:14:55+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-30095" class="comment-time-link" itemprop="url">September 10, 2014 at 11:14 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Wonderful post. Learned lot of things</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-30095" onclick="return addComment.moveForm( &quot;comment-30095&quot;, &quot;30095&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to Ezhil">Reply</a></div>
+</article></li><li class="comment even thread-odd thread-alt depth-1" id="comment-29952">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">shuo</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2014-08-30T00:14:49+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-29952" class="comment-time-link" itemprop="url">August 30, 2014 at 12:14 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Thanks a lot Sir. Your article is very useful and learn much from it.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-29952" onclick="return addComment.moveForm( &quot;comment-29952&quot;, &quot;29952&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to shuo">Reply</a></div>
+</article></li><li class="comment odd alt thread-even depth-1" id="comment-29865">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">micheal</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2014-08-20T04:08:59+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-29865" class="comment-time-link" itemprop="url">August 20, 2014 at 4:08 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Hi Pankaj,</p><p>first of all thanks<br>
+i downloaded the project, after successful login its getting redirected to /home,<br>
+but according to your screeshots it should land on emp/** page for username pankaj and pwd pankaj123.<br>
+if try to login with wrong credential its redirecting to access denied page, but for successful login its redirectng to /home.<br>
+please help</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-29865" onclick="return addComment.moveForm( &quot;comment-29865&quot;, &quot;29865&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to micheal">Reply</a></div>
+</article></li><li class="comment even thread-odd thread-alt depth-1" id="comment-29641">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">Sandeep</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2014-07-30T20:00:24+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-29641" class="comment-time-link" itemprop="url">July 30, 2014 at 8:00 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Thanks Pankaj, I could run the application you have provided here successfully, but when I did following change; I am not able to get into the application, every time getting “Access Denied”.</p><p>Database Tables –<br>
+1) USERS (USER_ID, USER_PASS, FIRST_NAME, LAST_NAME, DOB, MOBILE_NO,HOME_PHONE_NO,EMAIL_ID).<br>
+USER_ID is PK here</p><p>2) USER_ROLES(USER_ID, USER_ROLE).<br>
+USER_ID &amp; USER_ROLE is composite primary key here and USER_ID is reference key of USERS table.</p><p>I have made following changes in spring-security.xml:</p><p>I have made following change in login.jsp file:</p><p>				User ID:</p><p>				Password:</p><p>Now, where I deploy and run the application, its always fails with “Access Denied”, so your help here is highly appreciated please. Please let me know where am I missing configuration?</p><p>Thanking you in advance!!</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-29641" onclick="return addComment.moveForm( &quot;comment-29641&quot;, &quot;29641&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to Sandeep">Reply</a></div>
+</article></li><li class="comment odd alt thread-even depth-1" id="comment-29514">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">Sandeep</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2014-07-17T19:48:09+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice#comment-29514" class="comment-time-link" itemprop="url">July 17, 2014 at 7:48 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Hi Pankaj, excellent tutorial and it helped me to start with Spring Security!! Appreciated your efforts!!</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-29514" onclick="return addComment.moveForm( &quot;comment-29514&quot;, &quot;29514&quot;, &quot;respond&quot;, &quot;2736&quot; )" aria-label="Reply to Sandeep">Reply</a></div>
+</article></li></ol></div><div id="respond" class="comment-respond"><h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2736/spring-security-example-userdetailsservice#respond" style="display:none;">Cancel reply</a></small></h3><form action="http://www.journaldev.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate=""><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required="true" required="required"></p><p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required="true" required="required"></p><p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="2736" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0"></p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="b7ffbad5d2"></p><p class="antispam-group antispam-group-q" style="clear: both;">
+<label>Current <a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="6a130f2a18">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script> <span class="required">*</span></label>
+<input type="hidden" name="antspm-a" class="antispam-control antispam-control-a" value="2017">
+<input type="text" name="antspm-q" class="antispam-control antispam-control-q" value="4.3" autocomplete="off"></p><p class="antispam-group antispam-group-e" style="display: none;">
+<label>Leave this field empty</label>
+<input type="text" name="antspm-e-email-url-website" class="antispam-control antispam-control-e" value="" autocomplete="off"></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="176"></p></form></div>
+</main><aside class="sidebar sidebar-primary widget-area" role="complementary" aria-label="Primary Sidebar" itemscope="" itemtype="https://schema.org/WPSideBar"><section id="seed_glcse_widget-2" class="widget widget_seed_glcse_widget"><div class="widget-wrap"><div class="glcse-widget"><form id="glcse-search-form" class="glcse-search" action="http://www.journaldev.com" method="get">
+<input type="hidden" name="cref" value="http://www.journaldev.com/?glcse=1">
+<input type="hidden" name="cof" value="FORID:11">
+<input type="hidden" name="ie" value="UTF-8">
+<input type="text" name="q" size="44">
+<input type="hidden" name="s" value="glcse"></form> <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=glcse-search-form&lang=en"></script> </div></div></section><section id="adswidget9-quick-adsense" class="widget �lambda_4"><div class="widget-wrap"><span id='ezoic-pub-ad-placeholder-102'></span><span style='display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:300px;min-width:336px;' class='ezoic-ad box-1 adtester-container adtester-container-102' data-ez-name='journaldev_com-box-1'><span id='div-gpt-ad-journaldev_com-box-1-0' ezaw='336' ezah='280' style='position:relative;z-index:0;display:inline-block;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[336,280],'journaldev_com-box-1','ezslot_7']));</script></span></span></div></section><section id="adswidget8-quick-adsense" class="widget �lambda_3"><div class="widget-wrap"><span id='ezoic-pub-ad-placeholder-103'></span></div></section>
+<section id="text-10" class="widget widget_text"><div class="widget-wrap"><div class="textwidget"><h3><a href="http://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial" target="_blank">Spring Tutorial</a></h3><ol><h4>Spring Core</h4><li><a href="http://www.journaldev.com/2410/spring-dependency-injection" target="_blank">Spring Dependency Injection</a></li><li><a href="http://www.journaldev.com/2461/spring-ioc-bean-example-tutorial" target="_blank">Spring IoC and Bean</a></li><li><a href="http://www.journaldev.com/2637/spring-bean-life-cycle" target="_blank">Spring Bean Life Cycle</a></li><li><a href="http://www.journaldev.com/2552/spring-rest-example-tutorial-spring-restful-web-services" target="_blank">Spring REST</a></li><li><a href="http://www.journaldev.com/8934/spring-rest-xml-and-json-example" target="_blank">Spring REST XML</a></li><li><a href="http://www.journaldev.com/2583/spring-aop-example-tutorial-aspect-advice-pointcut-joinpoint-annotations" target="_blank">Spring AOP</a></li><li><a href="http://www.journaldev.com/7801/spring-aop-method-profiling-beginners-example" target="_blank">Spring AOP Method Profiling</a></li><li><a href="http://www.journaldev.com/2623/spring-autowired-annotation" target="_blank">Spring @Autowired</a></li><li><a href="http://www.journaldev.com/3358/spring-requestmapping-requestparam-pathvariable-example" target="_blank">Spring @RequestMapping</a></li><h4><span id='ezoic-pub-ad-placeholder-108' class="ezoic-adpicker-ad"></span><span style='display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:250px;text-align:center !important;' class='ezoic-ad large-billboard-2 adtester-container adtester-container-108' data-ez-name='journaldev_com-large-billboard-2'><span id='div-gpt-ad-journaldev_com-large-billboard-2-0' ezaw='250' ezah='250' style='position:relative;z-index:0;display:inline-block;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[250,250],'journaldev_com-large-billboard-2','ezslot_8']));</script></span></span>Spring MVC</h4><li><a href="http://www.journaldev.com/2433/spring-mvc-tutorial" target="_blank">Spring MVC Tutorial</a></li><li><a href="http://www.journaldev.com/2651/spring-mvc-exception-handling-controlleradvice-exceptionhandler-handlerexceptionresolver" target="_blank">Spring MVC Exception Handling</a></li><li><a href="http://www.journaldev.com/2668/spring-validation-example-mvc-validator" target="_blank">Spring MVC Validator</a></li><li><a href="http://www.journaldev.com/2676/spring-mvc-interceptor-example-handlerinterceptor-handlerinterceptoradapter" target="_blank">Spring MVC Intercepter</a></li><li><a href="http://www.journaldev.com/2573/spring-mvc-file-upload-example-single-multiple-files" target="_blank">Spring MVC File Upload</a></li><li><a href="http://www.journaldev.com/2610/spring-mvc-internationalization-i18n-and-localization-l10n-example" target="_blank">Spring MVC i18n</a></li><li><a href="http://www.journaldev.com/3531/spring-mvc-hibernate-mysql-integration-crud-example-tutorial" target="_blank">Spring MVC Hibernate MqSQL</a></li><h4>Spring ORM</h4><li><a href="http://www.journaldev.com/7655/spring-orm-example-jpa-hibernate-transaction" target="_blank">Spring ORM</a></li><li><a href="http://www.journaldev.com/7772/spring-orm-example-with-jpa-hibernate-aop-transactions" target="_blank">Spring ORM JPA</a></li><li><a href="http://www.journaldev.com/2603/spring-transaction-management-jdbc-example" target="_blank">Spring Transaction</a></li><h4>Spring Security</h4><li><a href="http://www.journaldev.com/8669/introduction-to-spring-4-security" target="_blank">Spring Security Overview</a></li><li><a href="http://www.journaldev.com/2715/spring-security-example-tutorial" target="_blank">Spring Security Example Tutorial</a></li><li><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice" target="_blank">Spring Security UserDetailsService</a></li><li><a href="http://www.journaldev.com/8718/spring-4-security-mvc-login-logout-example" target="_blank">Spring MVC Login Logout</a></li><li><a href="http://www.journaldev.com/8748/spring-4-mvc-security-managing-roles-example" target="_blank">Spring Security Roles</a></li><h4>Spring Boot</h4><li><a href="http://www.journaldev.com/7969/spring-boot-tutorial" target="_blank">Spring Boot Tutorial</a></li><li><a href="http://www.journaldev.com/7989/key-components-and-internals-of-spring-boot-framework" target="_blank">Spring Boot Components</a></li><li><a href="http://www.journaldev.com/8195/spring-boot-cli-setup-and-helloworld-example" target="_blank">Spring Boot CLI Hello World</a></li><li><a href="http://www.journaldev.com/8225/spring-boot-initilizr-web-interface" target="_blank">Spring Boot Initilizr Web</a></li><li><a href="http://www.journaldev.com/8596/spring-boot-initilizr-with-ides-or-ide-plugins" target="_blank">Spring Boot Initilizr IDE</a></li><li><a href="http://www.journaldev.com/8609/spring-boot-initilizr-with-spring-boot-cli" target="_blank">Spring Boot Initilizr CLI</a></li><li><a href="http://www.journaldev.com/8650/spring-boot-initilizr-with-thirdparty-tools" target="_blank">Spring Boot Initilizr Tools</a></li><li><a href="http://www.journaldev.com/8611/spring-boot-framework-ina-nutshell" target="_blank">Spring Boot Summary</a></li><h4>Spring AMQP</h4><li><a href="http://www.journaldev.com/11643/introduction-spring-amqp-messaging" target="_blank">Spring AMQP Overview</a></li><li><a href="http://www.journaldev.com/11655/spring-amqp-rabbitmq-install-and-setup" target="_blank">Spring AMQP RabbitMQ</a></li><li><a href="http://www.journaldev.com/11713/spring-amqp-rabbitmq-messaging-example" target="_blank">Spring AMQP Example</a></li><li><a href="http://www.journaldev.com/11766/spring-amqp-install-and-setup-activemq-server" target="_blank">Spring AMQP ActiveMQ</a></li><h4>Spring Integrations</h4><li><a href="http://www.journaldev.com/2593/spring-jdbc-example" target="_blank">Spring JDBC</a></li><li><a href="http://www.journaldev.com/2597/spring-datasource-jndi-with-tomcat-example" target="_blank">Spring DataSource JNDI</a></li><li><a href="http://www.journaldev.com/3524/spring-hibernate-integration-example-tutorial" target="_blank">Spring Hibernate</a></li><li><a href="http://www.journaldev.com/4058/primefaces-spring-4-with-jpa-hibernate-eclipselink-example-tutorial" target="_blank">Spring Primefaces JPA</a></li><li><a href="http://www.journaldev.com/4061/primefaces-spring-eclipselink-nosql-mongodb-oracle-nosql-db" target="_blank">Spring Primefaces MongoDB</a></li><li><a href="http://www.journaldev.com/4096/primefaces-spring-hibernate-integration-example-tutorial" target="_blank">Spring Primefaces Hibernate</a></li><li><a href="http://www.journaldev.com/4260/primefaces-hibernate-and-springroo-integration" target="_blank">SpringRoo Primefaces Hibernate</a></li><li><a href="http://www.journaldev.com/7112/jsf-spring-integration-example-tutorial" target="_blank">Spring JSF</a></li><li><a href="http://www.journaldev.com/7122/jsf-spring-hibernate-integration-example-tutorial" target="_blank">Spring JDF Hibernate</a></li><h4>Miscellaneous</h4><li><a href="http://www.journaldev.com/4144/spring-data-mongodb-example" target="_blank">Spring Data MongoDB</a></li><li><a href="http://www.journaldev.com/2696/spring-interview-questions-and-answers" target="_blank">Spring Interview Questions</a></li></ol></div></div></section>
+<section id="enews-ext-2" class="widget enews-widget"><div class="widget-wrap"><div class="enews"><h4 class="widget-title widgettitle">Stay Updated!</h4><form id="subscribeenews-ext-2" action="//journaldev.us8.list-manage.com/subscribe/post?u=612f3d966c86000f37699d8cf&amp;id=c64db63284" method="post" target="_blank" onsubmit="if ( subbox1.value == 'Name') { subbox1.value = ''; } if ( subbox2.value == 'Last Name') { subbox2.value = ''; }" name="enews-ext-2">
+<label for="subbox1" class="screenread">Name</label><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="Name" name="FNAME">								<label for="subbox" class="screenread">E-Mail Address</label><input type="email" value="" id="subbox" placeholder="E-Mail Address" name="EMAIL" required="required">
+<input type="submit" value="I AM IN!" id="subbutton"></form></div></div></section><section id="text-6" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">Recommended Tutorials</h4><div class="textwidget"><strong>Java Tutorials</strong>:  <a href="http://www.journaldev.com/942/java-io-tutorial">Java IO Tutorial</a>, <a href="http://www.journaldev.com/634/regular-expression-in-java-regex-example">Java Regular Expressions Tutorial</a>, <a href="http://www.journaldev.com/1079/multithreading-in-java">Multithreading in Java</a>, <a href="http://www.journaldev.com/977/java-logging-api-tutorial-examples-logger-levels-handlers-formatters-filters">Java Logging API Tutorial</a>, <a href="http://www.journaldev.com/721/java-annotations-example-tutorial">Java Annotations</a>,<a href="http://www.journaldev.com/1240/java-xml-tutorial">Java XML Tutorial</a>, <a href="http://www.journaldev.com/1260/collections-in-java-tutorial">Collections in Java</a>, <a href="http://www.journaldev.com/1663/java-generics-example-method-class-interface">Java Generics</a>, <a href="http://www.journaldev.com/1696/exception-handling-in-java">Exception Handling in Java</a>, <a href="http://www.journaldev.com/1789/java-reflection-example-tutorial">Java Reflection</a>, <a href="http://www.journaldev.com/1827/java-design-patterns-example-tutorial">Java Design Patterns</a>, <a href="http://www.journaldev.com/2681/jdbc-tutorial-with-example-projects-datasource-jndi-and-spring-integration">JDBC Tutorial</a><br>
+<strong>Java EE</strong>: <a href="http://www.journaldev.com/2114/servlet-jsp-tutorial">Servlet JSP Tutorial</a>, <a href="http://www.journaldev.com/2310/struts2-tutorial-with-example-projects">Struts2 Tutorial</a>, <a href="http://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial">Spring Tutorial</a>, <a href="http://www.journaldev.com/3793/hibernate-tutorial">Hibernate Tutorial</a>, <a href="http://www.journaldev.com/5516/primefaces-tutorial-with-example-projects">Primefaces Tutorial</a><br>
+<strong>Web Services</strong>: <a href="http://www.journaldev.com/255/axis2-web-services-tutorial">Apache Axis 2 Tutorial</a>, <a href="http://www.journaldev.com/498/jax-rs-restful-web-service-using-jersey-example-tutorial">JAX-RS Web Services Tutorial</a><br>
+<strong>Misc</strong>: <a href="http://www.journaldev.com/1117/memcached-tutorial">Memcached Tutorial</a><br><br>
+<strong>Resources</strong>: <a href="http://journaldev.tradepub.com" rel="nofollow">Free eBooks</a>, <a href="//www.hostmonster.com/track/mygadgetplanet/JournalDev" target="_blank" rel="nofollow">
+My Favorite Web Hosting</a></div></div></section><section id="text-7" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">Important Interview Questions</h4><div class="textwidget"><a href="http://www.journaldev.com/1321/java-string-interview-questions-and-answers">Java String Interview Questions</a>,
+<a href="http://www.journaldev.com/1162/java-multithreading-concurrency-interview-questions-answers">Java Multithreading Interview Questions</a>,
+<a href="http://www.journaldev.com/370/5-java-programming-test-questions-for-interview">Java Programming Interview Questions</a>,
+<a href="http://www.journaldev.com/2366/core-java-interview-questions-and-answers">Java Interview Questions</a>, <a href="http://www.journaldev.com/1330/java-collections-interview-questions-and-answers">Java Collections Interview Questions</a>, <a href="http://www.journaldev.com/2167/java-exception-interview-questions-and-answers">Java Exception Interview Questions</a><br><br>
+<a href="http://www.journaldev.com/2015/servlet-interview-questions-and-answers">Servlet Interview Questions</a>, <a href="http://www.journaldev.com/2110/jsp-interview-questions-and-answers">JSP Interview Questions</a>, <a href="http://www.journaldev.com/2354/struts2-interview-questions-and-answers">Struts2 Interview Questions</a>, <a href="http://www.journaldev.com/2529/jdbc-interview-questions-and-answers">JDBC Interview Questions</a>, <a href="http://www.journaldev.com/2696/spring-interview-questions-and-answers">Spring Interview Questions</a>, <a href="http://www.journaldev.com/3633/hibernate-interview-questions-and-answers">Hibernate Interview Questions</a><br></div></div><span id='ezoic-pub-ad-placeholder-109' class="ezoic-adpicker-ad"></span><span style='display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:300px;text-align:center !important;' class='ezoic-ad large-leaderboard-1 adtester-container adtester-container-109' data-ez-name='journaldev_com-large-leaderboard-1'><span id='div-gpt-ad-journaldev_com-large-leaderboard-1-0' ezaw='300' ezah='250' style='position:relative;z-index:0;display:inline-block;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[300,250],'journaldev_com-large-leaderboard-1','ezslot_2']));</script></span></span></section></aside></div> <script type="text/javascript">function $(id){return!id?null:document.getElementById(id);}
+loadPrettifyCss=function(){if(!$('prettify_css')){css=document.createElement('link');css.id='prettify_css';css.type='text/css';css.rel='stylesheet';css.href='http://cdn.journaldev.com/wp-content/plugins/wp-code-prettify/css/prettify.css';var headNode=document.getElementsByTagName("head")[0];headNode.appendChild(css);}else{$('prettify_css').href='http://cdn.journaldev.com/wp-content/plugins/wp-code-prettify/css/prettify.css';}
+if(!$('prettify_custom')){css=document.createElement('style');css.id='prettify_custom';css.type='text/css';css.rel='stylesheet';css.innerHTML='pre.prettyprint { margin: 5px; margin-bottom: 15px; padding: 10px; max-height: 900px; overflow: auto; background-color: #f8f8f8;}';var headNode=document.getElementsByTagName("head")[0];headNode.appendChild(css);}else{$('prettify_css').innerHTML='pre.prettyprint { margin: 5px; margin-bottom: 15px; padding: 10px; max-height: 900px; overflow: auto; background-color: #f8f8f8;}';}}</script> <script type="text/javascript">loadPrettifyCss();</script> <script type="text/javascript" src="http://cdn.journaldev.com/wp-content/plugins/wp-code-prettify/js/prettify.js"></script> <script type="text/javascript">function wpCodePrettifyOnLoad(func){var wpCodePrettifyOldOnLoad=window.onload;if(typeof window.onload!='function'){window.onload=func}else{window.onload=function(){wpCodePrettifyOldOnLoad();func()}}}
+wpCodePrettifyOnLoad(function(){prettyPrint();});</script> </div><footer class="site-footer" itemscope="" itemtype="https://schema.org/WPFooter"><div class="wrap"><p>©&nbsp;2017 · <a href="http://www.journaldev.com/privacy-policy">Privacy Policy</a> · Don't copy, it's Bad Karma · Powered by <a href="https://wordpress.org/" title="WordPress">WordPress</a></p></div></footer></div><div id="mailchimp-top-bar" class="mctb mctb-sticky mctb-position-top mctb-medium"><div class="mctb-bar" style="display: none"><form method="post">
+<label class="mctb-label">Free eBook:  Java Design Patterns (130 Pages) Download Now!</label>
+<input type="email" name="email" placeholder="Your email address please.." class="mctb-email" required="">
+<input type="text" name="email_confirm" placeholder="Confirm your email" value="" autocomplete="off" tabindex="-1" class="mctb-email-confirm">
+<input type="submit" value="Send Me Now!" class="mctb-button">
+<input type="hidden" name="_mctb" value="1">
+<input type="hidden" name="_mctb_no_js" value="1">
+<input type="hidden" name="_mctb_timestamp" value="1499979002"></form></div></div><div class="k7c387-container k7c387-2 k7c387-hide"><div class="k7c387-body">
+<img src="http://cdn.journaldev.com/wp-content/plugins/kill-adblock//images/logo.png"><div class="k7c387"></div></div></div><script src="https://apis.google.com/js/platform.js" async defer></script> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script type='text/javascript'>function _dmBootstrap(file){var _dma=document.createElement('script');_dma.type='text/javascript';_dma.async=true;_dma.src=('https:'==document.location.protocol?'https://':'http://')+file;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(_dma);}
+function _dmFollowup(file){if(typeof DMAds==='undefined')_dmBootstrap('cdn2.DeveloperMedia.com/a.min.js');}
+(function(){_dmBootstrap('cdn1.DeveloperMedia.com/a.min.js');setTimeout(_dmFollowup,2000);})();</script><div class="stb-container stb-bottom-right-container"><div class="scroll-triggered-box stb stb-4065 stb-bottom-right" id="stb-4065" style="display: none;"><div class="stb-content"> <script type="text/javascript">(function(){if(!window.mc4wp){window.mc4wp={listeners:[],forms:{on:function(event,callback){window.mc4wp.listeners.push({event:event,callback:callback});}}}}})();</script><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-9855 mc4wp-form-theme mc4wp-form-theme-red" method="post" data-id="9855" data-name="Default sign-up form"><div class="mc4wp-form-fields"><div style="width:400px;height:200px;"><p></p><h3>FREE eBook: Java Interview Questions (250+ Questions)</h3><div style="width:200px;height:200px;float:left;"><img src="http://cdn.journaldev.com/wp-content/uploads/2015/10/JIQ-608x608.png" width="200" height="200"></div><div style="width:200px;height:200px;float:right;"><p><label for="mc4wp_email">Email address: </label></p><p><input type="email" id="mc4wp_email" name="EMAIL" placeholder="Your email address" required=""></p><p>
+<input type="submit" value="Download Now!"></p><p>Because <strong>58,316</strong> Developers can't be Wrong!</p></div></div><p></p><div style="display: none;"><input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></div><input type="hidden" name="_mc4wp_timestamp" value="1499979002"><input type="hidden" name="_mc4wp_form_id" value="9855"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1"></div><div class="mc4wp-response"></div></form></div>
+<span class="stb-close">×</span></div></div><div id="stb-overlay"></div><script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/akismet/_inc/form.js'></script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/anti-spam/js/anti-spam-4.3.js'></script> <script type='text/javascript'>var thickboxL10n={"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"http:\/\/www.journaldev.com\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};</script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-includes/js/thickbox/thickbox.js'></script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/jaspreetchahals-coupons-lite/js/jquery.zclip.js'></script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/jaspreetchahals-coupons-lite/js/jcorgcr_wp.min.js'></script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-includes/js/comment-reply.min.js'></script> <script type='text/javascript'>var mctb={"cookieLength":"90","icons":{"hide":"&#x25B2;","show":"&#x25BC;"},"position":"top","is_submitted":"","is_success":""};</script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/mailchimp-top-bar/assets/js/script.min.js'></script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/bj-lazy-load/js/bj-lazy-load.min.js'></script> <script type='text/javascript'>var STB_Global_Options={"testMode":""};var STB_Box_Options={"4065":{"id":4065,"title":"Subscribe to JournalDev Newsletter","trigger":"percentage","triggerPercentage":40,"triggerElementSelector":"","animation":"slide","cookieTime":30,"autoHide":true,"autoShow":true,"position":"bottom-right","minimumScreenWidth":700,"unclosable":false}};</script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/scroll-triggered-boxes/assets/js/script.min.js'></script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-includes/js/wp-embed.min.js'></script> 
+<!--
+*** This site runs WP Super Minify plugin v1.5.1 - http://wordpress.org/plugins/wp-super-minify ***
+*** Total size saved: 8.092% | Size before compression: 136484 bytes | Size after compression: 125440 bytes. ***
+-->
+<!-- Dynamic page generated in 1.679 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2017-07-13 13:50:02 -->
+
+<!-- Compression = gzip --><script type="text/javascript" style='display:none;'>
+var __ez_dims = (function() {
+	var setCookie = function( name, content, expiry ) {
+		return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'');
+	};
+	var ffid = 1;
+	var oh = window.screen.height;
+	var ow = window.screen.width;
+	var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+	var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+	var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+	var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+	setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+	setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+})();
+</script><script type='text/javascript' style='display:none;' async>
+__ez.queue.addFile('edmonton.php', '//www.journaldev.com/detroitchicago/edmonton.webp?a=a&cb=167-0&shcb=21', true, [], true, false, false, false);
+__ez.queue.addFile('jellyfish.php', '//www.journaldev.com/porpoiseant/jellyfish.webp?a=a&cb=167-0&shcb=21', false, [], true, false, false, false);
+</script>
+
+
+<div id='dmo1' style='display:none'>
+	<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-6396844742497208";
+		/* dmo */
+		google_ad_slot = "dmo";
+		google_ad_width = 88;
+		google_ad_height = 31;
+		//-->
+	</script>
+	<script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>
+
+<!--Begin comScore Tag--><script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"20015427"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el)})();</script><noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript><!--End comScore Tag-->
+<!--Quantcast Tag--><script type="text/javascript">var _qevents=_qevents||[];(function(){var elem=document.createElement('script');elem.src=(document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js";elem.async=true;elem.type="text/javascript";var scpt=document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem,scpt)})();_qevents.push({qacct:"p-31iz6hfFutd16",labels:"Domain.journaldev_com,DomainId.47402"});</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.journaldev_com,DomainId.47402"border="0"height="1"width="1"alt="Quantcast"/></div></noscript><!--End Quantcast tag-->
+<script data-pagespeed-no-defer data-cfasync='false' type='text/javascript' style='display:none'>
+__ez_func_ezosuigeneris = function() { if(typeof ezosuigeneris != "undefined") { var ezosuigenerisDate = new Date(); ezosuigenerisDate.setMonth(ezosuigenerisDate.getMonth() + 24); document.cookie = "ezosuigeneris=" + ezosuigeneris + ";expires=" + ezosuigenerisDate.toUTCString() + ";domain="+ezdomain+";path=/"; } };
+__ez.queue.addFunc('__ez_func_ezosuigeneris', '__ez_func_ezosuigeneris', null, false, ['__ezf_ezosuigeneris'], true, false, false, false);
+
+__ez_func_ezosuigenerisc = function() { if(typeof ezosuigenerisc != "undefined") { var ezosuigeneriscDate = new Date(); ezosuigeneriscDate.setMonth(ezosuigeneriscDate.getMonth() + 24); document.cookie = "ezosuigenerisc=" + ezosuigenerisc + ";expires=" + ezosuigeneriscDate.toUTCString() + ";domain="+ezdomain+";path=/"; } };
+__ez.queue.addFunc('__ez_func_ezosuigenerisc', '__ez_func_ezosuigenerisc', null, false, ['__ezf_ezosuigenerisc'], true, false, false, false);
+</script></body></html><!--[selectron:done]-->

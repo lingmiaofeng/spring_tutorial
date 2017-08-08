@@ -1,0 +1,838 @@
+<!DOCTYPE html><html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"><head><meta charset="UTF-8">
+<script data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.evt={};__ez.ck={};__ez.dot={};__ez.template={};__ez.template.isOrig=false;__ez.evt.add=function(el,evt,handler){if(el.addEventListener){el.addEventListener(evt,handler,false)}else if(el.attachEvent){el.attachEvent('on'+evt,handler)}else{el['on'+evt]=handler()}};__ez.ck.get=function(n,e){null!==e&&(n=n+"_"+e);for(var t=n+"=",r=decodeURIComponent(document.cookie),o=r.split(";"),i=0;i<o.length;i++){for(var u=o[i];" "===u.charAt(0);)u=u.substring(1);if(0===u.indexOf(t))return u.substring(t.length,u.length)}return""};__ez.queue=function(){function g(a,b,g,h,j,k,l,m){var n=new f.file(a,b,g,h,j,k,l);!0===m?d[a]=n:e[a]=n,c[a]=n,i(n)}function h(a,g,h,j,k,l,m,n,o){!0===l&&(a=a+"_"+b++);var p=new f.func(a,g,h,j,k,m,n);!0===o?d[a]=p:e[a]=p,c[a]=p,i(p)}function i(a){!0!==j(a)&&a.process()}function j(a){if(a.blockedBy instanceof Array)for(var b=0;b<a.blockedBy.length;b++){var d=a.blockedBy[b];if(!1===c.hasOwnProperty(d))return k(a.name+" blocked = "+d),!0;if(!0===a.proceedIfError&&!0===c[d].isError)return!1;if(!1===c[d].isComplete)return k(a.name+" blocked = "+d),!0}return!1}function k(a){var b=window.location.href,c=new RegExp("[?&]ezq=([^&#]*)","i"),d=c.exec(b);"1"===(d?d[1]:null)&&console.debug(a)}function l(){++a>20||(k("let's go"),m(d),m(e))}function m(a){for(var b in a)if(!1!==a.hasOwnProperty(b)){var c=a[b];!0===c.isComplete||j(c)||!0===c.isInitialized||!0===c.isError?!0===c.isError?k(c.name+": error"):!0===c.isComplete?k(c.name+": complete already"):!0===c.isInitialized&&k(c.name+": initialized already"):c.process()}}var a=0,b=0,c=[],d=[],e=[],f={func:function(a,b,d,e,f,g,h){var i=this;this.name=a,this.funcName=b,this.parameters=null===d?null:d instanceof Array?d:[d],this.isBlock=e,this.blockedBy=f,this.deleteWhenComplete=g,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=h,this.process=function(){k("... func = "+a),i.isInitialized=!0,i.isComplete=!0;var b=i.funcName.split(".");b.length>3||(3===b.length?window[b[0]][b[1]][b[2]].apply(null,this.parameters):2===b.length?window[b[0]][b[1]].apply(null,this.parameters):window[i.funcName].apply(null,this.parameters)),!0===i.deleteWhenComplete&&delete c[a],!0===i.isBlock&&(k("----- F'D: "+i.name),l())}},file:function(a,b,c,d,e,f,g){var h=this;this.name=a,this.path=b,this.async=e,this.defer=f,this.isBlock=c,this.blockedBy=d,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=g,this.process=function(){h.isInitialized=!0,k("... file = "+a);var c=document.createElement("script");c.src=b,!0===e?c.async=!0:!0===f&&(c.defer=!0),c.onerror=function(){k("----- ERR'D: "+h.name),h.isError=!0,!0===h.isBlock&&l()},c.onreadystatechange=c.onload=function(){var a=c.readyState;k("----- F'D: "+h.name),a&&!/loaded|complete/.test(a)||(h.isComplete=!0,!0===h.isBlock&&l())},document.getElementsByTagName("head")[0].appendChild(c)}}};return{addFile:g,addFunc:h,items:c}}();var __ezDotData=function(a,b){this.name=a,this.val=b};__ez.dot.b64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=Base64._utf8_encode(a);j<a.length;)c=a.charCodeAt(j++),d=a.charCodeAt(j++),e=a.charCodeAt(j++),f=c>>2,g=(3&c)<<4|d>>4,h=(15&d)<<2|e>>6,i=63&e,isNaN(d)?h=i=64:isNaN(e)&&(i=64),b=b+this._keyStr.charAt(f)+this._keyStr.charAt(g)+this._keyStr.charAt(h)+this._keyStr.charAt(i);return b},decode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=a.replace(/[^A-Za-z0-9+\/=]/g,"");j<a.length;)f=this._keyStr.indexOf(a.charAt(j++)),g=this._keyStr.indexOf(a.charAt(j++)),h=this._keyStr.indexOf(a.charAt(j++)),i=this._keyStr.indexOf(a.charAt(j++)),c=f<<2|g>>4,d=(15&g)<<4|h>>2,e=(3&h)<<6|i,b+=String.fromCharCode(c),64!=h&&(b+=String.fromCharCode(d)),64!=i&&(b+=String.fromCharCode(e));return b=Base64._utf8_decode(b)},_utf8_encode:function(a){a=a.replace(/rn/g,"n");for(var b="",c=0;c<a.length;c++){var d=a.charCodeAt(c);d<128?b+=String.fromCharCode(d):d>127&&d<2048?(b+=String.fromCharCode(d>>6|192),b+=String.fromCharCode(63&d|128)):(b+=String.fromCharCode(d>>12|224),b+=String.fromCharCode(d>>6&63|128),b+=String.fromCharCode(63&d|128))}return b},_utf8_decode:function(a){for(var b="",c=0,d=c1=c2=0;c<a.length;)d=a.charCodeAt(c),d<128?(b+=String.fromCharCode(d),c++):d>191&&d<224?(c2=a.charCodeAt(c+1),b+=String.fromCharCode((31&d)<<6|63&c2),c+=2):(c2=a.charCodeAt(c+1),c3=a.charCodeAt(c+2),b+=String.fromCharCode((15&d)<<12|(63&c2)<<6|63&c3),c+=3);return b}},__ez.dot.dataToStr=function(a){if(void 0===a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},__ez.dot.getCC=function(){var a="XX";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(a=_ezaq.country),a},__ez.dot.getDID=function(){var a="0";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(a=_ezaq.domain_id.toString()),a},__ez.dot.getEpoch=function(a){return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(a=_ezaq.t_epoch),a},__ez.dot.getURL=function(a){return("undefined"!=typeof ezJsu&&1==ezJsu||"undefined"!=typeof _ez_sa&&1==_ez_sa||"undefined"!=typeof isAmp&&!0===isAmp)&&(a="//g.ezoic.net"+a),a},__ez.dot.isValid=function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof __ezDotData==!1)return console.error("Invalid data. ",a[b]),!1;return!0},__ez.dot.isDefined=function(){for(var a=0;a<arguments.length;a++)if(void 0===arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0};__ez.bit=function(){function c(a,b){d(a,b),e()}function d(b,c){__ez.dot.isDefined(b)&&__ez.dot.isValid(c)&&a.push({type:"pageview",pageview_id:b,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}function e(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&ds="+btoa(JSON.stringify(a))),a=[])}var a=[],b="/detroitchicago/greenoaks.gif";return{Add:d,AddAndFire:c,Fire:e}}();</script><script data-cfasync='false' data-pagespeed-no-defer>__ez.pel=function(){function c(a,b){d(a,b,0,0,0,0,0),f()}function d(b,c,d,e,f,h,i){if(__ez.dot.isDefined(b,b.getSlotElementId)){var j=parseInt(b.getTargeting("ap")[0]),k=b.getSizes()[0],l=k.l.toString()+"x"+k.j.toString(),m=g(b),n=b.getSlotElementId();__ez.dot.isDefined(m,n)&&__ez.dot.isValid(c)&&a.push({type:"impression",impression_id:m,domain_id:__ez.dot.getDID(),unit:n,t_epoch:__ez.dot.getEpoch(0),revenue:d,est_revenue:e,ad_position:j,ad_size:l,bid_floor_filled:f,bid_floor_prev:h,stat_source_id:i,country_code:__ez.dot.getCC(),data:__ez.dot.dataToStr(c)})}}function e(b,c){var d=b.split("/");if(__ez.dot.isDefined(b)&&3===d.length&&__ez.dot.isValid(c)){var e=d[0],f=d[2];a.push({type:"impression",impression_id:f,domain_id:__ez.dot.getDID(),unit:e,t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}}function f(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&sts="+btoa(JSON.stringify(a))),a=[])}function g(a){var b=0;try{var c=a.getTargetingMap();if(-1===a.getSlotElementId().indexOf("div-gpt-ad"))return b;if(void 0!==c)for(var e in c)if(-1!==e.indexOf("iid")&&void 0!==c[e][0]){b=c[e][0];break}}catch(a){}return b}var a=[],b="/porpoiseant/army.gif";return{Add:d,AddAndFire:c,AddById:e,Fire:f}}();var EzoicPixel=function(){this.pixels=[],this.pixelUrl="/ezoic/e.gif",("undefined"!=typeof ezJsu&&ezJsu===!0||"undefined"!=typeof _ez_sa&&_ez_sa===!0||"undefined"!=typeof window.isAmp&&isAmp===!0)&&(this.pixelUrl="//g.ezoic.net"+this.pixelUrl),this.tEpoch=0,"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(this.tEpoch=_ezaq.t_epoch)},EzoicPixelData=function(a,b){this.name=a,this.val=b};EzoicPixel.prototype={constructor:EzoicPixel,AddAndFireImpPixel:function(a,b){this.AddImpPixel(a,b,0,0,0,0,0),this.FirePixels()},AddAndFirePVPixel:function(a,b){this.AddPVPixel(a,b),this.FirePixels()},AddImpPixel:function(a,b,c,d,e,f,g){if(this.isDefined(a,a.getSlotElementId)){var h=parseInt(a.getTargeting("ap")[0]),i=a.getSizes()[0],j=i.l.toString()+"x"+i.j.toString(),k="0",l="XX";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(k=_ezaq.domain_id.toString()),"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(l=_ezaq.country);var m=this.getSlotIID(a),n=a.getSlotElementId();this.isDefined(m,n)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:m,domain_id:k,unit:n,t_epoch:this.tEpoch,revenue:c,est_revenue:d,ad_position:h,ad_size:j,bid_floor_filled:e,bid_floor_prev:f,stat_source_id:g,country_code:l,data:b}))}},AddImpPixelById:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString());var d=a.split("/");if(this.isDefined(a)&&3===d.length&&this.validateData(b)){var e=d[0],f=d[2];b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:f,domain_id:c,unit:e,t_epoch:this.tEpoch,data:b})}},AddPVPixel:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString()),this.isDefined(a)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"pageview",pageview_id:a,domain_id:c,t_epoch:this.tEpoch,data:b}))},FirePixels:function(){"undefined"!=typeof document.visibilityState&&"prerender"===document.visibilityState||(this.isDefined(this.pixels)&&this.pixels.length>0&&((new Image).src=this.pixelUrl+"?orig="+(__ez.template.isOrig===!0?1:0)+"&pixels="+encodeURIComponent(JSON.stringify(this.pixels))),this.pixels=[])},NewData:function(a,b){return new EzoicPixelData(a,b)},convertDataToStr:function(a){if("undefined"==typeof a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},getSlotIID:function(a){var b=0;try{var c=a.getTargetingMap(),d=a.getSlotElementId();if(d.indexOf("div-gpt-ad")===-1)return b;if("undefined"!=typeof c)for(var e in c)if(e.indexOf("iid")!==-1&&"undefined"!=typeof c[e][0]){b=c[e][0];break}}catch(a){}return b},isDefined:function(){for(var a=0;a<arguments.length;a++)if("undefined"==typeof arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0},validateData:function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof EzoicPixelData==!1)return console.error("Invalid pixelData. ",a[b]),!1;return!0}};</script>
+<script type="text/javascript">
+	var __banger_pmp_deals=[{"SlotName":"/1254144/journaldev_com-medrectangle-4","Deals":[{"DealId":18,"Floor":25}]},{"SlotName":"/1254144/journaldev_com-large-leaderboard-1","Deals":[]},{"SlotName":"/1254144/journaldev_com-large-billboard-2","Deals":[]},{"SlotName":"/1254144/journaldev_com-box-3","Deals":[]},{"SlotName":"/1254144/journaldev_com-banner-1","Deals":[]},{"SlotName":"/1254144/journaldev_com-box-1","Deals":[]},{"SlotName":"/1254144/journaldev_com-medrectangle-3","Deals":[]},{"SlotName":"/1254144/journaldev_com-box-2","Deals":[]},{"SlotName":"/1254144/journaldev_com-box-4","Deals":[{"DealId":18,"Floor":25}]}];
+</script>
+<script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
+function ez_isclean( data ) {
+    if (typeof data === 'undefined') { data = document.URL; }
+    var re = /(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))(@|%2540|%40)((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/;
+    var isClean = !re.test(data);
+    return isClean;
+}
+
+var ez_queue = new Array();
+function sort_queue(a, b)
+{
+  if( a.priority < b.priority ) return -1;
+  else if( a.priority == b.priority ) return 0;
+  else return 1;
+}
+function execute_ez_queue()
+{
+  ez_queue.sort( sort_queue );
+
+  for( var i in ez_queue )
+  {
+        if(typeof ez_queue[i].method != "undefined")
+        {
+            try{
+                ez_queue[i].method.call( null );
+            }
+            catch (err) {
+
+            }
+        }
+  }
+}
+
+window.ez_ad_units = new Array();
+window.ezslots = new Array();
+function ez_write_tag(d) {
+    if(ez_isclean() && d instanceof Array) {
+
+		ez_ad_units[ez_ad_units.length] = d;
+        var ezcmd = "googletag.cmd.push(function() {var divid = 'div-gpt-ad-"+d[1]+"-0';if(typeof ezlrarn == 'function'){ezlrarn(divid);}googletag.display(divid);var to = 0;if("+d[2]+".getTargeting('ga')[0] == '0'){to = 500;console.log('"+d[2]+" - no google');}if(window.ezDisableInitialLoad==true){setTimeout(function(){googletag.pubads().refresh(["+d[2]+"])},to);}});";
+		return ezcmd;
+    }
+    else {
+        return "1+1";
+    }
+}
+function in_array(needle, haystack) {
+    var length = haystack.length;
+    for(var i = 0; i < length; i++) {
+        if(haystack[i] == needle) return true;
+    }
+    return false;
+}
+</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>var ezrpos = new Array();var ez_current_interval;var ez_current_load = 0;</script>
+<script data-cfasync="false" type="text/javascript" data-pagespeed-no-defer src="//go.ezoic.net/porpoiseant/dall.js" async></script>
+<script data-cfasync="false" type="text/javascript" data-pagespeed-no-defer>
+function epbjsRefreshSlot(e){epbjs.que.push(function(){epbjs.requestBids({adUnitCodes:[e.getSlotElementId()],bidsBackHandler:function(){epbjs.setTargetingForGPTAsync([e.getSlotElementId()])}})})}var epbjs=epbjs||{};epbjs.bidderTimeout=2500,epbjs.useAdj=true,epbjs.que=epbjs.que||[],epbjs.ezdss=epbjs.ezdss||[],epbjs.ezobid=epbjs.ezobid||[],epbjs.que.push(function(){var e=[{code: 'div-gpt-ad-journaldev_com-medrectangle-4-0', sizes: [[580,400],[336,280],[300,250]], bids: [{bidder: 'districtm', params: { placementId: '11629436' }},{bidder: 'pulsepoint', params: { cf: '300X250', cp: 560269, ct: 472597 }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }},{bidder: 'criteo', params: { zoneId: '739917' }}] },{code: 'div-gpt-ad-journaldev_com-large-leaderboard-1-0', sizes: [[250,250]], bids: [{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }}] },{code: 'div-gpt-ad-journaldev_com-large-billboard-2-0', sizes: [[250,250]], bids: [{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }}] },{code: 'div-gpt-ad-journaldev_com-box-3-0', sizes: [[300,250]], bids: [{bidder: 'districtm', params: { placementId: '11629436' }},{bidder: 'pulsepoint', params: { cf: '300X250', cp: 560269, ct: 472597 }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }},{bidder: 'criteo', params: { zoneId: '739917' }}] },{code: 'div-gpt-ad-journaldev_com-banner-1-0', sizes: [[300,250]], bids: [{bidder: 'districtm', params: { placementId: '11629436' }},{bidder: 'pulsepoint', params: { cf: '300X250', cp: 560269, ct: 472597 }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }},{bidder: 'criteo', params: { zoneId: '739917' }}] },{code: 'div-gpt-ad-journaldev_com-box-1-0', sizes: [[336,280],[300,250]], bids: [{bidder: 'districtm', params: { placementId: '11629436' }},{bidder: 'pulsepoint', params: { cf: '300X250', cp: 560269, ct: 472597 }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }},{bidder: 'criteo', params: { zoneId: '739917' }}] },{code: 'div-gpt-ad-journaldev_com-medrectangle-3-0', sizes: [[580,400],[336,280],[300,250]], bids: [{bidder: 'districtm', params: { placementId: '11629436' }},{bidder: 'pulsepoint', params: { cf: '300X250', cp: 560269, ct: 472597 }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }},{bidder: 'criteo', params: { zoneId: '739917' }}] },{code: 'div-gpt-ad-journaldev_com-box-2-0', sizes: [[728,90]], bids: [{bidder: 'districtm', params: { placementId: '11629436' }},{bidder: 'pulsepoint', params: { cf: '728X90', cp: 560269, ct: 472601 }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }},{bidder: 'criteo', params: { zoneId: '739924' }}] },{code: 'div-gpt-ad-journaldev_com-box-4-0', sizes: [[300,250],[336,280]], bids: [{bidder: 'districtm', params: { placementId: '0' }},{bidder: 'pulsepoint', params: { cf: '', cp: 560269, ct: 0 }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }},{bidder: 'criteo', params: { zoneId: '0' }}] }];epbjs.addAdUnits(e);epbjs.aliasBidder('appnexus', 'districtm');epbjs.SS={"criteo":10050,"districtm":10035,"pulsepoint":10019,"sonobi":10048},epbjs.bidderSettings={districtm: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.850000; var adj2 = adj1 * 1.200000; return adj2; }},pulsepoint: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.750000; var adj2 = adj1 * 1.200000; return adj2; }},sonobi: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.700000; var adj2 = adj1 * 1.200000; return adj2; }},criteo: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.720000; var adj2 = adj1 * 1.200000; return adj2; }},standard:{adserverTargeting:[{key:"hb_bidder",val:function(e){return e.bidderCode}},{key:"hb_adid",val:function(e){return e.adId}},{key:"hb_pb",val:function(e){var s=e.cpm;return 5>s?(Math.floor(100*s)/100).toFixed(2):(Math.floor(10*s)/10).toFixed(2)}},{key:"hb_ssid",val:function(e){return"ehb"==e.bidder?0:"undefined"!=typeof epbjs.SS[e.bidder]?epbjs.SS[e.bidder]:(console.error("epbjs: NO MATCH"),0)}}]}},epbjs.onEvent("bidWon",function(e){"ehb"==e.bidder?epbjs.ezdss[e.adUnitCode]=e.ss:"undefined"!=typeof epbjs.SS[e.bidder]?(epbjs.ezdss[e.adUnitCode]=epbjs.SS[e.bidder],1==epbjs.useAdj&&["sovrn","openx","pulsepoint","defymedia","aol","conversant","districtm","admedia","brealtime","sonobi","criteo"].indexOf(e.bidder)>-1&&(epbjs.ezobid[e.adUnitCode]=e.cpm/1.200000)):console.error("epbjs: NO MATCH")}),epbjs.requestBids({bidsBackHandler:function(e){epbjs.setTargetingForGPTAsync()}})});
+</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.isEZABL=false;window.ezmadspc=300;</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.ezDisableInitialLoad=false;</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
+window.googletag = window.googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+
+
+
+</script>
+<script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
+googletag.cmd.push(function() {if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {ezslot_0 = googletag.defineSlot('/1254144/journaldev_com-medrectangle-4',[580,400],'div-gpt-ad-journaldev_com-medrectangle-4-0').addService(googletag.pubads()).setTargeting('iid14','1372030').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','16').setTargeting('ap','1105').setTargeting('sap','1105').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','9').setTargeting('al','1022').setTargeting('compid','0').setTargeting('tap','journaldev_com-medrectangle-4-1372030').setTargeting('bv','21').setCollapseEmptyDiv(false).setTargeting('br1','40').setTargeting('br2','20').setTargeting('ezoic','1').setTargeting('deal1',[17,19,20,21,22,23,24,25,26]);ezslot_0.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4459013723').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[0]="0";ezslot_1 = googletag.defineSlot('/1254144/journaldev_com-large-leaderboard-1',[250,250],'div-gpt-ad-journaldev_com-large-leaderboard-1-0').addService(googletag.pubads()).setTargeting('iid15','1405779').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','16').setTargeting('ap','1109').setTargeting('sap','1109').setTargeting('a','|253|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','tf').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','0').setTargeting('al','1035').setTargeting('compid','0').setTargeting('tap','journaldev_com-large-leaderboard-1-1405779').setTargeting('bv','15').setCollapseEmptyDiv(false).setTargeting('br1','0').setTargeting('br2','0').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_1.set('adsense_ad_types','text_image').set('adsense_background_color','EEFF00').set('adsense_border_color','EEFF00').set('adsense_channel_ids','4459013723').set('adsense_link_color','000000').set('adsense_text_color','000000').set('adsense_url_color','000000');ezrpos[1]="1";ezslot_2 = googletag.defineSlot('/1254144/journaldev_com-large-billboard-2',[250,250],'div-gpt-ad-journaldev_com-large-billboard-2-0').addService(googletag.pubads()).setTargeting('iid14','1346529').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','16').setTargeting('ap','1108').setTargeting('sap','1108').setTargeting('a','|5|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','tf').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','0').setTargeting('al','1034').setTargeting('compid','0').setTargeting('tap','journaldev_com-large-billboard-2-1346529').setTargeting('bv','12').setCollapseEmptyDiv(false).setTargeting('br1','0').setTargeting('br2','0').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_2.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4459013723').set('adsense_link_color','20929A').set('adsense_text_color','000000').set('adsense_url_color','F0F0F0');ezrpos[2]="2";ezslot_3 = googletag.defineSlot('/1254144/journaldev_com-box-3',[300,250],'div-gpt-ad-journaldev_com-box-3-0').addService(googletag.pubads()).setTargeting('iid15','1404130').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','16').setTargeting('ap','1101').setTargeting('sap','1101').setTargeting('a','|253|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','n').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','2').setTargeting('al','1002').setTargeting('compid','0').setTargeting('tap','journaldev_com-box-3-1404130').setTargeting('bv','11').setCollapseEmptyDiv(false).setTargeting('br1','20').setTargeting('br2','10').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_3.set('adsense_ad_types','text_image').set('adsense_background_color','EEFF00').set('adsense_border_color','EEFF00').set('adsense_channel_ids','4459013723').set('adsense_link_color','000000').set('adsense_text_color','000000').set('adsense_url_color','000000');ezrpos[3]="3";ezslot_4 = googletag.defineSlot('/1254144/journaldev_com-banner-1',[300,250],'div-gpt-ad-journaldev_com-banner-1-0').addService(googletag.pubads()).setTargeting('iid15','1403080').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','16').setTargeting('ap','1107').setTargeting('sap','1107').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','5').setTargeting('al','1030').setTargeting('compid','0').setTargeting('tap','journaldev_com-banner-1-1403080').setTargeting('bv','16').setCollapseEmptyDiv(false).setTargeting('br1','0').setTargeting('br2','0').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_4.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4459013723').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[4]="4";ezslot_5 = googletag.defineSlot('/1254144/journaldev_com-box-1',[336,280],'div-gpt-ad-journaldev_com-box-1-0').addService(googletag.pubads()).setTargeting('iid15','1409679').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','16').setTargeting('ap','1102').setTargeting('sap','1102').setTargeting('a','|124|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','tf').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','1').setTargeting('al','1000').setTargeting('compid','0').setTargeting('tap','journaldev_com-box-1-1409679').setTargeting('bv','15').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('br1','0').setTargeting('br2','0').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_5.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4459013723').set('adsense_link_color','FF0000').set('adsense_text_color','000000').set('adsense_url_color','FF0000');ezrpos[5]="5";ezslot_6 = googletag.defineSlot('/1254144/journaldev_com-medrectangle-3',[580,400],'div-gpt-ad-journaldev_com-medrectangle-3-0').addService(googletag.pubads()).setTargeting('iid15','1404430').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','16').setTargeting('ap','1104').setTargeting('sap','1104').setTargeting('a','|253|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','n').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','8').setTargeting('al','1021').setTargeting('compid','0').setTargeting('tap','journaldev_com-medrectangle-3-1404430').setTargeting('bv','17').setCollapseEmptyDiv(false).setTargeting('br1','10').setTargeting('br2','10').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_6.set('adsense_ad_types','text_image').set('adsense_background_color','EEFF00').set('adsense_border_color','EEFF00').set('adsense_channel_ids','4459013723').set('adsense_link_color','000000').set('adsense_text_color','000000').set('adsense_url_color','000000');ezrpos[6]="6";ezslot_7 = googletag.defineSlot('/1254144/journaldev_com-box-2',[728,90],'div-gpt-ad-journaldev_com-box-2-0').addService(googletag.pubads()).setTargeting('iid15','1410429').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','16').setTargeting('ap','1100').setTargeting('sap','1100').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','n').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','7').setTargeting('al','1001').setTargeting('compid','0').setTargeting('tap','journaldev_com-box-2-1410429').setTargeting('bv','9').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('br1','20').setTargeting('br2','10').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_7.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4459013723').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[7]="7";ezslot_8 = googletag.defineSlot('/1254144/journaldev_com-box-4',[336,280],'div-gpt-ad-journaldev_com-box-4-0').addService(googletag.pubads()).setTargeting('iid15','1404580').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','16').setTargeting('ap','1106').setTargeting('sap','1106').setTargeting('a','|253|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','tf').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','6').setTargeting('al','1003').setTargeting('compid','0').setTargeting('tap','journaldev_com-box-4-1404580').setTargeting('bv','12').setCollapseEmptyDiv(false).setTargeting('br1','30').setTargeting('br2','20').setTargeting('ezoic','1').setTargeting('deal1',[17,19,20,21,22,23,24,25,26]);ezslot_8.set('adsense_ad_types','text_image').set('adsense_background_color','EEFF00').set('adsense_border_color','EEFF00').set('adsense_channel_ids','4459013723').set('adsense_link_color','000000').set('adsense_text_color','000000').set('adsense_url_color','000000');ezrpos[8]="8";}else{window.ezHideLocations=[];window.ezHideLocations.push('div-gpt-ad-journaldev_com-medrectangle-4-0');window.ezHideLocations.push('div-gpt-ad-journaldev_com-large-leaderboard-1-0');window.ezHideLocations.push('div-gpt-ad-journaldev_com-large-billboard-2-0');window.ezHideLocations.push('div-gpt-ad-journaldev_com-box-3-0');window.ezHideLocations.push('div-gpt-ad-journaldev_com-banner-1-0');ezslot_5 = googletag.defineSlot('/1254144/journaldev_com-box-1',[336,280],'div-gpt-ad-journaldev_com-box-1-0').addService(googletag.pubads()).setTargeting('iid15','1409679').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','16').setTargeting('ap','1102').setTargeting('sap','1102').setTargeting('a','|124|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','tf').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','1').setTargeting('al','1000').setTargeting('compid','0').setTargeting('tap','journaldev_com-box-1-1409679').setTargeting('bv','15').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('br1','0').setTargeting('br2','0').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_5.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4459013723').set('adsense_link_color','FF0000').set('adsense_text_color','000000').set('adsense_url_color','FF0000');ezrpos[5]="5";window.ezHideLocations.push('div-gpt-ad-journaldev_com-medrectangle-3-0');ezslot_7 = googletag.defineSlot('/1254144/journaldev_com-box-2',[728,90],'div-gpt-ad-journaldev_com-box-2-0').addService(googletag.pubads()).setTargeting('iid15','1410429').setTargeting('t','134').setTargeting('d','47402').setTargeting('t1','134').setTargeting('pvc','16').setTargeting('ap','1100').setTargeting('sap','1100').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod6').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','398').setTargeting('reft','n').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','7').setTargeting('al','1001').setTargeting('compid','0').setTargeting('tap','journaldev_com-box-2-1410429').setTargeting('bv','9').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('br1','20').setTargeting('br2','10').setTargeting('ezoic','1').setTargeting('deal1',[17,18,19,20,21,22,23,24,25,26]);ezslot_7.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4459013723').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[7]="7";window.ezHideLocations.push('div-gpt-ad-journaldev_com-box-4-0');}googletag.pubads().addEventListener('slotRenderEnded', function(event) { __ez.queue.addFunc("ezbanger", "ezbanger", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('impressionViewable', function(event) { __ez.queue.addFunc("ezvb", "ezvb", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('slotVisibilityChanged', function(event) { __ez.queue.addFunc("ezvbc", "ezvbc", event, false, ['banger.js'], true, true, false, true); });googletag.enableServices();});if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {ezslots.push("ezslot_0");ezslots.push("ezslot_1");ezslots.push("ezslot_2");ezslots.push("ezslot_3");ezslots.push("ezslot_4");ezslots.push("ezslot_5");ezslots.push("ezslot_6");ezslots.push("ezslot_7");ezslots.push("ezslot_8");}else{ezslots.push("ezslot_5");ezslots.push("ezslot_7");}</script>
+<script>(function(){function a(g,h,i){var j=new Date;j.setTime(j.getTime()+1e3*(60*(60*(24*i))));var k="expires="+j.toUTCString(),l=g+"="+h+";"+k+";path=/;";"undefined"!=typeof ezdomain&&(l+="domain="+ezdomain),document.cookie=l}var b=window.addEventListener?"addEventListener":"attachEvent",c=window[b],f="attachEvent"==b?"onmessage":"message";c(f,function(g){"undefined"!=typeof g.data.ezstatus&&(__ez.bit.AddAndFire(_ezaq.page_view_id,[new __ezDotData("dg",g.data.ezstatus)]),a("ezdg",g.data.ezstatus,730))})})();</script>
+<script type="text/javascript" data-cfasync="false">var _ezaq = {"ad_cache_level":1,"ad_location_ids":"22,35,34,2,30,0,21,1,3","adx_ad_count":9,"bidder_version":3,"city":"Kostelec nad Labem","country":"CZ","days_since_last_visit":-1,"display_ad_count":9,"domain_id":47402,"ds_adsize_opt_id":-1,"engaged_time_visit":17,"ezcache_level":0,"forensiq_score":-1,"form_factor_id":1,"has_bad_words":0,"iab_category":"","is_bot":0,"is_return_visitor":false,"last_page_load":"1499979536684","last_pageview_id":"db35d8e7-e85c-461f-4b87-fdee0674cd67","lt_cache_level":0,"max_ads":10,"metro_code":0,"page_ad_positions":"1100,1101,1102,1104,1105,1106,1107,1108,1109","page_view_count":16,"page_view_id":"6ba42da1-d08e-431f-7379-9f3b6dbdfeb2","pv_event_count":0,"response_time_orig":310,"serverid":"52.17.252.148:9383","sub_page_ad_positions":"1100,1101,1102,1104,1105,1106,1107,1108,1109","t_epoch":1499980284,"template_id":134,"time_on_site_visit":25,"url":"http://www.journaldev.com/2637/spring-bean-life-cycle","user_id":1038073899,"weather_precipitation":0,"weather_summary":"","weather_temperature":0,"word_count":3044};var _ezim_d = {"journaldev_com-banner-1":{"adx_ad_count":9,"full_id":"journaldev_com-banner-1/2017-07-13/1403080","height":"250","position_id":1107,"sub_position_id":1107,"width":"300"},"journaldev_com-box-1":{"adx_ad_count":9,"full_id":"journaldev_com-box-1/2017-07-13/1409679","height":"280","position_id":1102,"sub_position_id":1102,"width":"336"},"journaldev_com-box-2":{"adx_ad_count":9,"full_id":"journaldev_com-box-2/2017-07-13/1410429","height":"90","position_id":1100,"sub_position_id":1100,"width":"728"},"journaldev_com-box-3":{"adx_ad_count":9,"full_id":"journaldev_com-box-3/2017-07-13/1404130","height":"250","position_id":1101,"sub_position_id":1101,"width":"300"},"journaldev_com-box-4":{"adx_ad_count":9,"full_id":"journaldev_com-box-4/2017-07-13/1404580","height":"280","position_id":1106,"sub_position_id":1106,"width":"336"},"journaldev_com-large-billboard-2":{"adx_ad_count":9,"full_id":"journaldev_com-large-billboard-2/2017-07-13/1346529","height":"250","position_id":1108,"sub_position_id":1108,"width":"250"},"journaldev_com-large-leaderboard-1":{"adx_ad_count":9,"full_id":"journaldev_com-large-leaderboard-1/2017-07-13/1405779","height":"250","position_id":1109,"sub_position_id":1109,"width":"250"},"journaldev_com-medrectangle-3":{"adx_ad_count":9,"full_id":"journaldev_com-medrectangle-3/2017-07-13/1404430","height":"400","position_id":1104,"sub_position_id":1104,"width":"580"},"journaldev_com-medrectangle-4":{"adx_ad_count":9,"full_id":"journaldev_com-medrectangle-4/2017-07-13/1372030","height":"400","position_id":1105,"sub_position_id":1105,"width":"580"}};var _ezat = {"domain_id":47402,"form_factor_id":1,"pageview_date":"2017-07-13","pageview_id":"6ba42da1-d08e-431f-7379-9f3b6dbdfeb2","template_id":134,"url":"http://www.journaldev.com/2637/spring-bean-life-cycle","visit_uuid":"b476384b-0ec5-4d8c-5f4a-3897b8ead7d6"};</script><script data-cfasync='false' type="text/javascript" src="/detroitchicago/rochester.js?cb=167-0&v=7" async></script><script data-pagespeed-no-defer data-cfasync='false' type="text/javascript">__ez.queue.addFile('banger.js', '/porpoiseant/banger.js?cb=167-0&bv=2&v=14&PageSpeed=off', true, [], true, false, false, true);</script><script data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl() {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = "ezux_lpl_47402=" + new Date().getTime() + "|6ba42da1-d08e-431f-7379-9f3b6dbdfeb2; " + expires;
+}
+function attach_ezolpl() {
+    if(window.attachEvent) {
+        window.attachEvent('onload', create_ezolpl);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl();
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl;
+        }
+    }
+}
+attach_ezolpl();
+</script><title>Spring Bean Life Cycle - JournalDev</title><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Spring Bean Life Cycle, Spring @PostConstruct, @PreDestroy, InitializingBean, afterPropertiesSet(), DisposableBean, destroy(), init-method, destroy-method"><link rel="canonical" href="http://www.journaldev.com/2637/spring-bean-life-cycle"><link rel="publisher" href="https://plus.google.com/+Journaldev"><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="Spring Bean Life Cycle - JournalDev"><meta property="og:description" content="Spring Bean Life Cycle, Spring @PostConstruct, @PreDestroy, InitializingBean, afterPropertiesSet(), DisposableBean, destroy(), init-method, destroy-method"><meta property="og:url" content="http://www.journaldev.com/2637/spring-bean-life-cycle"><meta property="og:site_name" content="JournalDev"><meta property="article:publisher" content="https://www.facebook.com/JournalDev"><meta property="article:section" content="Spring"><meta property="article:published_time" content="2014-04-02T06:35:47-07:00"><meta property="article:modified_time" content="2016-07-06T12:04:22-07:00"><meta property="og:updated_time" content="2016-07-06T12:04:22-07:00"><meta property="fb:admins" content="592894892"><meta property="og:image" content="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle.jpg"><meta property="og:image" content="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle-project-411x450.png"><meta name="twitter:card" content="summary"><meta name="twitter:description" content="Spring Bean Life Cycle, Spring @PostConstruct, @PreDestroy, InitializingBean, afterPropertiesSet(), DisposableBean, destroy(), init-method, destroy-method"><meta name="twitter:title" content="Spring Bean Life Cycle - JournalDev"><meta name="twitter:site" content="@JournalDev"><meta name="twitter:image" content="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle.jpg"><meta name="twitter:creator" content="@JournalDev"><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="dns-prefetch" href="//s.w.org"><link rel="alternate" type="application/rss+xml" title="JournalDev » Feed" href="http://www.journaldev.com/feed"><link rel="alternate" type="application/rss+xml" title="JournalDev » Comments Feed" href="http://www.journaldev.com/comments/feed"><link rel="alternate" type="application/rss+xml" title="JournalDev » Spring Bean Life Cycle Comments Feed" href="http://www.journaldev.com/2637/spring-bean-life-cycle/feed"> <script type="text/javascript">window._wpemojiSettings={"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.journaldev.com\/wp-includes\/js\/wp-emoji-release.min.js"}};!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b===c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);</script> <style type="text/css">img.wp-smiley,img.emoji{display:inline !important;border:none !important;box-shadow:none !important;height:1em !important;width:1em !important;margin:0
+.07em !important;vertical-align:-0.1em !important;background:none !important;padding:0
+!important}</style><link rel="stylesheet" id="news-pro-theme-css" href="http://cdn.journaldev.com/wp-content/themes/news-pro/style.css" type="text/css" media="all"><link rel="stylesheet" id="dashicons-css" href="http://cdn.journaldev.com/wp-includes/css/dashicons.min.css" type="text/css" media="all"><link rel="stylesheet" id="thickbox-css" href="http://cdn.journaldev.com/wp-includes/js/thickbox/thickbox.css" type="text/css" media="all"><link rel="stylesheet" id="jcorgcr_css-css" href="http://cdn.journaldev.com/wp-content/plugins/jaspreetchahals-coupons-lite/css/jcorgcr.min.css" type="text/css" media="all"><link rel="stylesheet" id="google-fonts-css" href="//fonts.googleapis.com/css?family=Raleway%3A400%2C700%7CPathway+Gothic+One" type="text/css" media="all"><link rel="stylesheet" id="scroll-triggered-boxes-css" href="http://cdn.journaldev.com/wp-content/plugins/scroll-triggered-boxes/assets/css/styles.min.css" type="text/css" media="all"><link rel="stylesheet" id="forget-about-shortcode-buttons-css" href="http://cdn.journaldev.com/wp-content/plugins/forget-about-shortcode-buttons/public/css/button-styles.css" type="text/css" media="all"> <script type='text/javascript' src='http://cdn.journaldev.com/wp-includes/js/jquery/jquery.js'></script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-includes/js/jquery/jquery-migrate.min.js'></script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/top-bar/js/jquery.cookie.js'></script> <script type='text/javascript'>var tpbr_settings={"fixed":"fixed","message":"{Flash Sale} - Best Java Course at $10 Only (Original Price $195). Hurry, offer expires soon!","status":"inactive","yn_button":"button","color":"#B63233","button_text":"Check it Out Now","button_url":"http:\/\/click.linksynergy.com\/fs-bin\/click?id=CXSHbEvJ*Hk&subid=&offerid=323058.1&type=10&tmpid=14537&RD_PARM1=https%3A%2F%2Fwww.udemy.com%2Fjava-the-complete-java-developer-course%2F%3FcouponCode=ARC2202","close_image":null,"is_admin_bar":"no"};</script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/top-bar/js/tpbr_front.min.js'></script> <!--[if lt IE 9]> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/themes/genesis/lib/js/html5shiv.js'></script> <![endif]--> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/themes/news-pro/js/responsive-menu.js'></script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/simple-social-icons/svgxuse.js'></script> <link rel="https://api.w.org/" href="http://www.journaldev.com/wp-json/"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.journaldev.com/xmlrpc.php?rsd"><link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://cdn.journaldev.com/wp-includes/wlwmanifest.xml"><meta name="generator" content="WordPress 4.8"><link rel="shortlink" href="http://www.journaldev.com/?p=2637"><link rel="alternate" type="application/json+oembed" href="http://www.journaldev.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.journaldev.com%2F2637%2Fspring-bean-life-cycle"><link rel="alternate" type="text/xml+oembed" href="http://www.journaldev.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.journaldev.com%2F2637%2Fspring-bean-life-cycle&amp;format=xml"> <script language="JavaScript">jQuery(function(){jQuery('.wpdm-popup').click(function(){tb_show(jQuery(this).html(),this.href+'&modal=1&width=600&height=400');return false;});jQuery('.haspass').click(function(){var url=jQuery(this).attr('href');var id=jQuery(this).attr('rel');var password=jQuery('#pass_'+id).val();jQuery.post('http://www.journaldev.com/',{download:id,password:password},function(res){if(res=='error'){jQuery('#wpdm_file_'+id+' .perror').html('Wrong Password');setTimeout("jQuery('#wpdm_file_"+id+" .perror').html('');",3000);return false;}else{location.href='http://www.journaldev.com/?wpdmact=process&did='+res;}});return false;});})</script> <style type="text/css">.enews
+.screenread{height:1px;left:-1000em;overflow:hidden;position:absolute;top:-1000em;width:1px}</style><style>.kc105f{font-size:18px}.close-btn{position:absolute;right:5px;top:-15px;background:#333;border-radius:50%;height:25px;width:25px;text-align:center;cursor:pointer}.kc105f-hide{display:none}.kc105f-1{width:100%;background:#e84206;color:#fff;text-align:center;position:fixed;bottom:0px;padding:10px;z-index:100000}.kc105f-2{width:100%;height:100%;background:rgba(0, 0, 0, .95);z-index:100000;position:fixed;top:0;right:0}.kc105f-2 .kc105f-body,.kc105f-3 .kc105f-body{background:#fff;color:#666;text-align:center;position:fixed;margin:auto;top:200px;right:10%;width:80%;padding:20px;z-index:100001;border-radius:10px}.kc105f-2 .close-btn,.kc105f-3 .close-btn{background:#e84206;color:#fff}.kc105f-3 .kc105f-body{box-shadow:2px 2px 2px #333}</style> <script>(function(window){var KillAdBlock=function(options){this._options={checkOnLoad:false,resetOnEnd:false,loopCheckTime:50,loopMaxNumber:5,baitClass:'pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links',baitStyle:'width: 1px !important; height: 1px !important; position: absolute !important; left: -10000px !important; top: -1000px !important;',debug:false};this._var={version:'1.2.0',bait:null,checking:false,loop:null,loopNumber:0,event:{detected:[],notDetected:[]}};if(options!==undefined){this.setOption(options);}
+var self=this;var eventCallback=function(){setTimeout(function(){if(self._options.checkOnLoad===true){if(self._options.debug===true){self._log('onload->eventCallback','A check loading is launched');}
+if(self._var.bait===null){self._creatBait();}
+setTimeout(function(){self.check();},1);}},1);};if(window.addEventListener!==undefined){window.addEventListener('load',eventCallback,false);}else{window.attachEvent('onload',eventCallback);}};KillAdBlock.prototype._options=null;KillAdBlock.prototype._var=null;KillAdBlock.prototype._bait=null;KillAdBlock.prototype._log=function(method,message){console.log('[KillAdBlock]['+method+'] '+message);};KillAdBlock.prototype.setOption=function(options,value){if(value!==undefined){var key=options;options={};options[key]=value;}
+for(var option in options){this._options[option]=options[option];if(this._options.debug===true){this._log('setOption','The option "'+option+'" he was assigned to "'+options[option]+'"');}}
+return this;};KillAdBlock.prototype._creatBait=function(){var bait=document.createElement('div');bait.setAttribute('class',this._options.baitClass);bait.setAttribute('style',this._options.baitStyle);this._var.bait=window.document.body.appendChild(bait);this._var.bait.offsetParent;this._var.bait.offsetHeight;this._var.bait.offsetLeft;this._var.bait.offsetTop;this._var.bait.offsetWidth;this._var.bait.clientHeight;this._var.bait.clientWidth;if(this._options.debug===true){this._log('_creatBait','Bait has been created');}};KillAdBlock.prototype._destroyBait=function(){window.document.body.removeChild(this._var.bait);this._var.bait=null;if(this._options.debug===true){this._log('_destroyBait','Bait has been removed');}};KillAdBlock.prototype.check=function(loop){if(loop===undefined){loop=true;}
+if(this._options.debug===true){this._log('check','An audit was requested '+(loop===true?'with a':'without')+' loop');}
+if(this._var.checking===true){if(this._options.debug===true){this._log('check','A check was canceled because there is already an ongoing');}
+return false;}
+this._var.checking=true;if(this._var.bait===null){this._creatBait();}
+var self=this;this._var.loopNumber=0;if(loop===true){this._var.loop=setInterval(function(){self._checkBait(loop);},this._options.loopCheckTime);}
+setTimeout(function(){self._checkBait(loop);},1);if(this._options.debug===true){this._log('check','A check is in progress ...');}
+return true;};KillAdBlock.prototype._checkBait=function(loop){var detected=false;if(this._var.bait===null){this._creatBait();}
+if(window.document.body.getAttribute('abp')!==null||this._var.bait.offsetParent===null||this._var.bait.offsetHeight==0||this._var.bait.offsetLeft==0||this._var.bait.offsetTop==0||this._var.bait.offsetWidth==0||this._var.bait.clientHeight==0||this._var.bait.clientWidth==0){detected=true;}
+if(window.getComputedStyle!==undefined){var baitTemp=window.getComputedStyle(this._var.bait,null);if(baitTemp.getPropertyValue('display')=='none'||baitTemp.getPropertyValue('visibility')=='hidden'){detected=true;}}
+if(this._options.debug===true){this._log('_checkBait','A check ('+(this._var.loopNumber+1)+'/'+this._options.loopMaxNumber+' ~'+(1+this._var.loopNumber*this._options.loopCheckTime)+'ms) was conducted and detection is '+(detected===true?'positive':'negative'));}
+if(loop===true){this._var.loopNumber++;if(this._var.loopNumber>=this._options.loopMaxNumber){this._stopLoop();}}
+if(detected===true){this._stopLoop();this._destroyBait();this.emitEvent(true);if(loop===true){this._var.checking=false;}}else if(this._var.loop===null||loop===false){this._destroyBait();this.emitEvent(false);if(loop===true){this._var.checking=false;}}};KillAdBlock.prototype._stopLoop=function(detected){clearInterval(this._var.loop);this._var.loop=null;this._var.loopNumber=0;if(this._options.debug===true){this._log('_stopLoop','A loop has been stopped');}};KillAdBlock.prototype.emitEvent=function(detected){if(this._options.debug===true){this._log('emitEvent','An event with a '+(detected===true?'positive':'negative')+' detection was called');}
+var fns=this._var.event[(detected===true?'detected':'notDetected')];for(var i in fns){if(this._options.debug===true){this._log('emitEvent','Call function '+(parseInt(i)+1)+'/'+fns.length);}
+if(fns.hasOwnProperty(i)){fns[i]();}}
+if(this._options.resetOnEnd===true){this.clearEvent();}
+return this;};KillAdBlock.prototype.clearEvent=function(){this._var.event.detected=[];this._var.event.notDetected=[];if(this._options.debug===true){this._log('clearEvent','The event list has been cleared');}};KillAdBlock.prototype.on=function(detected,fn){this._var.event[(detected===true?'detected':'notDetected')].push(fn);if(this._options.debug===true){this._log('on','A type of event "'+(detected===true?'detected':'notDetected')+'" was added');}
+return this;};KillAdBlock.prototype.onDetected=function(fn){return this.on(true,fn);};KillAdBlock.prototype.onNotDetected=function(fn){return this.on(false,fn);};window.KillAdBlock=KillAdBlock;if(window.killAdBlock===undefined){window.killAdBlock=new KillAdBlock({checkOnLoad:true,resetOnEnd:true});}})(window);function show_message()
+{kill_adBlock_message_delay=kill_adBlock_message_delay*1000;kill_adBlock_close_automatically_delay=kill_adBlock_close_automatically_delay*1000;setTimeout(function(){jQuery('.kc105f').html(kill_adBlock_message);jQuery('.kc105f-container').fadeIn();},kill_adBlock_message_delay);if(kill_adBlock_close_automatically_delay>0&&kill_adBlock_close_automatically==1)
+{setTimeout(function(){jQuery('.close-btn').trigger('click');},kill_adBlock_close_automatically_delay);}}
+function adBlockNotDetected(){}
+jQuery(document).ready(function(){jQuery('.close-btn').click(function(){jQuery('.kc105f-container').fadeOut('kc105f-hide');});});var kill_adBlock_status=1;var kill_adBlock_message='We thrive to provide you the best content totally free. Advertisement is the only source of our income to run this site and paying our bills. Please whitelist our website or disable AdBlocker and reload to continue reading the top quality article for free.';var kill_adBlock_message_delay=3;var kill_adBlock_close_btn=0;var kill_adBlock_close_automatically=0;var kill_adBlock_close_automatically_delay=0;var kill_adBlock_message_type=2;function adBlockDetected(){show_message();}
+if(typeof killAdBlock==='undefined'){adBlockDetected();}else{killAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);}</script> <script data-cfasync="false" src="//load.sumome.com/" data-sumo-platform="wordpress" data-sumo-site-id="698353846a267a100ea055220d594fa90eff8892a405d778a1382db0c2b84c39" async></script> <link rel="icon" type="image/png" href="http://cdn.journaldev.com/fav.png"><link rel="pingback" href="http://www.journaldev.com/xmlrpc.php"> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-12171637-4','auto');ga('send','pageview');</script> <script type="text/javascript">window._mNHandle=window._mNHandle||{};window._mNHandle.queue=window._mNHandle.queue||[];medianet_versionId="121199";(function(){var sct=document.createElement("script"),sctHl=document.getElementsByTagName("script")[0],isSSL='https:'==document.location.protocol;sct.type="text/javascript";sct.src=(isSSL?'https:':'http:')+'//contextual.media.net/dmedianet.js?cid=8CUSP8IK6'+(isSSL?'&https=1':'')+'';sct.async="async";sctHl.parentNode.insertBefore(sct,sctHl);})();</script>  <style type="text/css">.site-title
+a{background:url(http://cdn.journaldev.com/wp-content/uploads/2014/05/cropped-Final-JD-Logo.png) no-repeat !important}</style><link rel="amphtml" href="http://www.journaldev.com/2637/spring-bean-life-cycle/amp"><style type="text/css" id="syntaxhighlighteranchor"></style><style type="text/css">.mctb-bar,.mctb-response,.mctb-close{background:#f7682c !important}.mctb-bar,.mctb-label,.mctb-close{color:#fff !important}.mctb-button{background:#096abf !important;border-color:#096abf !important}.mctb-email:focus{outline-color:#096abf !important}.mctb-button{color:#fff !important}</style><style type="text/css">.stb-4065{border-width:0px !important;@media ( max-width: 700px ){#stb-4065{display:none !important}}}</style><link rel="icon" href="http://cdn.journaldev.com/wp-content/uploads/2015/08/jd-site-img-150x150.png" sizes="32x32"><link rel="icon" href="http://cdn.journaldev.com/wp-content/uploads/2015/08/jd-site-img-268x268.png" sizes="192x192"><link rel="apple-touch-icon-precomposed" href="http://cdn.journaldev.com/wp-content/uploads/2015/08/jd-site-img-268x268.png"><meta name="msapplication-TileImage" content="http://cdn.journaldev.com/wp-content/uploads/2015/08/jd-site-img-300x300.png"><style>.ezoic-ad.medrectangle-4 { display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:420px;min-width:580px; }
+.ezoic-ad.large-leaderboard-1 { display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:250px;text-align:center !important; }
+.ezoic-ad.large-billboard-2 { display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:250px;text-align:center !important; }
+.ezoic-ad.box-3 { display:block !important;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:300px;text-align:center !important; }
+.ezoic-ad.banner-1 { display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:300px; }
+.ezoic-ad.box-1 { display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:300px;min-width:336px; }
+.ezoic-ad.medrectangle-3 { display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:420px;min-width:580px; }
+.ezoic-ad.box-2 { display:inline-block;float:right !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:728px; }
+.ezoic-ad.box-4 { display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:300px;min-width:336px; }
+.ezoic-ad{display:inline-block;}
+.ezoic-floating-bottom { display: none!important; }</style>
+<script data-cfasync="false" type="text/javascript">window.google_analytics_uacct = "UA-97838217-35";</script>
+<script data-cfasync="false" type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['e._setAccount', 'UA-97838217-35']);
+_gaq.push(['f._setAccount', 'UA-38339005-1']);
+_gaq.push(['e._setDomainName', 'journaldev.com']);
+_gaq.push(['f._setDomainName', 'journaldev.com']);
+_gaq.push(['e._setCustomVar',1,'template','pub_site',3]);
+_gaq.push(['e._setCustomVar',2,'t','134',3]);
+_gaq.push(['e._setCustomVar',3,'rid','0',2]);
+_gaq.push(['e._setCustomVar',4,'bra','mod6',3]);
+_gaq.push(['e._setAllowAnchor',true]);
+_gaq.push(['e._setSiteSpeedSampleRate', 10]);
+_gaq.push(['f._setCustomVar',1,'template','pub_site',3]);
+_gaq.push(['f._setCustomVar',2,'domain','journaldev.com',3]);
+_gaq.push(['f._setSiteSpeedSampleRate', 20]);
+_gaq.push(['e._trackPageview']);
+_gaq.push(['f._trackPageview']);
+
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">var ezouid = "1038073899";</script><base href="http://www.journaldev.com/2637/spring-bean-life-cycle"><script type='text/javascript'>
+var ezoTemplate = 'pub_site';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script><!-- START EZHEAD -->
+<script type='text/javascript'>
+var soc_app_id = '0';
+var did = 47402;
+var ezdomain = 'journaldev.com';
+var ezoicSearchable = 1;
+</script>
+<!--{jquery}-->
+<!-- END EZHEAD -->
+<script pagespeed_no_defer="" data-cfasync="false" type="text/javascript">
+        window.cookieconsent_options = {
+            "message":"We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners.",
+            "dismiss":"Got it!",
+            "learnMore":"See details",
+            "link":'/privacy.html',
+            "theme":"/ezoic/styles/dark-bottom.css",
+			"domain":"journaldev.com"
+        };
+    </script>
+<script pagespeed_no_defer="" data-cfasync="false" type="text/javascript" src="/ezoic/cookieconsent.min.js"></script>
+<script data-pagespeed-no-defer data-cfasync='false' type='text/javascript' style='display:none'>__ez.queue.addFile('__ezf_ezosuigeneris', '//g.ezoic.net/ezosuigeneris.js?i=4e0f5bea403ac70480b1e8b9505e2948', true, [], true, false, false, false);</script><script data-pagespeed-no-defer data-cfasync='false' type='text/javascript' style='display:none'>__ez.queue.addFile('__ezf_ezosuigenerisc', '//g.ezoic.net/ezosuigenerisc.js?i=6ae2b23840d0aceb806edb8f896f4313', true, [], true, false, false, false);</script></head><body class="post-template-default single single-post postid-2637 single-format-standard custom-header header-image content-sidebar" itemscope="" itemtype="https://schema.org/WebPage"><div class="site-container"><header class="site-header" itemscope="" itemtype="https://schema.org/WPHeader"><div class="wrap"><div class="title-area"><p class="site-title" itemprop="headline"><a href="http://www.journaldev.com/">JournalDev</a></p><p class="site-description" itemprop="description">Java, Java EE, Android, Web Development Tutorials</p></div><div class="widget-area header-widget-area"><section id="adswidget7-quick-adsense" class="widget �lambda_2"><div class="widget-wrap"><span id='ezoic-pub-ad-placeholder-100'></span><span style='display:none;float:right !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:728px;' class='ezoic-ad box-2 adtester-container adtester-container-100' data-ez-name='journaldev_com-box-2'><span id='div-gpt-ad-journaldev_com-box-2-0' ezaw='728' ezah='90' style='position:relative;z-index:0;display:none;' class='ezoic-ad'><!--script-placeholder--></span></span><script>var ezzns1 = {1.30:504709,1.50:504711,1.90:504715,2.20:504718,0.25:504696,0.30:504697,0.45:504700,4.50:504726,5.00:504727,0.10:504693,0.80:504704,2.40:504719,2.60:504720,1.70:504713,0.70:504703,0.90:504705,1.00:504706,1.10:504707,1.80:504714,2.80:504721,0.05:504692,0.35:504698,0.50:504701,3.00:504722,4.00:504725,0.20:504695,1.40:504710,1.60:504712,0.15:504694,0.60:504702,3.50:504724,0.40:504699,1.20:504708,2.00:504716,};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js" ></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="journaldev_com-box-2" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() { __ez.queue.addFunc('ReloadFromP_1100', 'IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP', 1100, false, ['banger.js'], false, false, false, true); };
+var ezoflbf_1 = function() { eval(ez_write_tag([[728,90],'journaldev_com-box-2','ezslot_7']));
+		};</script><script type="text/javascript">Criteo.DisplayAd({
+    zoneid: 504695, containerid: 'crt-1', passbackcode: ezoflbf_1
+});
+</script></div>
+<script type='text/javascript'>
+	var __ezfl_sss_1100 = function() {
+		setTimeout(function(){
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1100);
+			if (typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if (typeof ez_ad_units != undefined) {
+					for (i = 0; i < ez_ad_units.length; i++) {
+						if (ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.20);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+		}, 4000);
+	};
+	__ez.queue.addFunc('__ezfl_sss_1100', '__ezfl_sss_1100', null, false, ['banger.js'], false, false, false, true);
+</script><!--ezoicfl--></div></section></div></div></header><nav class="nav-primary" itemscope="" itemtype="https://schema.org/SiteNavigationElement"><div class="wrap"><ul id="menu-new-headermenu" class="menu genesis-nav-menu menu-primary"><li id="menu-item-7610" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7610"><a href="http://www.journaldev.com/java-tutorial-java-ee-tutorials" itemprop="url"><span itemprop="name">Java Tutorial</span></a></li><li id="menu-item-7611" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7611"><a href="#" itemprop="url"><span itemprop="name">#Index Posts</span></a><ul class="sub-menu"><li id="menu-item-7612" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7612"><a href="http://www.journaldev.com/7153/core-java-tutorial" itemprop="url"><span itemprop="name">Core Java Tutorial</span></a></li><li id="menu-item-7613" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7613"><a href="http://www.journaldev.com/1827/java-design-patterns-example-tutorial" itemprop="url"><span itemprop="name">Java Design Patterns</span></a></li><li id="menu-item-7614" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7614"><a href="http://www.journaldev.com/2114/servlet-jsp-tutorial" itemprop="url"><span itemprop="name">Servlet JSP Tutorial</span></a></li><li id="menu-item-7615" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7615"><a href="http://www.journaldev.com/2310/struts2-tutorial-with-example-projects" itemprop="url"><span itemprop="name">Struts 2 Tutorial</span></a></li><li id="menu-item-7616" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7616"><a href="http://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial" itemprop="url"><span itemprop="name">Spring Tutorial</span></a></li><li id="menu-item-7638" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7638"><a href="http://www.journaldev.com/7635/jsf-tutorial" itemprop="url"><span itemprop="name">JSF Tutorial</span></a></li><li id="menu-item-7620" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7620"><a href="http://www.journaldev.com/5516/primefaces-tutorial-with-example-projects" itemprop="url"><span itemprop="name">Primefaces Tutorial</span></a></li><li id="menu-item-7619" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7619"><a href="http://www.journaldev.com/2681/jdbc-tutorial" itemprop="url"><span itemprop="name">JDBC Tutorial</span></a></li><li id="menu-item-7617" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7617"><a href="http://www.journaldev.com/3793/hibernate-tutorial" itemprop="url"><span itemprop="name">Hibernate Tutorial</span></a></li><li id="menu-item-7618" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7618"><a href="http://www.journaldev.com/6672/mongodb-tutorial-installation-example-projects-integration-with-servlet-spring-jsf" itemprop="url"><span itemprop="name">MongoDB Tutorial</span></a></li></ul></li><li id="menu-item-7621" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7621"><a href="#" itemprop="url"><span itemprop="name">#Interview Questions</span></a><ul class="sub-menu"><li id="menu-item-7622" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7622"><a href="http://www.journaldev.com/java-interview-questions" itemprop="url"><span itemprop="name">Java Interview Questions</span></a></li><li id="menu-item-7623" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7623"><a href="http://www.journaldev.com/2529/jdbc-interview-questions-and-answers" itemprop="url"><span itemprop="name">JDBC Interview Questions</span></a></li><li id="menu-item-7624" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7624"><a href="http://www.journaldev.com/2015/servlet-interview-questions-and-answers" itemprop="url"><span itemprop="name">Servlet Interview Questions</span></a></li><li id="menu-item-7625" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7625"><a href="http://www.journaldev.com/2110/jsp-interview-questions-and-answers" itemprop="url"><span itemprop="name">JSP Interview Questions</span></a></li><li id="menu-item-7626" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7626"><a href="http://www.journaldev.com/2354/struts2-interview-questions-and-answers" itemprop="url"><span itemprop="name">Struts2 Interview Questions</span></a></li><li id="menu-item-7627" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7627"><a href="http://www.journaldev.com/2696/spring-interview-questions-and-answers" itemprop="url"><span itemprop="name">Spring Interview Questions</span></a></li><li id="menu-item-7628" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7628"><a href="http://www.journaldev.com/3633/hibernate-interview-questions-and-answers" itemprop="url"><span itemprop="name">Hibernate Interview Questions</span></a></li><li id="menu-item-7629" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7629"><a href="http://www.journaldev.com/7261/jsf-interview-questions-and-answers" itemprop="url"><span itemprop="name">JSF Interview Questions</span></a></li></ul></li><li id="menu-item-7759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7759"><a href="http://www.journaldev.com/resources" itemprop="url"><span itemprop="name">Resources</span></a></li><li id="menu-item-10352" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10352"><a href="https://store.journaldev.com" itemprop="url"><span itemprop="name">Store</span></a></li></ul></div></nav><div class="site-inner"><div class="content-sidebar-wrap"><main class="content"><div class="breadcrumb" itemscope="" itemtype="https://schema.org/BreadcrumbList"><span xmlns:v="http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb"><a href="http://www.journaldev.com/" rel="v:url" property="v:title">Home</a> » <span rel="v:child" typeof="v:Breadcrumb"><a href="http://www.journaldev.com/dev/spring" rel="v:url" property="v:title">Spring</a> » <span class="breadcrumb_last">Spring Bean Life Cycle</span></span></span></span></div><article class="post-2637 post type-post status-publish format-standard category-spring entry" itemscope="" itemtype="https://schema.org/CreativeWork"><header class="entry-header"><h1 class="entry-title" itemprop="headline">Spring Bean Life Cycle</h1><p class="entry-meta"><time class="entry-modified-time" itemprop="dateModified" datetime="2016-07-06T12:04:22+00:00">July 6, 2016</time> by <span class="entry-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><a href="http://www.journaldev.com/author/pankaj" class="entry-author-link" itemprop="url" rel="author"><span class="entry-author-name" itemprop="name">Pankaj</span></a></span> <span class="entry-comments-link"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comments">22 Comments</a></span></p></header><div class="entry-content" itemprop="text"><div style="float:none;margin:10px 0 10px 0;text-align:center;"><span id='ezoic-pub-ad-placeholder-101'></span><span style='display:none !important;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:300px;text-align:center !important;' class='ezoic-ad box-3 adtester-container adtester-container-101' data-ez-name='journaldev_com-box-3'><span id='div-gpt-ad-journaldev_com-box-3-0' ezaw='300' ezah='250' style='position:relative;z-index:0;display:none;' class='ezoic-ad'><!--script-placeholder--></span></span><script>var ezzns2 = {5.00:504669,0.90:504560,1.40:504651,0.05:504099,0.45:504555,0.50:504556,0.80:504559,0.30:504551,0.40:504554,2.80:504661,4.00:504666,2.40:504659,3.00:504664,3.50:504665,1.10:504648,1.60:504653,1.80:504655,1.90:504656,0.15:504144,0.20:504145,0.35:504552,0.70:504558,4.50:504667,0.25:504548,2.60:504660,1.00:504647,1.50:504652,1.70:504654,2.00:504657,2.20:504658,0.10:504141,0.60:504557,1.20:504649,1.30:504650,};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js" ></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="journaldev_com-box-3" id="crt-2">
+<script type="text/javascript">
+var ezoflbf_2_2 = function() { __ez.queue.addFunc('ReloadFromP_1101', 'IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP', 1101, false, ['banger.js'], false, false, false, true); };
+var ezoflbf_2 = function() { eval(ez_write_tag([[300,250],'journaldev_com-box-3','ezslot_3']));
+		};</script><script type="text/javascript">Criteo.DisplayAd({
+    zoneid: 504145, containerid: 'crt-2', passbackcode: ezoflbf_2
+});
+</script></div>
+<script type='text/javascript'>
+	var __ezfl_sss_1101 = function() {
+		setTimeout(function(){
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1101);
+			if (typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if (typeof ez_ad_units != undefined) {
+					for (i = 0; i < ez_ad_units.length; i++) {
+						if (ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.20);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+		}, 4000);
+	};
+	__ez.queue.addFunc('__ezfl_sss_1101', '__ezfl_sss_1101', null, false, ['banger.js'], false, false, false, true);
+</script><!--ezoicfl--></div><p>Today we will look into Spring Bean Life Cycle. <a href="http://www.journaldev.com/2461/spring-ioc-bean-example-tutorial" title="Spring IoC Container and Spring Bean Example Tutorial">Spring Beans</a> are the most important part of any Spring application. Spring <strong>ApplicationContext</strong> is responsible to initialize the Spring Beans defined in spring bean configuration file.</p><h2>Spring Bean Life Cycle</h2><p><a href="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle.jpg"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle.jpg" alt="spring bean life cycle" width="560" height="315" class="lazy lazy-hidden aligncenter size-full wp-image-10919" data-lazy-srcset="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle.jpg 560w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle-450x253.jpg 450w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle-150x84.jpg 150w" sizes="(max-width: 560px) 100vw, 560px"><noscript><img
+src="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle.jpg" alt="spring bean life cycle" width="560" height="315" class="aligncenter size-full wp-image-10919" srcset="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle.jpg 560w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle-450x253.jpg 450w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle-150x84.jpg 150w" sizes="(max-width: 560px) 100vw, 560px" /></noscript></a><br>
+Spring Context is also responsible for <span id='ezoic-pub-ad-placeholder-'null" class="ezoic-adpicker-ad"></span><!-- placeholder  blocked.  Reason : inactive --><span id='ezoic-pub-ad-placeholder-110' class="ezoic-adpicker-ad"></span><a href="http://www.journaldev.com/2410/spring-dependency-injection" title="Spring Dependency Injection Example with Annotations and XML Configuration">injection dependencies</a> in the bean, either through setter or constructor methods or by <a href="http://www.journaldev.com/2623/spring-autowired-annotation" title="Spring bean autowire by name, type, constructor, Autowired and Qualifier annotations example">spring autowiring</a>.</p><p>Sometimes we want to initialize resources in the bean classes, for example creating database connections or validating third party services at the time of initialization before any client request. <a href="http://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial">Spring framework</a> provide different ways through which we can provide post-initialization and pre-destroy methods in a spring bean life cycle.</p><div style="float:none;margin:10px 0 10px 0;text-align:center;"><span id='ezoic-pub-ad-placeholder-104'></span><span style='display:none;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:420px;min-width:580px;' class='ezoic-ad medrectangle-3 adtester-container adtester-container-104' data-ez-name='journaldev_com-medrectangle-3'><span id='div-gpt-ad-journaldev_com-medrectangle-3-0' ezaw='580' ezah='400' style='position:relative;z-index:0;display:none;' class='ezoic-ad'><!--script-placeholder--></span></span><script>var ezzns21 = {};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js" ></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="journaldev_com-medrectangle-3" id="crt-21">
+<script type="text/javascript">
+var ezoflbf_2_21 = function() { __ez.queue.addFunc('ReloadFromP_1104', 'IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP', 1104, false, ['banger.js'], false, false, false, true); };
+var ezoflbf_21 = function() { eval(ez_write_tag([[580,400],'journaldev_com-medrectangle-3','ezslot_6']));
+		};</script><script type="text/javascript">ezoflbf_21();
+</script></div>
+<script type='text/javascript'>
+	var __ezfl_sss_1104 = function() {
+		setTimeout(function(){
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1104);
+			if (typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if (typeof ez_ad_units != undefined) {
+					for (i = 0; i < ez_ad_units.length; i++) {
+						if (ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.10);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+		}, 4000);
+	};
+	__ez.queue.addFunc('__ezfl_sss_1104', '__ezfl_sss_1104', null, false, ['banger.js'], false, false, false, true);
+</script><!--ezoicfl--></div><ol><li>By implementing <strong>InitializingBean</strong> and <strong>DisposableBean</strong> interfaces – Both these interfaces declare a single method where we can initialize/close resources in the bean. For post-initialization, we can implement <code>InitializingBean</code> interface and provide implementation of <code>afterPropertiesSet()</code> method. For pre-destroy, we can implement <code>DisposableBean</code> interface and provide implementation of <code>destroy()</code> method. These methods are the callback methods and similar to servlet listener implementations.<p>This approach is simple to use but it’s not recommended because it will create tight coupling with the Spring framework in our bean implementations.</p></li><li>Providing <strong>init-method</strong> and <strong>destroy-method</strong> attribute values for the bean in the spring bean configuration file. This is the recommended approach because of no direct dependency to spring framework and we can create our own methods.</li></ol><p>Note that both <em>post-init</em> and <em>pre-destroy</em> methods should have no arguments but they can throw Exceptions. We would also require to get the bean instance from the spring application context for these methods invocation.</p><h3>Spring Bean Life Cycle – @PostConstruct, @PreDestroy Annotations</h3><p>Spring framework also support <code>@PostConstruct</code> and <code>@PreDestroy</code> annotations for defining post-init and pre-destroy methods. These annotations are part of <code>javax.annotation</code> package. However for these annotations to work, we need to configure our spring application to look for annotations. We can do this either by defining bean of type <code>org.springframework.context.annotation.CommonAnnotationBeanPostProcessor</code> or by <code>context:annotation-config</code> element in spring bean configuration file.</p><p>Let’s write a simple Spring application to showcase the use of above configurations for spring bean life cycle management. Create a Spring Maven project in Spring Tool Suite, final project will look like below image.</p><div style="float:none;margin:10px 0 10px 0;text-align:center;"><span id='ezoic-pub-ad-placeholder-105'></span><span style='display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:420px;min-width:580px;' class='ezoic-ad medrectangle-4 adtester-container adtester-container-105' data-ez-name='journaldev_com-medrectangle-4'><span id='div-gpt-ad-journaldev_com-medrectangle-4-0' ezaw='580' ezah='400' style='position:relative;z-index:0;display:inline-block;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[580,400],'journaldev_com-medrectangle-4','ezslot_0']));</script></span></span></div><p><a href="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle-project.png"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle-project-411x450.png" alt="spring bean life cycle example methods" width="411" height="450" class="lazy lazy-hidden aligncenter size-medium wp-image-2640" data-lazy-srcset="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle-project-411x450.png 411w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle-project.png 624w" sizes="(max-width: 411px) 100vw, 411px"><noscript><img
+src="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle-project-411x450.png" alt="spring bean life cycle example methods" width="411" height="450" class="aligncenter size-medium wp-image-2640" srcset="http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle-project-411x450.png 411w, http://cdn.journaldev.com/wp-content/uploads/2014/04/spring-bean-life-cycle-project.png 624w" sizes="(max-width: 411px) 100vw, 411px" /></noscript></a></p><h3>Spring Bean Life Cycle – Maven Dependencies</h3><p>We don’t need to include any extra dependencies for configuring spring bean life cycle methods, our pom.xml file is like any other standard spring maven project.</p><pre class="prettyprint">&lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;
+  &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+  &lt;groupId&gt;org.springframework.samples&lt;/groupId&gt;
+  &lt;artifactId&gt;SpringBeanLifeCycle&lt;/artifactId&gt;
+  &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+  
+  &lt;properties&gt;
+
+		&lt;!-- Generic properties --&gt;
+		&lt;java.version&gt;1.7&lt;/java.version&gt;
+		&lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
+		&lt;project.reporting.outputEncoding&gt;UTF-8&lt;/project.reporting.outputEncoding&gt;
+
+		&lt;!-- Spring --&gt;
+		&lt;spring-framework.version&gt;4.0.2.RELEASE&lt;/spring-framework.version&gt;
+
+		&lt;!-- Logging --&gt;
+		&lt;logback.version&gt;1.0.13&lt;/logback.version&gt;
+		&lt;slf4j.version&gt;1.7.5&lt;/slf4j.version&gt;
+
+	&lt;/properties&gt;
+	
+	&lt;dependencies&gt;
+		&lt;!-- Spring and Transactions --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
+			&lt;artifactId&gt;spring-context&lt;/artifactId&gt;
+			&lt;version&gt;${spring-framework.version}&lt;/version&gt;
+		&lt;/dependency&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
+			&lt;artifactId&gt;spring-tx&lt;/artifactId&gt;
+			&lt;version&gt;${spring-framework.version}&lt;/version&gt;
+		&lt;/dependency&gt;
+
+		&lt;!-- Logging with SLF4J &amp; LogBack --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.slf4j&lt;/groupId&gt;
+			&lt;artifactId&gt;slf4j-api&lt;/artifactId&gt;
+			&lt;version&gt;${slf4j.version}&lt;/version&gt;
+			&lt;scope&gt;compile&lt;/scope&gt;
+		&lt;/dependency&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;ch.qos.logback&lt;/groupId&gt;
+			&lt;artifactId&gt;logback-classic&lt;/artifactId&gt;
+			&lt;version&gt;${logback.version}&lt;/version&gt;
+			&lt;scope&gt;runtime&lt;/scope&gt;
+		&lt;/dependency&gt;
+
+	&lt;/dependencies&gt;	
+&lt;/project&gt;
+</pre><h3>Spring Bean Life Cycle – Model Class</h3><p>Let’s create a simple java bean class that will be used in service classes.</p><div style="float:none;margin:10px 0 10px 0;text-align:center;"><span id='ezoic-pub-ad-placeholder-106'></span><span style='display:none;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:300px;min-width:336px;' class='ezoic-ad box-4 adtester-container adtester-container-106' data-ez-name='journaldev_com-box-4'><span id='div-gpt-ad-journaldev_com-box-4-0' ezaw='336' ezah='280' style='position:relative;z-index:0;display:none;' class='ezoic-ad'><!--script-placeholder--></span></span><script>var ezzns3 = {0.05:504809,0.30:504819,0.60:504827,3.00:504857,5.00:504865,0.15:504814,0.25:504817,1.50:504840,1.70:504842,3.50:504859,0.90:504830,1.80:504844,2.80:504855,0.20:504815,1.10:504833,1.40:504838,2.40:504851,4.00:504861,4.50:504863,0.45:504824,0.50:504826,0.70:504828,1.30:504836,1.60:504841,1.90:504846,0.35:504821,1.00:504831,1.20:504835,2.20:504850,0.10:504811,0.40:504823,0.80:504829,2.00:504848,2.60:504853,};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js" ></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="journaldev_com-box-4" id="crt-3">
+<script type="text/javascript">
+var ezoflbf_2_3 = function() { __ez.queue.addFunc('ReloadFromP_1106', 'IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP', 1106, false, ['banger.js'], false, false, false, true); };
+var ezoflbf_3 = function() { eval(ez_write_tag([[336,280],'journaldev_com-box-4','ezslot_8']));
+		};</script><script type="text/javascript">Criteo.DisplayAd({
+    zoneid: 504819, containerid: 'crt-3', passbackcode: ezoflbf_3
+});
+</script></div>
+<script type='text/javascript'>
+	var __ezfl_sss_1106 = function() {
+		setTimeout(function(){
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1106);
+			if (typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if (typeof ez_ad_units != undefined) {
+					for (i = 0; i < ez_ad_units.length; i++) {
+						if (ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.30);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+		}, 4000);
+	};
+	__ez.queue.addFunc('__ezfl_sss_1106', '__ezfl_sss_1106', null, false, ['banger.js'], false, false, false, true);
+</script><!--ezoicfl--></div><pre class="prettyprint">package com.journaldev.spring.bean;
+
+public class Employee {
+
+	private String name;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+}
+</pre><h3>Spring Bean Life Cycle – InitializingBean, DisposableBean</h3><p>Let’s create a service class where we will implement both the interfaces for post-init and pre-destroy methods.</p><pre class="prettyprint">package com.journaldev.spring.service;
+
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
+import com.journaldev.spring.bean.Employee;
+
+public class EmployeeService implements InitializingBean, DisposableBean{
+
+	private Employee employee;
+
+	public Employee getEmployee() {
+		return employee;
+	}
+
+	public void setEmployee(Employee employee) {
+		this.employee = employee;
+	}
+	
+	public EmployeeService(){
+		System.out.println("EmployeeService no-args constructor called");
+	}
+
+	@Override
+	public void destroy() throws Exception {
+		System.out.println("EmployeeService Closing resources");
+	}
+
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		System.out.println("EmployeeService initializing to dummy value");
+		if(employee.getName() == null){
+			employee.setName("Pankaj");
+		}
+	}
+}
+</pre><h3>Spring Bean Life Cycle – Custom post-init, pre-destroy</h3><p>Since we don’t want our services to have direct spring framework dependency, let’s create another form of Employee Service class where we will have post-init and pre-destroy spring life cycle methods and we will configure them in the spring bean configuration file.</p><pre class="prettyprint">package com.journaldev.spring.service;
+
+import com.journaldev.spring.bean.Employee;
+
+public class MyEmployeeService{
+
+	private Employee employee;
+
+	public Employee getEmployee() {
+		return employee;
+	}
+
+	public void setEmployee(Employee employee) {
+		this.employee = employee;
+	}
+	
+	public MyEmployeeService(){
+		System.out.println("MyEmployeeService no-args constructor called");
+	}
+
+	//pre-destroy method
+	public void destroy() throws Exception {
+		System.out.println("MyEmployeeService Closing resources");
+	}
+
+	//post-init method
+	public void init() throws Exception {
+		System.out.println("MyEmployeeService initializing to dummy value");
+		if(employee.getName() == null){
+			employee.setName("Pankaj");
+		}
+	}
+}
+</pre><p>We will look into the spring bean configuration file in a bit. Before that let’s create another service class that will use @PostConstruct and @PreDestroy annotations.</p><h3>Spring Bean Life Cycle – @PostConstruct, @PreDestroy</h3><p>Below is a simple class that will be configured as spring bean and for post-init and pre-destroy methods, we are using @PostConstruct and @PreDestroy annotations.</p><pre class="prettyprint">package com.journaldev.spring.service;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+public class MyService {
+
+	@PostConstruct
+	public void init(){
+		System.out.println("MyService init method called");
+	}
+	
+	public MyService(){
+		System.out.println("MyService no-args constructor called");
+	}
+	
+	@PreDestroy
+	public void destory(){
+		System.out.println("MyService destroy method called");
+	}
+}
+</pre><h3>Spring Bean Life Cycle – Configuration File</h3><p>Let’s see how we will configure our beans in spring context file.</p><pre class="prettyprint">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"&gt;
+
+&lt;!-- Not initializing employee name variable--&gt;
+&lt;bean name="employee" class="com.journaldev.spring.bean.Employee" /&gt;
+
+&lt;bean name="employeeService" class="com.journaldev.spring.service.EmployeeService"&gt;
+	&lt;property name="employee" ref="employee"&gt;&lt;/property&gt;
+&lt;/bean&gt;
+
+&lt;bean name="myEmployeeService" class="com.journaldev.spring.service.MyEmployeeService"
+		init-method="init" destroy-method="destroy"&gt;
+	&lt;property name="employee" ref="employee"&gt;&lt;/property&gt;
+&lt;/bean&gt;
+
+&lt;!-- initializing CommonAnnotationBeanPostProcessor is same as context:annotation-config --&gt;
+&lt;bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" /&gt;
+&lt;bean name="myService" class="com.journaldev.spring.service.MyService" /&gt;
+&lt;/beans&gt;
+</pre><p>Notice that I am not initializing employee name in it’s bean definition. Since EmployeeService is using interfaces, we don’t need any special configuration here.</p><div style="float:none;margin:10px 0 10px 0;text-align:center;"><span id='ezoic-pub-ad-placeholder-107'></span><span style='display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:300px;' class='ezoic-ad banner-1 adtester-container adtester-container-107' data-ez-name='journaldev_com-banner-1'><span id='div-gpt-ad-journaldev_com-banner-1-0' ezaw='300' ezah='250' style='position:relative;z-index:0;display:inline-block;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[300,250],'journaldev_com-banner-1','ezslot_4']));</script></span></span></div><p>For MyEmployeeService bean, we are using init-method and destroy-method attributes to let spring framework know our custom methods to execute.</p><p>MyService bean configuration doesn’t have anything special, but as you can see that I am enabling annotation based configuration for this.</p><p>Our application is ready, let’s write a test program to see how different methods get executed.</p><h3>Spring Bean Life Cycle – Test Program</h3><pre class="prettyprint">package com.journaldev.spring.main;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.journaldev.spring.service.EmployeeService;
+import com.journaldev.spring.service.MyEmployeeService;
+
+public class SpringMain {
+
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("spring.xml");
+
+		System.out.println("Spring Context initialized");
+		
+		//MyEmployeeService service = ctx.getBean("myEmployeeService", MyEmployeeService.class);
+		EmployeeService service = ctx.getBean("employeeService", EmployeeService.class);
+
+		System.out.println("Bean retrieved from Spring Context");
+		
+		System.out.println("Employee Name="+service.getEmployee().getName());
+		
+		ctx.close();
+		System.out.println("Spring Context Closed");
+	}
+
+}
+</pre><p>When we run above test program, we get below output.</p><pre class="prettyprint">Apr 01, 2014 10:50:50 PM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContex<a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="681c280b590a510a585b">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script>: startup date [Tue Apr 01 22:50:50 PDT 2014]; root of context hierarchy
+Apr 01, 2014 10:50:50 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [spring.xml]
+EmployeeService no-args constructor called
+EmployeeService initializing to dummy value
+MyEmployeeService no-args constructor called
+MyEmployeeService initializing to dummy value
+MyService no-args constructor called
+MyService init method called
+Spring Context initialized
+Bean retrieved from Spring Context
+Employee Name=Pankaj
+Apr 01, 2014 10:50:50 PM org.springframework.context.support.ClassPathXmlApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContex<a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="b1c5f1d280d388d38182">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script>: startup date [Tue Apr 01 22:50:50 PDT 2014]; root of context hierarchy
+MyService destroy method called
+MyEmployeeService Closing resources
+EmployeeService Closing resources
+Spring Context Closed
+</pre><p><strong>Spring Bean Life Cycle Important Points</strong>:</p><ul><li>From the console output it’s clear that Spring Context is first using no-args constructor to initialize the bean object and then calling the post-init method.</li><li>The order of bean initialization is same as it’s defined in the spring bean configuration file.</li><li>The context is returned only when all the spring beans are initialized properly with post-init method executions.</li><li>Employee name is printed as “Pankaj” because it was initialized in the post-init method.</li><li>When context is getting closed, beans are destroyed in the reverse order in which they were initialized i.e in LIFO (Last-In-First-Out) order.</li></ul><p>You can uncomment the code to get bean of type <code>MyEmployeeService</code> and confirm that output will be similar and follow all the points mentioned above.</p><h2>Spring Aware Interfaces</h2><p>Sometimes we need Spring Framework objects in our beans to perform some operations, for example reading ServletConfig and ServletContext parameters or to know the bean definitions loaded by the ApplicationContext. That’s why spring framework provides a bunch of *Aware interfaces that we can implement in our bean classes.</p><p><code>org.springframework.beans.factory.Aware</code> is the root marker interface for all these Aware interfaces. All of the *Aware interfaces are sub-interfaces of Aware and declare a single setter method to be implemented by the bean. Then spring context uses setter-based dependency injection to inject the corresponding objects in the bean and make it available for our use.</p><p>Spring Aware interfaces are similar to <a href="http://www.journaldev.com/1945/servletcontextlistener-servlet-listener-example" title="Servlet Listener Example – ServletContextListener, HttpSessionListener and ServletRequestListener">servlet listeners</a> with callback methods and implementing <a href="http://www.journaldev.com/1739/observer-design-pattern-in-java" title="Observer Design Pattern in Java – Example Tutorial">observer design pattern</a>.</p><p>Some of the important Aware interfaces are:</p><ul><li><strong>ApplicationContextAware</strong> – to inject ApplicationContext object, example usage is to get the array of bean definition names.</li><li><strong>BeanFactoryAware</strong> – to inject BeanFactory object, example usage is to check scope of a bean.</li><li><strong>BeanNameAware</strong> – to know the bean name defined in the configuration file.</li><li><strong>ResourceLoaderAware</strong> – to inject ResourceLoader object, example usage is to get the input stream for a file in the classpath.</li><li><strong>ServletContextAware</strong> – to inject ServletContext object in MVC application, example usage is to read context parameters and attributes.</li><li><strong>ServletConfigAware</strong> – to inject ServletConfig object in MVC application, example usage is to get servlet config parameters.</li></ul><p>Let’s see these Aware interfaces usage in action by implementing few of them in a class that we will configure as spring bean.</p><pre class="prettyprint">package com.journaldev.spring.service;
+
+import java.util.Arrays;
+
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanClassLoaderAware;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.BeanFactoryAware;
+import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.context.ApplicationEventPublisherAware;
+import org.springframework.context.EnvironmentAware;
+import org.springframework.context.ResourceLoaderAware;
+import org.springframework.context.annotation.ImportAware;
+import org.springframework.core.env.Environment;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
+import org.springframework.core.type.AnnotationMetadata;
+
+public class MyAwareService implements ApplicationContextAware,
+		ApplicationEventPublisherAware, BeanClassLoaderAware, BeanFactoryAware,
+		BeanNameAware, EnvironmentAware, ImportAware, ResourceLoaderAware {
+
+	@Override
+	public void setApplicationContext(ApplicationContext ctx)
+			throws BeansException {
+		System.out.println("setApplicationContext called");
+		System.out.println("setApplicationContext:: Bean Definition Names="
+				+ Arrays.toString(ctx.getBeanDefinitionNames()));
+	}
+
+	@Override
+	public void setBeanName(String beanName) {
+		System.out.println("setBeanName called");
+		System.out.println("setBeanName:: Bean Name defined in context="
+				+ beanName);
+	}
+
+	@Override
+	public void setBeanClassLoader(ClassLoader classLoader) {
+		System.out.println("setBeanClassLoader called");
+		System.out.println("setBeanClassLoader:: ClassLoader Name="
+				+ classLoader.getClass().getName());
+	}
+
+	@Override
+	public void setResourceLoader(ResourceLoader resourceLoader) {
+		System.out.println("setResourceLoader called");
+		Resource resource = resourceLoader.getResource("classpath:spring.xml");
+		System.out.println("setResourceLoader:: Resource File Name="
+				+ resource.getFilename());
+	}
+
+	@Override
+	public void setImportMetadata(AnnotationMetadata annotationMetadata) {
+		System.out.println("setImportMetadata called");
+	}
+
+	@Override
+	public void setEnvironment(Environment env) {
+		System.out.println("setEnvironment called");
+	}
+
+	@Override
+	public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+		System.out.println("setBeanFactory called");
+		System.out.println("setBeanFactory:: employee bean <a href="http://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples">singleton</a>="
+				+ beanFactory.isSingleton("employee"));
+	}
+
+	@Override
+	public void setApplicationEventPublisher(
+			ApplicationEventPublisher applicationEventPublisher) {
+		System.out.println("setApplicationEventPublisher called");
+	}
+
+}
+</pre><h3>Spring *Aware Example Configuration File</h3><p>Very simple spring bean configuration file.</p><pre class="prettyprint">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"&gt;
+
+&lt;bean name="employee" class="com.journaldev.spring.bean.Employee" /&gt;
+
+&lt;bean name="myAwareService" class="com.journaldev.spring.service.MyAwareService" /&gt;
+
+&lt;/beans&gt;
+</pre><h3>Spring *Aware Test Program</h3><pre class="prettyprint">package com.journaldev.spring.main;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.journaldev.spring.service.MyAwareService;
+
+public class SpringAwareMain {
+
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("spring-aware.xml");
+
+		ctx.getBean("myAwareService", MyAwareService.class);
+		
+		ctx.close();
+	}
+
+}
+</pre><p>Now when we execute above class, we get following output.</p><pre class="prettyprint">Apr 01, 2014 11:27:05 PM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContex<a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="d8ac98eee8b9eabeecebed">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script>: startup date [Tue Apr 01 23:27:05 PDT 2014]; root of context hierarchy
+Apr 01, 2014 11:27:05 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [spring-aware.xml]
+setBeanName called
+setBeanName:: Bean Name defined in context=myAwareService
+setBeanClassLoader called
+setBeanClassLoader:: ClassLoader Name=sun.misc.Launcher$AppClassLoader
+setBeanFactory called
+setBeanFactory:: employee bean singleton=true
+setEnvironment called
+setResourceLoader called
+setResourceLoader:: Resource File Name=spring.xml
+setApplicationEventPublisher called
+setApplicationContext called
+setApplicationContext:: Bean Definition Names=[employee, myAwareService]
+Apr 01, 2014 11:27:05 PM org.springframework.context.support.ClassPathXmlApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContex<a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="90e4d0a6a0f1a2f6a4a3a5">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script>: startup date [Tue Apr 01 23:27:05 PDT 2014]; root of context hierarchy
+</pre><p>Console output of the test program is simple to understand, I won’t go into much detail about that.</p><p>That’s all for the Spring Bean Life Cycle methods and injecting framework specific objects into the spring beans. Please download sample project from below link and analyze it to learn more about them.</p><div id="wpdm_file_14" class="wpdm_file wpdm-only-button"><div class="cont"><div class="btn_outer"><div class="btn_outer_c" style="background-image: url(&quot;http://cdn.journaldev.com/wp-content/plugins/download-manager/icon/system-log-out.png&quot;);"><a class="btn_left  has-counter" rel="14" title="Spring Bean Lifycycle Project" href="http://www.journaldev.com/?wpdmact=process&amp;did=MTQuaG90bGluaw==">Download Spring Bean Lifycycle Project</a><span class="btn_right counter">2623 downloads</span></div></div><div class="clear"></div></div></div><div style="font-size:0px;height:0px;line-height:0px;margin:0;padding:0;clear:both"></div></div><footer class="entry-footer"><p class="entry-meta"><span class="entry-categories">Filed Under: <a href="http://www.journaldev.com/dev/spring" rel="category tag">Spring</a></span></p></footer></article><section class="author-box" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><h4 class="author-box-title">About <span itemprop="name">Pankaj</span></h4><div class="author-box-content" itemprop="description"><p>If you have come this far, it means that you liked what you are reading. Why not reach little more and connect with me directly on <a href="https://plus.google.com/118104420597648001532/posts?rel=author"><strong>Google Plus</strong></a>, <a href="https://www.facebook.com/journaldev"><strong>Facebook</strong></a> or <a href="https://twitter.com/JournalDev"><strong>Twitter</strong></a>. I would love to hear your thoughts and opinions on my articles directly.</p><p>Recently I started creating video tutorials too, so do check out my videos on <a href="https://www.youtube.com/user/JournalDev"><strong>Youtube</strong></a>.</p></div></section><div class="adjacent-entry-pagination pagination"><div class="pagination-previous alignleft"><a href="http://www.journaldev.com/2623/spring-autowired-annotation" rel="prev">« Spring @Autowired Annotation</a></div><div class="pagination-next alignright"><a href="http://www.journaldev.com/2651/spring-mvc-exception-handling-controlleradvice-exceptionhandler-handlerexceptionresolver" rel="next">Spring MVC Exception Handling – @ControllerAdvice, @ExceptionHandler, HandlerExceptionResolver »</a></div></div><div class="entry-comments" id="comments"><h3>Comments</h3><ol class="comment-list"><li class="comment even thread-even depth-1" id="comment-38255">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">Selva</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2017-05-27T17:28:50+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-38255" class="comment-time-link" itemprop="url">May 27, 2017 at 5:28 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Great article !</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-38255" onclick="return addComment.moveForm( &quot;comment-38255&quot;, &quot;38255&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to Selva">Reply</a></div>
+</article></li><li class="comment odd alt thread-odd thread-alt depth-1" id="comment-36736">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">kanchan tiwari</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2016-10-31T09:51:47+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-36736" class="comment-time-link" itemprop="url">October 31, 2016 at 9:51 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Great explanation !!! thanks for the guide..</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-36736" onclick="return addComment.moveForm( &quot;comment-36736&quot;, &quot;36736&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to kanchan tiwari">Reply</a></div>
+</article></li><li class="comment even thread-even depth-1" id="comment-35644">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">Mengying Ye</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2016-07-11T04:15:46+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-35644" class="comment-time-link" itemprop="url">July 11, 2016 at 4:15 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Thanks for your post, it’s really great ,could I translate it into chinese?</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-35644" onclick="return addComment.moveForm( &quot;comment-35644&quot;, &quot;35644&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to Mengying Ye">Reply</a></div>
+</article></li><li class="comment odd alt thread-odd thread-alt depth-1" id="comment-35037">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">shripad</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2016-06-09T00:20:34+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-35037" class="comment-time-link" itemprop="url">June 9, 2016 at 12:20 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Nice article…and thanks for such a nice description !!! 🙂</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-35037" onclick="return addComment.moveForm( &quot;comment-35037&quot;, &quot;35037&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to shripad">Reply</a></div>
+</article><ul class="children"><li class="comment byuser comment-author-pankaj bypostauthor even depth-2" id="comment-35042">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name"><a href="http://www.journaldev.com" class="comment-author-link" rel="external nofollow" itemprop="url">Pankaj</a></span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2016-06-09T06:41:13+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-35042" class="comment-time-link" itemprop="url">June 9, 2016 at 6:41 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Thanks Shri for nice words.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-35042" onclick="return addComment.moveForm( &quot;comment-35042&quot;, &quot;35042&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to Pankaj">Reply</a></div>
+</article></li></ul></li><li class="comment odd alt thread-even depth-1" id="comment-34966">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">Pranita</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2016-06-05T06:08:57+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-34966" class="comment-time-link" itemprop="url">June 5, 2016 at 6:08 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Hi Sir,</p><p>Thanks for this ultimate post. Once any one read this article, no need to visit any other tutorial.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-34966" onclick="return addComment.moveForm( &quot;comment-34966&quot;, &quot;34966&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to Pranita">Reply</a></div>
+</article><ul class="children"><li class="comment byuser comment-author-pankaj bypostauthor even depth-2" id="comment-34969">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name"><a href="http://www.journaldev.com" class="comment-author-link" rel="external nofollow" itemprop="url">Pankaj</a></span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2016-06-05T11:34:09+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-34969" class="comment-time-link" itemprop="url">June 5, 2016 at 11:34 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Thanks for the nice words Pranita.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-34969" onclick="return addComment.moveForm( &quot;comment-34969&quot;, &quot;34969&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to Pankaj">Reply</a></div>
+</article></li></ul></li><li class="comment odd alt thread-odd thread-alt depth-1" id="comment-34778">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">Jagadeesh</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2016-05-24T22:48:02+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-34778" class="comment-time-link" itemprop="url">May 24, 2016 at 10:48 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Excellent Pakaj.. Good Job..</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-34778" onclick="return addComment.moveForm( &quot;comment-34778&quot;, &quot;34778&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to Jagadeesh">Reply</a></div>
+</article><ul class="children"><li class="comment byuser comment-author-pankaj bypostauthor even depth-2" id="comment-34889">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name"><a href="http://www.journaldev.com" class="comment-author-link" rel="external nofollow" itemprop="url">Pankaj</a></span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2016-06-02T12:39:49+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-34889" class="comment-time-link" itemprop="url">June 2, 2016 at 12:39 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Thanks Jagadeesh, appreciate your kind word.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-34889" onclick="return addComment.moveForm( &quot;comment-34889&quot;, &quot;34889&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to Pankaj">Reply</a></div>
+</article></li></ul></li><li class="comment odd alt thread-even depth-1" id="comment-34111">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">DR</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2016-02-16T07:36:14+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-34111" class="comment-time-link" itemprop="url">February 16, 2016 at 7:36 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Thanks For all the tutorials</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-34111" onclick="return addComment.moveForm( &quot;comment-34111&quot;, &quot;34111&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to DR">Reply</a></div>
+</article><ul class="children"><li class="comment byuser comment-author-pankaj bypostauthor even depth-2" id="comment-34890">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name"><a href="http://www.journaldev.com" class="comment-author-link" rel="external nofollow" itemprop="url">Pankaj</a></span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2016-06-02T12:40:04+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-34890" class="comment-time-link" itemprop="url">June 2, 2016 at 12:40 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>you are welcome buddy.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-34890" onclick="return addComment.moveForm( &quot;comment-34890&quot;, &quot;34890&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to Pankaj">Reply</a></div>
+</article></li></ul></li><li class="comment odd alt thread-odd thread-alt depth-1" id="comment-33308">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">anil</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2015-10-05T23:29:41+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-33308" class="comment-time-link" itemprop="url">October 5, 2015 at 11:29 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Thank you sir…………</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-33308" onclick="return addComment.moveForm( &quot;comment-33308&quot;, &quot;33308&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to anil">Reply</a></div>
+</article><ul class="children"><li class="comment byuser comment-author-pankaj bypostauthor even depth-2" id="comment-34891">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name"><a href="http://www.journaldev.com" class="comment-author-link" rel="external nofollow" itemprop="url">Pankaj</a></span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2016-06-02T12:40:20+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-34891" class="comment-time-link" itemprop="url">June 2, 2016 at 12:40 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>welcome Anil.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-34891" onclick="return addComment.moveForm( &quot;comment-34891&quot;, &quot;34891&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to Pankaj">Reply</a></div>
+</article></li></ul></li><li class="comment odd alt thread-even depth-1" id="comment-32903">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">Raju.m</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2015-08-04T21:39:57+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-32903" class="comment-time-link" itemprop="url">August 4, 2015 at 9:39 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Hi pankaj,<br>
+This is very interesting to  note all point .can u pls share me spring qeb service in soap . Thanks in advance</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-32903" onclick="return addComment.moveForm( &quot;comment-32903&quot;, &quot;32903&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to Raju.m">Reply</a></div>
+</article><ul class="children"><li class="comment byuser comment-author-pankaj bypostauthor even depth-2" id="comment-34892">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name"><a href="http://www.journaldev.com" class="comment-author-link" rel="external nofollow" itemprop="url">Pankaj</a></span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2016-06-02T12:41:19+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-34892" class="comment-time-link" itemprop="url">June 2, 2016 at 12:41 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>I have written a lot on soap web services, spring don’t support SOAP web services, they provide support for REST web services. I have written about them in detail, please search and read. 🙂</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-34892" onclick="return addComment.moveForm( &quot;comment-34892&quot;, &quot;34892&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to Pankaj">Reply</a></div>
+</article></li></ul></li><li class="comment odd alt thread-odd thread-alt depth-1" id="comment-31435">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">Vishal Upadhyay</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2015-01-14T00:19:51+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-31435" class="comment-time-link" itemprop="url">January 14, 2015 at 12:19 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>A good explanation.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-31435" onclick="return addComment.moveForm( &quot;comment-31435&quot;, &quot;31435&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to Vishal Upadhyay">Reply</a></div>
+</article><ul class="children"><li class="comment byuser comment-author-pankaj bypostauthor even depth-2" id="comment-34893">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name"><a href="http://www.journaldev.com" class="comment-author-link" rel="external nofollow" itemprop="url">Pankaj</a></span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2016-06-02T12:41:32+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-34893" class="comment-time-link" itemprop="url">June 2, 2016 at 12:41 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Thanks Vishal.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-34893" onclick="return addComment.moveForm( &quot;comment-34893&quot;, &quot;34893&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to Pankaj">Reply</a></div>
+</article></li></ul></li><li class="comment odd alt thread-even depth-1" id="comment-30692">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">Ganesh</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2014-11-07T01:00:14+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-30692" class="comment-time-link" itemprop="url">November 7, 2014 at 1:00 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Thanx sir…..</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-30692" onclick="return addComment.moveForm( &quot;comment-30692&quot;, &quot;30692&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to Ganesh">Reply</a></div>
+</article><ul class="children"><li class="comment byuser comment-author-pankaj bypostauthor even depth-2" id="comment-34894">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name"><a href="http://www.journaldev.com" class="comment-author-link" rel="external nofollow" itemprop="url">Pankaj</a></span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2016-06-02T12:41:46+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-34894" class="comment-time-link" itemprop="url">June 2, 2016 at 12:41 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>You are welcome Ganesh.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-34894" onclick="return addComment.moveForm( &quot;comment-34894&quot;, &quot;34894&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to Pankaj">Reply</a></div>
+</article></li></ul></li><li class="comment odd alt thread-odd thread-alt depth-1" id="comment-28421">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name">johnybasha shaik</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2014-04-02T19:49:08+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-28421" class="comment-time-link" itemprop="url">April 2, 2014 at 7:49 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Hi Pankaj.. I regularly follow your website. You are doing a great job for all the followers of this site in learing java/j2ee. I have a suggestion. Though the content you are publishing is very good and with in depth analysis. The way the articles structured are not user friendly. I mean to say. the articles are not as per index. For example, if I go to design patterns, user can’t see which list goes under creational patterns and which does go to behavioural unless I open and read each pattern. If I come to spring tutorial, I dont know which article should I start first. My suggestion, is please publish them in a sequential order to make reading user friendly. I hope you take this advice positively.<br>
+Thanks.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-28421" onclick="return addComment.moveForm( &quot;comment-28421&quot;, &quot;28421&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to johnybasha shaik">Reply</a></div>
+</article><ul class="children"><li class="comment byuser comment-author-pankaj bypostauthor even depth-2" id="comment-28422">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name"><a href="http://www.journaldev.com" class="comment-author-link" rel="external nofollow" itemprop="url">Pankaj</a></span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2014-04-02T23:16:02+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-28422" class="comment-time-link" itemprop="url">April 2, 2014 at 11:16 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Thanks for the feedback. Usually when I am done with a topic, I write a summary post with the order of articles to read.</p><p>For example summary post for design patterns: <a href="http://www.journaldev.com/1827/java-design-patterns-example-tutorial" rel="nofollow">http://www.journaldev.com/1827/java-design-patterns-example-tutorial</a><br>
+Summary post for Struts2: <a href="http://www.journaldev.com/2310/struts2-tutorial-with-example-projects" rel="nofollow">http://www.journaldev.com/2310/struts2-tutorial-with-example-projects</a></p><p>Including all the links in every post is cumbersome and not a good idea too. Imagine you start reading a post and half of the page is with 20 link to other articles. I will write a summary post for Spring Tutorial too once I am done with most of the articles in the series.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-28422" onclick="return addComment.moveForm( &quot;comment-28422&quot;, &quot;28422&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to Pankaj">Reply</a></div>
+</article><ul class="children"><li class="comment byuser comment-author-pankaj bypostauthor odd alt depth-3" id="comment-34895">
+<article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<span itemprop="name"><a href="http://www.journaldev.com" class="comment-author-link" rel="external nofollow" itemprop="url">Pankaj</a></span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2016-06-02T12:43:06+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2637/spring-bean-life-cycle#comment-34895" class="comment-time-link" itemprop="url">June 2, 2016 at 12:43 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Spring index post is ready, please go through <a href="http://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial" rel="nofollow">http://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial</a></p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-34895" onclick="return addComment.moveForm( &quot;comment-34895&quot;, &quot;34895&quot;, &quot;respond&quot;, &quot;2637&quot; )" aria-label="Reply to Pankaj">Reply</a></div>
+</article></li></ul></li></ul></li></ol></div><div id="respond" class="comment-respond"><h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2637/spring-bean-life-cycle#respond" style="display:none;">Cancel reply</a></small></h3><form action="http://www.journaldev.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate=""><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required="true" required="required"></p><p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required="true" required="required"></p><p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="2637" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0"></p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="08c35875b3"></p><p class="antispam-group antispam-group-q" style="clear: both;">
+<label>Current <a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="5c25391c2e">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script> <span class="required">*</span></label>
+<input type="hidden" name="antspm-a" class="antispam-control antispam-control-a" value="2017">
+<input type="text" name="antspm-q" class="antispam-control antispam-control-q" value="4.3" autocomplete="off"></p><p class="antispam-group antispam-group-e" style="display: none;">
+<label>Leave this field empty</label>
+<input type="text" name="antspm-e-email-url-website" class="antispam-control antispam-control-e" value="" autocomplete="off"></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="141"></p></form></div>
+</main><aside class="sidebar sidebar-primary widget-area" role="complementary" aria-label="Primary Sidebar" itemscope="" itemtype="https://schema.org/WPSideBar"><section id="seed_glcse_widget-2" class="widget widget_seed_glcse_widget"><div class="widget-wrap"><div class="glcse-widget"><form id="glcse-search-form" class="glcse-search" action="http://www.journaldev.com" method="get">
+<input type="hidden" name="cref" value="http://www.journaldev.com/?glcse=1">
+<input type="hidden" name="cof" value="FORID:11">
+<input type="hidden" name="ie" value="UTF-8">
+<input type="text" name="q" size="44">
+<input type="hidden" name="s" value="glcse"></form> <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=glcse-search-form&lang=en"></script> </div></div></section><section id="adswidget9-quick-adsense" class="widget �lambda_4"><div class="widget-wrap"><span id='ezoic-pub-ad-placeholder-102'></span><span style='display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:300px;min-width:336px;' class='ezoic-ad box-1 adtester-container adtester-container-102' data-ez-name='journaldev_com-box-1'><span id='div-gpt-ad-journaldev_com-box-1-0' ezaw='336' ezah='280' style='position:relative;z-index:0;display:inline-block;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[336,280],'journaldev_com-box-1','ezslot_5']));</script></span></span></div></section><section id="adswidget8-quick-adsense" class="widget �lambda_3"><div class="widget-wrap"><span id='ezoic-pub-ad-placeholder-103'></span></div></section>
+<section id="text-10" class="widget widget_text"><div class="widget-wrap"><div class="textwidget"><h3><a href="http://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial" target="_blank">Spring Tutorial</a></h3><ol><h4>Spring Core</h4><li><a href="http://www.journaldev.com/2410/spring-dependency-injection" target="_blank">Spring Dependency Injection</a></li><li><a href="http://www.journaldev.com/2461/spring-ioc-bean-example-tutorial" target="_blank">Spring IoC and Bean</a></li><li><a href="http://www.journaldev.com/2637/spring-bean-life-cycle" target="_blank">Spring Bean Life Cycle</a></li><li><a href="http://www.journaldev.com/2552/spring-rest-example-tutorial-spring-restful-web-services" target="_blank">Spring REST</a></li><li><a href="http://www.journaldev.com/8934/spring-rest-xml-and-json-example" target="_blank">Spring REST XML</a></li><li><a href="http://www.journaldev.com/2583/spring-aop-example-tutorial-aspect-advice-pointcut-joinpoint-annotations" target="_blank">Spring AOP</a></li><li><a href="http://www.journaldev.com/7801/spring-aop-method-profiling-beginners-example" target="_blank">Spring AOP Method Profiling</a></li><li><a href="http://www.journaldev.com/2623/spring-autowired-annotation" target="_blank">Spring @Autowired</a></li><li><a href="http://www.journaldev.com/3358/spring-requestmapping-requestparam-pathvariable-example" target="_blank">Spring @RequestMapping</a></li><h4><span id='ezoic-pub-ad-placeholder-108' class="ezoic-adpicker-ad"></span><span style='display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:250px;text-align:center !important;' class='ezoic-ad large-billboard-2 adtester-container adtester-container-108' data-ez-name='journaldev_com-large-billboard-2'><span id='div-gpt-ad-journaldev_com-large-billboard-2-0' ezaw='250' ezah='250' style='position:relative;z-index:0;display:inline-block;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[250,250],'journaldev_com-large-billboard-2','ezslot_2']));</script></span></span>Spring MVC</h4><li><a href="http://www.journaldev.com/2433/spring-mvc-tutorial" target="_blank">Spring MVC Tutorial</a></li><li><a href="http://www.journaldev.com/2651/spring-mvc-exception-handling-controlleradvice-exceptionhandler-handlerexceptionresolver" target="_blank">Spring MVC Exception Handling</a></li><li><a href="http://www.journaldev.com/2668/spring-validation-example-mvc-validator" target="_blank">Spring MVC Validator</a></li><li><a href="http://www.journaldev.com/2676/spring-mvc-interceptor-example-handlerinterceptor-handlerinterceptoradapter" target="_blank">Spring MVC Intercepter</a></li><li><a href="http://www.journaldev.com/2573/spring-mvc-file-upload-example-single-multiple-files" target="_blank">Spring MVC File Upload</a></li><li><a href="http://www.journaldev.com/2610/spring-mvc-internationalization-i18n-and-localization-l10n-example" target="_blank">Spring MVC i18n</a></li><li><a href="http://www.journaldev.com/3531/spring-mvc-hibernate-mysql-integration-crud-example-tutorial" target="_blank">Spring MVC Hibernate MqSQL</a></li><h4>Spring ORM</h4><li><a href="http://www.journaldev.com/7655/spring-orm-example-jpa-hibernate-transaction" target="_blank">Spring ORM</a></li><li><a href="http://www.journaldev.com/7772/spring-orm-example-with-jpa-hibernate-aop-transactions" target="_blank">Spring ORM JPA</a></li><li><a href="http://www.journaldev.com/2603/spring-transaction-management-jdbc-example" target="_blank">Spring Transaction</a></li><h4>Spring Security</h4><li><a href="http://www.journaldev.com/8669/introduction-to-spring-4-security" target="_blank">Spring Security Overview</a></li><li><a href="http://www.journaldev.com/2715/spring-security-example-tutorial" target="_blank">Spring Security Example Tutorial</a></li><li><a href="http://www.journaldev.com/2736/spring-security-example-userdetailsservice" target="_blank">Spring Security UserDetailsService</a></li><li><a href="http://www.journaldev.com/8718/spring-4-security-mvc-login-logout-example" target="_blank">Spring MVC Login Logout</a></li><li><a href="http://www.journaldev.com/8748/spring-4-mvc-security-managing-roles-example" target="_blank">Spring Security Roles</a></li><h4>Spring Boot</h4><li><a href="http://www.journaldev.com/7969/spring-boot-tutorial" target="_blank">Spring Boot Tutorial</a></li><li><a href="http://www.journaldev.com/7989/key-components-and-internals-of-spring-boot-framework" target="_blank">Spring Boot Components</a></li><li><a href="http://www.journaldev.com/8195/spring-boot-cli-setup-and-helloworld-example" target="_blank">Spring Boot CLI Hello World</a></li><li><a href="http://www.journaldev.com/8225/spring-boot-initilizr-web-interface" target="_blank">Spring Boot Initilizr Web</a></li><li><a href="http://www.journaldev.com/8596/spring-boot-initilizr-with-ides-or-ide-plugins" target="_blank">Spring Boot Initilizr IDE</a></li><li><a href="http://www.journaldev.com/8609/spring-boot-initilizr-with-spring-boot-cli" target="_blank">Spring Boot Initilizr CLI</a></li><li><a href="http://www.journaldev.com/8650/spring-boot-initilizr-with-thirdparty-tools" target="_blank">Spring Boot Initilizr Tools</a></li><li><a href="http://www.journaldev.com/8611/spring-boot-framework-ina-nutshell" target="_blank">Spring Boot Summary</a></li><h4>Spring AMQP</h4><li><a href="http://www.journaldev.com/11643/introduction-spring-amqp-messaging" target="_blank">Spring AMQP Overview</a></li><li><a href="http://www.journaldev.com/11655/spring-amqp-rabbitmq-install-and-setup" target="_blank">Spring AMQP RabbitMQ</a></li><li><a href="http://www.journaldev.com/11713/spring-amqp-rabbitmq-messaging-example" target="_blank">Spring AMQP Example</a></li><li><a href="http://www.journaldev.com/11766/spring-amqp-install-and-setup-activemq-server" target="_blank">Spring AMQP ActiveMQ</a></li><h4>Spring Integrations</h4><li><a href="http://www.journaldev.com/2593/spring-jdbc-example" target="_blank">Spring JDBC</a></li><li><a href="http://www.journaldev.com/2597/spring-datasource-jndi-with-tomcat-example" target="_blank">Spring DataSource JNDI</a></li><li><a href="http://www.journaldev.com/3524/spring-hibernate-integration-example-tutorial" target="_blank">Spring Hibernate</a></li><li><a href="http://www.journaldev.com/4058/primefaces-spring-4-with-jpa-hibernate-eclipselink-example-tutorial" target="_blank">Spring Primefaces JPA</a></li><li><a href="http://www.journaldev.com/4061/primefaces-spring-eclipselink-nosql-mongodb-oracle-nosql-db" target="_blank">Spring Primefaces MongoDB</a></li><li><a href="http://www.journaldev.com/4096/primefaces-spring-hibernate-integration-example-tutorial" target="_blank">Spring Primefaces Hibernate</a></li><li><a href="http://www.journaldev.com/4260/primefaces-hibernate-and-springroo-integration" target="_blank">SpringRoo Primefaces Hibernate</a></li><li><a href="http://www.journaldev.com/7112/jsf-spring-integration-example-tutorial" target="_blank">Spring JSF</a></li><li><a href="http://www.journaldev.com/7122/jsf-spring-hibernate-integration-example-tutorial" target="_blank">Spring JDF Hibernate</a></li><h4>Miscellaneous</h4><li><a href="http://www.journaldev.com/4144/spring-data-mongodb-example" target="_blank">Spring Data MongoDB</a></li><li><a href="http://www.journaldev.com/2696/spring-interview-questions-and-answers" target="_blank">Spring Interview Questions</a></li></ol></div></div></section>
+<section id="enews-ext-2" class="widget enews-widget"><div class="widget-wrap"><div class="enews"><h4 class="widget-title widgettitle">Stay Updated!</h4><form id="subscribeenews-ext-2" action="//journaldev.us8.list-manage.com/subscribe/post?u=612f3d966c86000f37699d8cf&amp;id=c64db63284" method="post" target="_blank" onsubmit="if ( subbox1.value == 'Name') { subbox1.value = ''; } if ( subbox2.value == 'Last Name') { subbox2.value = ''; }" name="enews-ext-2">
+<label for="subbox1" class="screenread">Name</label><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="Name" name="FNAME">								<label for="subbox" class="screenread">E-Mail Address</label><input type="email" value="" id="subbox" placeholder="E-Mail Address" name="EMAIL" required="required">
+<input type="submit" value="I AM IN!" id="subbutton"></form></div></div></section><section id="text-6" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">Recommended Tutorials</h4><div class="textwidget"><strong>Java Tutorials</strong>:  <a href="http://www.journaldev.com/942/java-io-tutorial">Java IO Tutorial</a>, <a href="http://www.journaldev.com/634/regular-expression-in-java-regex-example">Java Regular Expressions Tutorial</a>, <a href="http://www.journaldev.com/1079/multithreading-in-java">Multithreading in Java</a>, <a href="http://www.journaldev.com/977/java-logging-api-tutorial-examples-logger-levels-handlers-formatters-filters">Java Logging API Tutorial</a>, <a href="http://www.journaldev.com/721/java-annotations-example-tutorial">Java Annotations</a>,<a href="http://www.journaldev.com/1240/java-xml-tutorial">Java XML Tutorial</a>, <a href="http://www.journaldev.com/1260/collections-in-java-tutorial">Collections in Java</a>, <a href="http://www.journaldev.com/1663/java-generics-example-method-class-interface">Java Generics</a>, <a href="http://www.journaldev.com/1696/exception-handling-in-java">Exception Handling in Java</a>, <a href="http://www.journaldev.com/1789/java-reflection-example-tutorial">Java Reflection</a>, <a href="http://www.journaldev.com/1827/java-design-patterns-example-tutorial">Java Design Patterns</a>, <a href="http://www.journaldev.com/2681/jdbc-tutorial-with-example-projects-datasource-jndi-and-spring-integration">JDBC Tutorial</a><br>
+<strong>Java EE</strong>: <a href="http://www.journaldev.com/2114/servlet-jsp-tutorial">Servlet JSP Tutorial</a>, <a href="http://www.journaldev.com/2310/struts2-tutorial-with-example-projects">Struts2 Tutorial</a>, <a href="http://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial">Spring Tutorial</a>, <a href="http://www.journaldev.com/3793/hibernate-tutorial">Hibernate Tutorial</a>, <a href="http://www.journaldev.com/5516/primefaces-tutorial-with-example-projects">Primefaces Tutorial</a><br>
+<strong>Web Services</strong>: <a href="http://www.journaldev.com/255/axis2-web-services-tutorial">Apache Axis 2 Tutorial</a>, <a href="http://www.journaldev.com/498/jax-rs-restful-web-service-using-jersey-example-tutorial">JAX-RS Web Services Tutorial</a><br>
+<strong>Misc</strong>: <a href="http://www.journaldev.com/1117/memcached-tutorial">Memcached Tutorial</a><br><br>
+<strong>Resources</strong>: <a href="http://journaldev.tradepub.com" rel="nofollow">Free eBooks</a>, <a href="//www.hostmonster.com/track/mygadgetplanet/JournalDev" target="_blank" rel="nofollow">
+My Favorite Web Hosting</a></div></div></section><section id="text-7" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">Important Interview Questions</h4><div class="textwidget"><a href="http://www.journaldev.com/1321/java-string-interview-questions-and-answers">Java String Interview Questions</a>,
+<a href="http://www.journaldev.com/1162/java-multithreading-concurrency-interview-questions-answers">Java Multithreading Interview Questions</a>,
+<a href="http://www.journaldev.com/370/5-java-programming-test-questions-for-interview">Java Programming Interview Questions</a>,
+<a href="http://www.journaldev.com/2366/core-java-interview-questions-and-answers">Java Interview Questions</a>, <a href="http://www.journaldev.com/1330/java-collections-interview-questions-and-answers">Java Collections Interview Questions</a>, <a href="http://www.journaldev.com/2167/java-exception-interview-questions-and-answers">Java Exception Interview Questions</a><br><br>
+<a href="http://www.journaldev.com/2015/servlet-interview-questions-and-answers">Servlet Interview Questions</a>, <a href="http://www.journaldev.com/2110/jsp-interview-questions-and-answers">JSP Interview Questions</a>, <a href="http://www.journaldev.com/2354/struts2-interview-questions-and-answers">Struts2 Interview Questions</a>, <a href="http://www.journaldev.com/2529/jdbc-interview-questions-and-answers">JDBC Interview Questions</a>, <a href="http://www.journaldev.com/2696/spring-interview-questions-and-answers">Spring Interview Questions</a>, <a href="http://www.journaldev.com/3633/hibernate-interview-questions-and-answers">Hibernate Interview Questions</a><br></div></div><span id='ezoic-pub-ad-placeholder-109' class="ezoic-adpicker-ad"></span><span style='display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:250px;text-align:center !important;' class='ezoic-ad large-leaderboard-1 adtester-container adtester-container-109' data-ez-name='journaldev_com-large-leaderboard-1'><span id='div-gpt-ad-journaldev_com-large-leaderboard-1-0' ezaw='250' ezah='250' style='position:relative;z-index:0;display:inline-block;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[250,250],'journaldev_com-large-leaderboard-1','ezslot_1']));</script></span></span></section></aside></div> <script type="text/javascript">function $(id){return!id?null:document.getElementById(id);}
+loadPrettifyCss=function(){if(!$('prettify_css')){css=document.createElement('link');css.id='prettify_css';css.type='text/css';css.rel='stylesheet';css.href='http://cdn.journaldev.com/wp-content/plugins/wp-code-prettify/css/prettify.css';var headNode=document.getElementsByTagName("head")[0];headNode.appendChild(css);}else{$('prettify_css').href='http://cdn.journaldev.com/wp-content/plugins/wp-code-prettify/css/prettify.css';}
+if(!$('prettify_custom')){css=document.createElement('style');css.id='prettify_custom';css.type='text/css';css.rel='stylesheet';css.innerHTML='pre.prettyprint { margin: 5px; margin-bottom: 15px; padding: 10px; max-height: 900px; overflow: auto; background-color: #f8f8f8;}';var headNode=document.getElementsByTagName("head")[0];headNode.appendChild(css);}else{$('prettify_css').innerHTML='pre.prettyprint { margin: 5px; margin-bottom: 15px; padding: 10px; max-height: 900px; overflow: auto; background-color: #f8f8f8;}';}}</script> <script type="text/javascript">loadPrettifyCss();</script> <script type="text/javascript" src="http://cdn.journaldev.com/wp-content/plugins/wp-code-prettify/js/prettify.js"></script> <script type="text/javascript">function wpCodePrettifyOnLoad(func){var wpCodePrettifyOldOnLoad=window.onload;if(typeof window.onload!='function'){window.onload=func}else{window.onload=function(){wpCodePrettifyOldOnLoad();func()}}}
+wpCodePrettifyOnLoad(function(){prettyPrint();});</script> </div><footer class="site-footer" itemscope="" itemtype="https://schema.org/WPFooter"><div class="wrap"><p>©&nbsp;2017 · <a href="http://www.journaldev.com/privacy-policy">Privacy Policy</a> · Don't copy, it's Bad Karma · Powered by <a href="https://wordpress.org/" title="WordPress">WordPress</a></p></div></footer></div><div id="mailchimp-top-bar" class="mctb mctb-sticky mctb-position-top mctb-medium"><div class="mctb-bar" style="display: none"><form method="post">
+<label class="mctb-label">Free eBook:  Java Design Patterns (130 Pages) Download Now!</label>
+<input type="email" name="email" placeholder="Your email address please.." class="mctb-email" required="">
+<input type="text" name="email_confirm" placeholder="Confirm your email" value="" autocomplete="off" tabindex="-1" class="mctb-email-confirm">
+<input type="submit" value="Send Me Now!" class="mctb-button">
+<input type="hidden" name="_mctb" value="1">
+<input type="hidden" name="_mctb_no_js" value="1">
+<input type="hidden" name="_mctb_timestamp" value="1499979002"></form></div></div><div class="kc105f-container kc105f-2 kc105f-hide"><div class="kc105f-body">
+<img src="http://cdn.journaldev.com/wp-content/plugins/kill-adblock//images/logo.png"><div class="kc105f"></div></div></div><script src="https://apis.google.com/js/platform.js" async defer></script> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script type='text/javascript'>function _dmBootstrap(file){var _dma=document.createElement('script');_dma.type='text/javascript';_dma.async=true;_dma.src=('https:'==document.location.protocol?'https://':'http://')+file;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(_dma);}
+function _dmFollowup(file){if(typeof DMAds==='undefined')_dmBootstrap('cdn2.DeveloperMedia.com/a.min.js');}
+(function(){_dmBootstrap('cdn1.DeveloperMedia.com/a.min.js');setTimeout(_dmFollowup,2000);})();</script><div class="stb-container stb-bottom-right-container"><div class="scroll-triggered-box stb stb-4065 stb-bottom-right" id="stb-4065" style="display: none;"><div class="stb-content"> <script type="text/javascript">(function(){if(!window.mc4wp){window.mc4wp={listeners:[],forms:{on:function(event,callback){window.mc4wp.listeners.push({event:event,callback:callback});}}}}})();</script><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-9855 mc4wp-form-theme mc4wp-form-theme-red" method="post" data-id="9855" data-name="Default sign-up form"><div class="mc4wp-form-fields"><div style="width:400px;height:200px;"><p></p><h3>FREE eBook: Java Interview Questions (250+ Questions)</h3><div style="width:200px;height:200px;float:left;"><img src="http://cdn.journaldev.com/wp-content/uploads/2015/10/JIQ-608x608.png" width="200" height="200"></div><div style="width:200px;height:200px;float:right;"><p><label for="mc4wp_email">Email address: </label></p><p><input type="email" id="mc4wp_email" name="EMAIL" placeholder="Your email address" required=""></p><p>
+<input type="submit" value="Download Now!"></p><p>Because <strong>58,316</strong> Developers can't be Wrong!</p></div></div><p></p><div style="display: none;"><input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></div><input type="hidden" name="_mc4wp_timestamp" value="1499979002"><input type="hidden" name="_mc4wp_form_id" value="9855"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1"></div><div class="mc4wp-response"></div></form></div>
+<span class="stb-close">×</span></div></div><div id="stb-overlay"></div><script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/akismet/_inc/form.js'></script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/anti-spam/js/anti-spam-4.3.js'></script> <script type='text/javascript'>var thickboxL10n={"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"http:\/\/www.journaldev.com\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};</script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-includes/js/thickbox/thickbox.js'></script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/jaspreetchahals-coupons-lite/js/jquery.zclip.js'></script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/jaspreetchahals-coupons-lite/js/jcorgcr_wp.min.js'></script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-includes/js/comment-reply.min.js'></script> <script type='text/javascript'>var mctb={"cookieLength":"90","icons":{"hide":"&#x25B2;","show":"&#x25BC;"},"position":"top","is_submitted":"","is_success":""};</script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/mailchimp-top-bar/assets/js/script.min.js'></script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/bj-lazy-load/js/bj-lazy-load.min.js'></script> <script type='text/javascript'>var STB_Global_Options={"testMode":""};var STB_Box_Options={"4065":{"id":4065,"title":"Subscribe to JournalDev Newsletter","trigger":"percentage","triggerPercentage":40,"triggerElementSelector":"","animation":"slide","cookieTime":30,"autoHide":true,"autoShow":true,"position":"bottom-right","minimumScreenWidth":700,"unclosable":false}};</script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-content/plugins/scroll-triggered-boxes/assets/js/script.min.js'></script> <script type='text/javascript' src='http://cdn.journaldev.com/wp-includes/js/wp-embed.min.js'></script> 
+<!--
+*** This site runs WP Super Minify plugin v1.5.1 - http://wordpress.org/plugins/wp-super-minify ***
+*** Total size saved: 8.777% | Size before compression: 115133 bytes | Size after compression: 105028 bytes. ***
+-->
+<!-- Dynamic page generated in 1.354 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2017-07-13 13:50:02 -->
+
+<!-- Compression = gzip --><script type="text/javascript" style='display:none;'>
+var __ez_dims = (function() {
+	var setCookie = function( name, content, expiry ) {
+		return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'');
+	};
+	var ffid = 1;
+	var oh = window.screen.height;
+	var ow = window.screen.width;
+	var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+	var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+	var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+	var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+	setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+	setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+})();
+</script><script type='text/javascript' style='display:none;' async>
+__ez.queue.addFile('edmonton.php', '//www.journaldev.com/detroitchicago/edmonton.webp?a=a&cb=167-0&shcb=21', true, [], true, false, false, false);
+__ez.queue.addFile('jellyfish.php', '//www.journaldev.com/porpoiseant/jellyfish.webp?a=a&cb=167-0&shcb=21', false, [], true, false, false, false);
+</script>
+
+
+<div id='dmo1' style='display:none'>
+	<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-6396844742497208";
+		/* dmo */
+		google_ad_slot = "dmo";
+		google_ad_width = 88;
+		google_ad_height = 31;
+		//-->
+	</script>
+	<script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>
+
+<!--Begin comScore Tag--><script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"20015427"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el)})();</script><noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript><!--End comScore Tag-->
+<!--Quantcast Tag--><script type="text/javascript">var _qevents=_qevents||[];(function(){var elem=document.createElement('script');elem.src=(document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js";elem.async=true;elem.type="text/javascript";var scpt=document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem,scpt)})();_qevents.push({qacct:"p-31iz6hfFutd16",labels:"Domain.journaldev_com,DomainId.47402"});</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.journaldev_com,DomainId.47402"border="0"height="1"width="1"alt="Quantcast"/></div></noscript><!--End Quantcast tag-->
+<script data-pagespeed-no-defer data-cfasync='false' type='text/javascript' style='display:none'>
+__ez_func_ezosuigeneris = function() { if(typeof ezosuigeneris != "undefined") { var ezosuigenerisDate = new Date(); ezosuigenerisDate.setMonth(ezosuigenerisDate.getMonth() + 24); document.cookie = "ezosuigeneris=" + ezosuigeneris + ";expires=" + ezosuigenerisDate.toUTCString() + ";domain="+ezdomain+";path=/"; } };
+__ez.queue.addFunc('__ez_func_ezosuigeneris', '__ez_func_ezosuigeneris', null, false, ['__ezf_ezosuigeneris'], true, false, false, false);
+
+__ez_func_ezosuigenerisc = function() { if(typeof ezosuigenerisc != "undefined") { var ezosuigeneriscDate = new Date(); ezosuigeneriscDate.setMonth(ezosuigeneriscDate.getMonth() + 24); document.cookie = "ezosuigenerisc=" + ezosuigenerisc + ";expires=" + ezosuigeneriscDate.toUTCString() + ";domain="+ezdomain+";path=/"; } };
+__ez.queue.addFunc('__ez_func_ezosuigenerisc', '__ez_func_ezosuigenerisc', null, false, ['__ezf_ezosuigenerisc'], true, false, false, false);
+</script></body></html><!--[selectron:done]-->
