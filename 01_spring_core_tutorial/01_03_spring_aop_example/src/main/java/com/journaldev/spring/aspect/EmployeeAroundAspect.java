@@ -17,9 +17,11 @@ public class EmployeeAroundAspect {
 		Object value = null;
 		try {
 			value = proceedingJoinPoint.proceed();
+
 		} catch (Throwable e) {
-			logger.error(e.getMessage());
+git add *			logger.error(String.valueOf(e));
 		}
+
 		String pom="After invoking getName() method. Return value="+value;
 		logger.debug(pom);
 		return value;

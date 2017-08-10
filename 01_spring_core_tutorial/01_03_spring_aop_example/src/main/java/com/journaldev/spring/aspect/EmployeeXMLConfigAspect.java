@@ -14,7 +14,7 @@ public class EmployeeXMLConfigAspect {
 		try {
 			value = proceedingJoinPoint.proceed();
 		} catch (Throwable e) {
-			logger.error(e.getMessage());
+			logger.error(String.valueOf(e));
 		}
 		String pom = "EmployeeXMLConfigAspect:: After invoking getName() method. Return value="+value;
 		logger.debug(pom);

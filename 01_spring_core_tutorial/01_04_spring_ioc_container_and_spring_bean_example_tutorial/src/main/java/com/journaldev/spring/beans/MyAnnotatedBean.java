@@ -17,5 +17,9 @@ public class MyAnnotatedBean {
 	public void setEmpId(int empId) {
 		this.empId = empId;
 	}
-	
+
+	public int getHash(){
+		return this.hashCode();
+	}
+
 }

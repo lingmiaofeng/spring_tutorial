@@ -10,5 +10,9 @@ public class MyBean {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
+	public int getHash(){
+		return this.hashCode();
+	}
+
 }
