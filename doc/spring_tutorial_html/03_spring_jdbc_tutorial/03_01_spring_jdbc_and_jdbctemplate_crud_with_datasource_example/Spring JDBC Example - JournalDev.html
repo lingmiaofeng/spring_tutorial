@@ -489,8 +489,8 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 			ps.setString(3, employee.getRole());
 			int out = ps.executeUpdate();
 			if(out !=0){
-				System.out.println("Employee saved with id="+employee.getId());
-			}else System.out.println("Employee save failed with id="+employee.getId());
+				logger.info("Employee saved with id="+employee.getId());
+			}else logger.info("Employee save failed with id="+employee.getId());
 		}catch(SQLException e){
 			e.printStackTrace();
 		}finally{
@@ -520,9 +520,9 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 				emp.setId(id);
 				emp.setName(rs.getString("name"));
 				emp.setRole(rs.getString("role"));
-				System.out.println("Employee Found::"+emp);
+				logger.info("Employee Found::"+emp);
 			}else{
-				System.out.println("No Employee found with id="+id);
+				logger.info("No Employee found with id="+id);
 			}
 		}catch(SQLException e){
 			e.printStackTrace();
@@ -551,8 +551,8 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 			ps.setInt(3, employee.getId());
 			int out = ps.executeUpdate();
 			if(out !=0){
-				System.out.println("Employee updated with id="+employee.getId());
-			}else System.out.println("No Employee found with id="+employee.getId());
+				logger.info("Employee updated with id="+employee.getId());
+			}else logger.info("No Employee found with id="+employee.getId());
 		}catch(SQLException e){
 			e.printStackTrace();
 		}finally{
@@ -576,8 +576,8 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 			ps.setInt(1, id);
 			int out = ps.executeUpdate();
 			if(out !=0){
-				System.out.println("Employee deleted with id="+id);
-			}else System.out.println("No Employee found with id="+id);
+				logger.info("Employee deleted with id="+id);
+			}else logger.info("No Employee found with id="+id);
 		}catch(SQLException e){
 			e.printStackTrace();
 		}finally{
@@ -672,7 +672,7 @@ public class SpringMain {
 		
 		//Read
 		Employee emp1 = employeeDAO.getById(rand);
-		System.out.println("Employee Retrieved::"+emp1);
+		logger.info("Employee Retrieved::"+emp1);
 		
 		//Update
 		emp.setRole("CEO");
@@ -680,7 +680,7 @@ public class SpringMain {
 		
 		//Get All
 		List&lt;Employee&gt; empList = employeeDAO.getAll();
-		System.out.println(empList);
+		logger.info(empList);
 		
 		//Delete
 		employeeDAO.deleteById(rand);
@@ -688,7 +688,7 @@ public class SpringMain {
 		//Close Spring Context
 		ctx.close();
 		
-		System.out.println("DONE");
+		logger.info("DONE");
 	}
 
 }
@@ -741,8 +741,8 @@ public class EmployeeDAOJDBCTemplateImpl implements EmployeeDAO {
 		int out = jdbcTemplate.update(query, args);
 		
 		if(out !=0){
-			System.out.println("Employee saved with id="+employee.getId());
-		}else System.out.println("Employee save failed with id="+employee.getId());
+			logger.info("Employee saved with id="+employee.getId());
+		}else logger.info("Employee save failed with id="+employee.getId());
 	}
 
 	@Override
@@ -774,8 +774,8 @@ public class EmployeeDAOJDBCTemplateImpl implements EmployeeDAO {
 		
 		int out = jdbcTemplate.update(query, args);
 		if(out !=0){
-			System.out.println("Employee updated with id="+employee.getId());
-		}else System.out.println("No Employee found with id="+employee.getId());
+			logger.info("Employee updated with id="+employee.getId());
+		}else logger.info("No Employee found with id="+employee.getId());
 	}
 
 	@Override
@@ -786,8 +786,8 @@ public class EmployeeDAOJDBCTemplateImpl implements EmployeeDAO {
 		
 		int out = jdbcTemplate.update(query, id);
 		if(out !=0){
-			System.out.println("Employee deleted with id="+id);
-		}else System.out.println("No Employee found with id="+id);
+			logger.info("Employee deleted with id="+id);
+		}else logger.info("No Employee found with id="+id);
 	}
 
 	@Override

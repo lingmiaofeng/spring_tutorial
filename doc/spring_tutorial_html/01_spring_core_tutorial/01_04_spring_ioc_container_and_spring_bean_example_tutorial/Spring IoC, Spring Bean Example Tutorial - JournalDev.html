@@ -413,8 +413,8 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
-		System.out.println("MyBean hashcode="+myBean.hashCode());
-		System.out.println("MyAnnotatedBean hashcode="+myAnnotatedBean.hashCode());
+		logger.info("MyBean hashcode="+myBean.hashCode());
+		logger.info("MyAnnotatedBean hashcode="+myAnnotatedBean.hashCode());
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
@@ -473,7 +473,7 @@ import java.util.Date;
 public class MyService {
 
 	public void log(String msg){
-		System.out.println(new Date()+"::"+msg);
+		logger.info(new Date()+"::"+msg);
 	}
 }
 </pre><p>MyService is a simple java class with some methods.</p><pre class="prettyprint">package com.journaldev.spring.main;
@@ -506,8 +506,8 @@ public class MyMainClass {
 		service.log("Hi");
 		
 		MyService newService = ctx.getBean(MyService.class);
-		System.out.println("service hashcode="+service.hashCode());
-		System.out.println("newService hashcode="+newService.hashCode());
+		logger.info("service hashcode="+service.hashCode());
+		logger.info("newService hashcode="+newService.hashCode());
 		ctx.close();
 	}
 

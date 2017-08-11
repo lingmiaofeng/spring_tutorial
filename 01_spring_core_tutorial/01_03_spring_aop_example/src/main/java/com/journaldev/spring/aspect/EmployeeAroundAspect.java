@@ -14,13 +14,8 @@ public class EmployeeAroundAspect {
 	@Around("execution(* com.journaldev.spring.model.Employee.getName())")
 	public Object employeeAroundAdvice(ProceedingJoinPoint proceedingJoinPoint){
 		logger.debug("Before invoking getName() method");
-		Object value = null;
-		try {
-			value = proceedingJoinPoint.proceed();
+		Object value = "TEST";
 
-		} catch (Throwable e) {
-git add *			logger.error(String.valueOf(e));
-		}
 
 		String pom="After invoking getName() method. Return value="+value;
 		logger.debug(pom);

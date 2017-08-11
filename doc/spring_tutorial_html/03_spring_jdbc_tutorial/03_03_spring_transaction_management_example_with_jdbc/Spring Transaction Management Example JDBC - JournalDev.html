@@ -514,11 +514,11 @@ public class CustomerDAOImpl implements CustomerDAO {
 
 		jdbcTemplate.update(queryCustomer, new Object[] { customer.getId(),
 				customer.getName() });
-		System.out.println("Inserted into Customer Table Successfully");
+		logger.info("Inserted into Customer Table Successfully");
 		jdbcTemplate.update(queryAddress, new Object[] { customer.getId(),
 				customer.getAddress().getAddress(),
 				customer.getAddress().getCountry() });
-		System.out.println("Inserted into Address Table Successfully");
+		logger.info("Inserted into Address Table Successfully");
 	}
 
 }

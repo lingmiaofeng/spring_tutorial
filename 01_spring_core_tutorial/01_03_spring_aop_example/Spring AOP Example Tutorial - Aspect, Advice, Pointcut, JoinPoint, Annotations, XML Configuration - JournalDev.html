@@ -481,12 +481,12 @@ public class EmployeeAspect {
 
 	@Before("execution(public String getName())")
 	public void getNameAdvice(){
-		System.out.println("Executing Advice on getName()");
+		logger.info("Executing Advice on getName()");
 	}
 	
 	@Before("execution(* com.journaldev.spring.service.*.get*())")
 	public void getAllAdvice(){
-		System.out.println("Service method getter called");
+		logger.info("Service method getter called");
 	}
 }
 </pre><p>Important points in above aspect class is:</p><ul><li><strong>Aspect</strong> classes are required to have <code>@Aspect</code> annotation.</li><li>@Before annotation is used to create Before advice</li><li>The string parameter passed in the <code>@Before</code> annotation is the Pointcut expression</li><li><em>getNameAdvice()</em> advice will execute for any Spring Bean method with signature <code>public String getName()</code>. This is a very important point to remember, if we will create Employee bean using new operator the advices will not be applied. Only when we will use ApplicationContext to get the bean, advices will be applied.</li><li>We can use asterisk (*) as wild card in Pointcut expressions, <em>getAllAdvice()</em> will be applied for all the classes in <code>com.journaldev.spring.service</code> package whose name starts with <code>get</code> and doesn’t take any arguments.</li></ul><p>We will look these advices in action in a test class after we have looked into all the different types of advices.</p><h3>Spring AOP Pointcut Methods and Reuse</h3><p>Sometimes we have to use same Pointcut expression at multiple places, we can create an empty method with <code>@Pointcut</code> annotation and then use it as expression in advices.</p><p>EmployeeAspectPointcut.java code:</p><pre class="prettyprint">package com.journaldev.spring.aspect;
@@ -500,12 +500,12 @@ public class EmployeeAspectPointcut {
 
 	@Before("getNamePointcut()")
 	public void loggingAdvice(){
-		System.out.println("Executing loggingAdvice on getName()");
+		logger.info("Executing loggingAdvice on getName()");
 	}
 	
 	@Before("getNamePointcut()")
 	public void secondAdvice(){
-		System.out.println("Executing secondAdvice on getName()");
+		logger.info("Executing secondAdvice on getName()");
 	}
 	
 	@Pointcut("execution(public String getName())")
@@ -513,7 +513,7 @@ public class EmployeeAspectPointcut {
 	
 	@Before("allMethodsPointcut()")
 	public void allServiceMethodsAdvice(){
-		System.out.println("Before executing service method");
+		logger.info("Before executing service method");
 	}
 	
 	//Pointcut to execute on all the methods of classes in a package
@@ -534,16 +534,16 @@ public class EmployeeAspectJoinPoint {
 	
 	@Before("execution(public void com.journaldev.spring.model..set*(*))")
 	public void loggingAdvice(JoinPoint joinPoint){
-		System.out.println("Before running loggingAdvice on method="+joinPoint.toString());
+		logger.info("Before running loggingAdvice on method="+joinPoint.toString());
 		
-		System.out.println("Agruments Passed=" + Arrays.toString(joinPoint.getArgs()));
+		logger.info("Agruments Passed=" + Arrays.toString(joinPoint.getArgs()));
 
 	}
 	
 	//Advice arguments, will be applied to bean methods with single String argument
 	@Before("args(name)")
 	public void logStringArguments(String name){
-		System.out.println("String argument passed="+name);
+		logger.info("String argument passed="+name);
 	}
 }
 </pre><h3>Spring AOP After Advice Example</h3><p>Let’s look at a simple aspect class with example of After, After Throwing and After Returning advices.</p><p>EmployeeAfterAspect.java code:</p><pre class="prettyprint">package com.journaldev.spring.aspect;
@@ -559,17 +559,17 @@ public class EmployeeAfterAspect {
 
 	@After("args(name)")
 	public void logStringArguments(String name){
-		System.out.println("Running After Advice. String argument passed="+name);
+		logger.info("Running After Advice. String argument passed="+name);
 	}
 	
 	@AfterThrowing("within(com.journaldev.spring.model.Employee)")
 	public void logExceptions(JoinPoint joinPoint){
-		System.out.println("Exception thrown in Employee Method="+joinPoint.toString());
+		logger.info("Exception thrown in Employee Method="+joinPoint.toString());
 	}
 	
 	@AfterReturning(pointcut="execution(* getName())", returning="returnString")
 	public void getNameReturningAdvice(String returnString){
-		System.out.println("getNameReturningAdvice executed. Returned String="+returnString);
+		logger.info("getNameReturningAdvice executed. Returned String="+returnString);
 	}
 	
 }
@@ -585,14 +585,14 @@ public class EmployeeAroundAspect {
 
 	@Around("execution(* com.journaldev.spring.model.Employee.getName())")
 	public Object employeeAroundAdvice(ProceedingJoinPoint proceedingJoinPoint){
-		System.out.println("Before invoking getName() method");
+		logger.info("Before invoking getName() method");
 		Object value = null;
 		try {
 			value = proceedingJoinPoint.proceed();
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
-		System.out.println("After invoking getName() method. Return value="+value);
+		logger.info("After invoking getName() method. Return value="+value);
 		return value;
 	}
 }
@@ -611,7 +611,7 @@ public class EmployeeAnnotationAspect {
 
 	@Before("@annotation(com.journaldev.spring.aspect.Loggable)")
 	public void myAdvice(){
-		System.out.println("Executing myAdvice!!");
+		logger.info("Executing myAdvice!!");
 	}
 }
 </pre><p>myAdvice() method will advice only setName() method. This is a very safe approach and whenever we want to apply the advice on any method, all we need is to annotate it with Loggable annotation.</p><h3>Spring AOP XML Configuration</h3><p>I always prefer annotation but we also have option to configure aspects in spring configuration file. For example, let’s say we have a class as below.</p><p>EmployeeXMLConfigAspect.java code:</p><pre class="prettyprint">package com.journaldev.spring.aspect;
@@ -621,14 +621,14 @@ import org.aspectj.lang.ProceedingJoinPoint;
 public class EmployeeXMLConfigAspect {
 
 	public Object employeeAroundAdvice(ProceedingJoinPoint proceedingJoinPoint){
-		System.out.println("EmployeeXMLConfigAspect:: Before invoking getName() method");
+		logger.info("EmployeeXMLConfigAspect:: Before invoking getName() method");
 		Object value = null;
 		try {
 			value = proceedingJoinPoint.proceed();
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
-		System.out.println("EmployeeXMLConfigAspect:: After invoking getName() method. Return value="+value);
+		logger.info("EmployeeXMLConfigAspect:: After invoking getName() method. Return value="+value);
 		return value;
 	}
 }
@@ -653,7 +653,7 @@ public class SpringMain {
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("spring.xml");
 		EmployeeService employeeService = ctx.getBean("employeeService", EmployeeService.class);
 		
-		System.out.println(employeeService.getEmployee().getName());
+		logger.info(employeeService.getEmployee().getName());
 		
 		employeeService.getEmployee().setName("Pankaj");
 		
@@ -839,11 +839,11 @@ public class UserController {<br>
 @EnableAspectJAutoProxy<br>
 public class UserApiConfiguration {</p><p>}</p><p>@Aspect<br>
 public class InternationalizationAop {</p><p>	public InternationalizationAop() {<br>
-System.out.println(“&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;aop constructor&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;");<br>
+logger.info(“&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;aop constructor&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;");<br>
 }</p><p>	@Pointcut("execution(* com.test.user.*.UserProfile.get*(..))")<br>
 public void getTranslatedValue() {}</p><p>	@Before("getTranslatedValue()")<br>
 public void getTranslatedString(JoinPoint joinPoint) {<br>
-System.out.println(joinPoint.getSignature());<br>
+logger.info(joinPoint.getSignature());<br>
 }<br>
 }</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-31026" onclick="return addComment.moveForm( &quot;comment-31026&quot;, &quot;31026&quot;, &quot;respond&quot;, &quot;2583&quot; )" aria-label="Reply to Nethaji T M">Reply</a></div>
 </article></li><li class="comment even thread-odd thread-alt depth-1" id="comment-30792">
@@ -869,7 +869,7 @@ Ramakrishna K.C</p></div><div class="comment-reply"><a rel="nofollow" class="com
 </article><ul class="children"><li class="comment byuser comment-author-pankaj bypostauthor even depth-2" id="comment-29724">
 <article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
 <header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-<span itemprop="name"><a href="http://www.journaldev.com" class="comment-author-link" rel="external nofollow" itemprop="url">Pankaj</a></span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2014-08-06T08:22:55+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2583/spring-aop-example-tutorial-aspect-advice-pointcut-joinpoint-annotations#comment-29724" class="comment-time-link" itemprop="url">August 6, 2014 at 8:22 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Please provide complete stack trace, also are you sure <code>System.out.println(shape.getCircle().getName());</code> is printing null, not throwing exception.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-29724" onclick="return addComment.moveForm( &quot;comment-29724&quot;, &quot;29724&quot;, &quot;respond&quot;, &quot;2583&quot; )" aria-label="Reply to Pankaj">Reply</a></div>
+<span itemprop="name"><a href="http://www.journaldev.com" class="comment-author-link" rel="external nofollow" itemprop="url">Pankaj</a></span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2014-08-06T08:22:55+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2583/spring-aop-example-tutorial-aspect-advice-pointcut-joinpoint-annotations#comment-29724" class="comment-time-link" itemprop="url">August 6, 2014 at 8:22 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Please provide complete stack trace, also are you sure <code>logger.info(shape.getCircle().getName());</code> is printing null, not throwing exception.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-29724" onclick="return addComment.moveForm( &quot;comment-29724&quot;, &quot;29724&quot;, &quot;respond&quot;, &quot;2583&quot; )" aria-label="Reply to Pankaj">Reply</a></div>
 </article></li></ul></li><li class="comment odd alt thread-even depth-1" id="comment-29260">
 <article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
 <header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">

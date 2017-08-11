@@ -931,7 +931,7 @@ public class MySimpleMappingExceptionResolver extends SimpleMappingExceptionReso
 protected ModelAndView doResolveException(HttpServletRequest request,<br>
 HttpServletResponse response, Object handler, Exception ex) {<br>
 String viewName=determineViewName(ex, request);<br>
-System.out.println(“viewName:”+viewName);<br>
+logger.info(“viewName:”+viewName);<br>
 if (viewName!=null) {<br>
 Integer statusCode = super.determineStatusCode(request, viewName);<br>
 if (statusCode != null) {<br>

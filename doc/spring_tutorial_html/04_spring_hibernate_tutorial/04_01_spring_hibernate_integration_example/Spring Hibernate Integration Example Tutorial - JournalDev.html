@@ -612,12 +612,12 @@ public class SpringHibernateMain {
 		
 		personDAO.save(person);
 		
-		System.out.println("Person::"+person);
+		logger.info("Person::"+person);
 		
 		List&lt;Person&gt; list = personDAO.list();
 		
 		for(Person p : list){
-			System.out.println("Person List::"+p);
+			logger.info("Person List::"+p);
 		}
 		//close resources
 		context.close();	
@@ -747,7 +747,7 @@ I’m so confused.</p></div><div class="comment-reply"><a rel="nofollow" class="
 </article><ul class="children"><li class="comment odd alt depth-2" id="comment-34281">
 <article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
 <header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-<span itemprop="name">Nishant</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2016-03-11T11:54:57+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/3524/spring-hibernate-integration-example-tutorial#comment-34281" class="comment-time-link" itemprop="url">March 11, 2016 at 11:54 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>toString() method of Person class  is used wjen i simply write system.out.println(person). Same goes with any class you define. you just need to provide this method and whenever you sysout something it will automatically call this function.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-34281" onclick="return addComment.moveForm( &quot;comment-34281&quot;, &quot;34281&quot;, &quot;respond&quot;, &quot;3524&quot; )" aria-label="Reply to Nishant">Reply</a></div>
+<span itemprop="name">Nishant</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2016-03-11T11:54:57+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/3524/spring-hibernate-integration-example-tutorial#comment-34281" class="comment-time-link" itemprop="url">March 11, 2016 at 11:54 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>toString() method of Person class  is used wjen i simply write logger.info(person). Same goes with any class you define. you just need to provide this method and whenever you sysout something it will automatically call this function.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-34281" onclick="return addComment.moveForm( &quot;comment-34281&quot;, &quot;34281&quot;, &quot;respond&quot;, &quot;3524&quot; )" aria-label="Reply to Nishant">Reply</a></div>
 </article></li><li class="comment even depth-2" id="comment-37664">
 <article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
 <header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">

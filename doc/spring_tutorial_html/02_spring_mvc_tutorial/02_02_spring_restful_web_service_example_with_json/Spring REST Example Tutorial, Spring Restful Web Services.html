@@ -736,11 +736,11 @@ public class TestSpringRestExample {
 	public static void main(String args[]){
 		
 		testGetDummyEmployee();
-		System.out.println("*****");
+		logger.info("*****");
 		testCreateEmployee();
-		System.out.println("*****");
+		logger.info("*****");
 		testGetEmployee();
-		System.out.println("*****");
+		logger.info("*****");
 		testGetAllEmployee();
 	}
 
@@ -749,9 +749,9 @@ public class TestSpringRestExample {
 		//we can't get List&lt;Employee&gt; because JSON convertor doesn't know the type of
 		//object in the list and hence convert it to default JSON object type LinkedHashMap
 		List&lt;LinkedHashMap&gt; emps = restTemplate.getForObject(SERVER_URI+EmpRestURIConstants.GET_ALL_EMP, List.class);
-		System.out.println(emps.size());
+		logger.info(emps.size());
 		for(LinkedHashMap map : emps){
-			System.out.println("ID="+map.get("id")+",Name="+map.get("name")+",CreatedDate="+map.get("createdDate"));;
+			logger.info("ID="+map.get("id")+",Name="+map.get("name")+",CreatedDate="+map.get("createdDate"));;
 		}
 	}
 
@@ -776,7 +776,7 @@ public class TestSpringRestExample {
 	}
 	
 	public static void printEmpData(Employee emp){
-		System.out.println("ID="+emp.getId()+",Name="+emp.getName()+",CreatedDate="+emp.getCreatedDate());
+		logger.info("ID="+emp.getId()+",Name="+emp.getName()+",CreatedDate="+emp.getCreatedDate());
 	}
 }
 </pre><p>Most of the program is simple to understand, however when invoking rest method returning a Collection, we need to use <code>LinkedHashMap</code> because JSON to object conversion doesn’t know about the Employee object and converts it to the collection of <code>LinkedHashMap</code>. We can write a utility method to convert from <code>LinkedHashMap</code> to our Java Bean object.</p><p>When we run above program, we get following output in the console.</p><pre class="prettyprint">ID=9999,Name=Dummy,CreatedDate=Tue Mar 04 21:02:41 PST 2014
@@ -794,9 +794,9 @@ ID=9999,Name=Dummy,CreatedDate=1393995761381
 <span itemprop="name">Sumit</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2017-04-13T03:50:22+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2552/spring-rest-example-tutorial-spring-restful-web-services#comment-37914" class="comment-time-link" itemprop="url">April 13, 2017 at 3:50 am</a></time></p>		</header><div class="comment-content" itemprop="text"><p>In the testGetAllEmployees method we can use Employee[] in place of LinkedHashMap. It will give us the employee objects directly. Modified code is below:-</p><p>private static void testGetAllEmployee() {<br>
 RestTemplate restTemplate = new RestTemplate();<br>
 Employee[] emps = restTemplate.getForObject(SERVER_URI+EmpRestURIConstants.GET_ALL_EMP, Employee[].class);<br>
-System.out.println(emps.length);<br>
+logger.info(emps.length);<br>
 for(Employee emp : emps){<br>
-System.out.println(“ID=”+emp.getId()+”,Name=”+emp.getName()+”,CreatedDate=”+emp.getCreatedDate());;<br>
+logger.info(“ID=”+emp.getId()+”,Name=”+emp.getName()+”,CreatedDate=”+emp.getCreatedDate());;<br>
 }<br>
 }</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-37914" onclick="return addComment.moveForm( &quot;comment-37914&quot;, &quot;37914&quot;, &quot;respond&quot;, &quot;2552&quot; )" aria-label="Reply to Sumit">Reply</a></div>
 </article></li><li class="comment odd alt thread-odd thread-alt depth-1" id="comment-37858">
@@ -1316,7 +1316,7 @@ I too have the same thoughts in mind..</p><p>Thanks in advance!</p></div>
 I appreciate your efforts for us like beginner. I went through your blog and followed instruction its working perfectly alright. I have small doubt.</p><p>If I have controller with 1 function</p><p>@RequestMapping(value=”/getvalue”, method=RequestMethod.GET)<br>
 public String getStatastics(String string1, String string2, String string3, EnumDemo demo,  Model model){<br>
 String resultedString = string1 + string2 + string3;<br>
-System.out.println(demo.enumValue1);<br>
+logger.info(demo.enumValue1);<br>
 return resultedString;<br>
 }</p><p>Now I want to create client with calling this above function.<br>
 I would be really happy if you provide me some direction.<br>

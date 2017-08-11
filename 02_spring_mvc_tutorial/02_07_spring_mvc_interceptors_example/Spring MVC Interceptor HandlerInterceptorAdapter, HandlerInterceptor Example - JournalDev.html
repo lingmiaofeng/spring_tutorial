@@ -406,7 +406,7 @@ public class RequestProcessingTimeInterceptor extends HandlerInterceptorAdapter 
 	public void postHandle(HttpServletRequest request,
 			HttpServletResponse response, Object handler,
 			ModelAndView modelAndView) throws Exception {
-		System.out.println("Request URL::" + request.getRequestURL().toString()
+		logger.info("Request URL::" + request.getRequestURL().toString()
 				+ " Sent to Handler :: Current Time=" + System.currentTimeMillis());
 		//we can add attributes in the modelAndView and use that in the view page
 	}
@@ -491,7 +491,7 @@ like ,for create  we use following<br>
 <header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
 <span itemprop="name">Rita</span> <span class="says">says</span></p><p class="comment-meta"><time class="comment-time" datetime="2015-10-19T21:54:43+00:00" itemprop="datePublished"><a href="http://www.journaldev.com/2676/spring-mvc-interceptor-example-handlerinterceptor-handlerinterceptoradapter#comment-33392" class="comment-time-link" itemprop="url">October 19, 2015 at 9:54 pm</a></time></p>		</header><div class="comment-content" itemprop="text"><p>Problem : I am calling  spring controller using curl request.<br>
 As Input I am passing a json with request to controller.</p><p>Now I just want to fetch that json inside spring interceptor .But it is not working for me.</p><p>Enumeration en=request.getParameterNames();<br>
-System.out.println(Collections.list(en).size());</p><p>It is giving zero size.</p><p>Please take a look.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-33392" onclick="return addComment.moveForm( &quot;comment-33392&quot;, &quot;33392&quot;, &quot;respond&quot;, &quot;2676&quot; )" aria-label="Reply to Rita">Reply</a></div>
+logger.info(Collections.list(en).size());</p><p>It is giving zero size.</p><p>Please take a look.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-33392" onclick="return addComment.moveForm( &quot;comment-33392&quot;, &quot;33392&quot;, &quot;respond&quot;, &quot;2676&quot; )" aria-label="Reply to Rita">Reply</a></div>
 </article><ul class="children"><li class="comment byuser comment-author-pankaj bypostauthor odd alt depth-2" id="comment-34977">
 <article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
 <header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">

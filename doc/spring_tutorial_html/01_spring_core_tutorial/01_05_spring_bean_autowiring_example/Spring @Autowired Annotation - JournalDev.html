@@ -409,14 +409,14 @@ public class EmployeeService {
 
 	// constructor is used for autowire by constructor
 	public EmployeeService(Employee emp) {
-		System.out.println("Autowiring by constructor used");
+		logger.info("Autowiring by constructor used");
 		this.employee = emp;
 	}
 
 	// default constructor to avoid BeanInstantiationException for autowire
 	// byName or byType
 	public EmployeeService() {
-		System.out.println("Default Constructor used");
+		logger.info("Default Constructor used");
 	}
 
 	// used for autowire byName and byType
@@ -518,27 +518,27 @@ public class SpringMain {
 		
 		EmployeeService serviceByName = ctx.getBean("employeeServiceByName", EmployeeService.class);
 		
-		System.out.println("Autowiring byName. Employee Name="+serviceByName.getEmployee().getName());
+		logger.info("Autowiring byName. Employee Name="+serviceByName.getEmployee().getName());
 		
 		EmployeeService serviceByType = ctx.getBean("employeeServiceByType", EmployeeService.class);
 		
-		System.out.println("Autowiring byType. Employee Name="+serviceByType.getEmployee().getName());
+		logger.info("Autowiring byType. Employee Name="+serviceByType.getEmployee().getName());
 		
 		EmployeeService serviceByConstructor = ctx.getBean("employeeServiceConstructor", EmployeeService.class);
 		
-		System.out.println("Autowiring by Constructor. Employee Name="+serviceByConstructor.getEmployee().getName());
+		logger.info("Autowiring by Constructor. Employee Name="+serviceByConstructor.getEmployee().getName());
 		
 		//printing hashcode to confirm all the objects are of different type
-		System.out.println(serviceByName.hashCode()+"::"+serviceByType.hashCode()+"::"+serviceByConstructor.hashCode());
+		logger.info(serviceByName.hashCode()+"::"+serviceByType.hashCode()+"::"+serviceByConstructor.hashCode());
 		
 		//Testing @Autowired annotations
 		EmployeeAutowiredByTypeService autowiredByTypeService = ctx.getBean("employeeAutowiredByTypeService",EmployeeAutowiredByTypeService.class);
 		
-		System.out.println("@Autowired byType. Employee Name="+autowiredByTypeService.getEmployee().getName());
+		logger.info("@Autowired byType. Employee Name="+autowiredByTypeService.getEmployee().getName());
 
 		EmployeeAutowiredByConstructorService autowiredByConstructorService = ctx.getBean("employeeAutowiredByConstructorService",EmployeeAutowiredByConstructorService.class);
 		
-		System.out.println("@Autowired by Constructor. Employee Name="+autowiredByConstructorService.getEmployee().getName());
+		logger.info("@Autowired by Constructor. Employee Name="+autowiredByConstructorService.getEmployee().getName());
 
 		ctx.close();
 	}

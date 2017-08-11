@@ -1153,16 +1153,16 @@ public void setUserProfileService(UserProfileService profile){<br>
 this.userProfileService = profile;<br>
 }</p><p>	@RequestMapping(“/welcome”)<br>
 public ModelAndView helloWorld(){<br>
-System.out.println(“In TravelHelperController :: method helloWorld”);<br>
+logger.info(“In TravelHelperController :: method helloWorld”);<br>
 log.info(“In TravelHelperController :: method helloWorld”);<br>
 String message = “”<br>
 + “********** Hello second page “;<br>
 return new ModelAndView(“welcome”, “message”, message);</p><p>	}</p><p>	@RequestMapping(“/login”)<br>
 public ModelAndView checkLogin(){<br>
-System.out.println(“In TravelHelperController :: method checkLogin”);<br>
+logger.info(“In TravelHelperController :: method checkLogin”);<br>
 log.info(“In TravelHelperController :: method checkLogin”);<br>
 List profile = userProfileService.listProfile();<br>
-System.out.println(“Size : “+profile.size());<br>
+logger.info(“Size : “+profile.size());<br>
 return new ModelAndView(“home”, “message”, “in home”);<br>
 }</p><p>}</p><p>Error Log:</p><p>Dec 04, 2016 2:04:49 PM org.apache.catalina.core.ApplicationContext log<br>
 INFO: Initializing Spring FrameworkServlet ‘travelhelper’<br>

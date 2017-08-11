@@ -368,7 +368,7 @@ public interface MessageService {
 public class EmailService implements MessageService {
 
 	public boolean sendMessage(String msg, String rec) {
-		System.out.println("Email Sent to "+rec+ " with Message="+msg);
+		logger.info("Email Sent to "+rec+ " with Message="+msg);
 		return true;
 	}
 
@@ -378,7 +378,7 @@ public class EmailService implements MessageService {
 public class TwitterService implements MessageService {
 
 	public boolean sendMessage(String msg, String rec) {
-		System.out.println("Twitter message Sent to "+rec+ " with Message="+msg);
+		logger.info("Twitter message Sent to "+rec+ " with Message="+msg);
 		return true;
 	}
 
@@ -550,7 +550,7 @@ public class MyApplicationTest {
 		return new MessageService(){
 
 			public boolean sendMessage(String msg, String rec) {
-				System.out.println("Mock Service");
+				logger.info("Mock Service");
 				return true;
 			}
 			
@@ -767,7 +767,7 @@ private float ageInSeconds;<br>
 private boolean programmer;</p><p>	public static void main(String a[])<br>
 {</p><p>		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(<br>
 “/CoreSpring/src/main/resources/Test.xml”);</p><p>	      InjectSimple simple=(InjectSimple) context.getBean(“sample”);<br>
-System.out.println(simple);</p><p>	}</p><p>//Setter and Getter Methods.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-28326" onclick="return addComment.moveForm( &quot;comment-28326&quot;, &quot;28326&quot;, &quot;respond&quot;, &quot;2410&quot; )" aria-label="Reply to Adarsha">Reply</a></div>
+logger.info(simple);</p><p>	}</p><p>//Setter and Getter Methods.</p></div><div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="#comment-28326" onclick="return addComment.moveForm( &quot;comment-28326&quot;, &quot;28326&quot;, &quot;respond&quot;, &quot;2410&quot; )" aria-label="Reply to Adarsha">Reply</a></div>
 </article><ul class="children"><li class="comment byuser comment-author-pankaj bypostauthor odd alt depth-2" id="comment-28329">
 <article itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
 <header class="comment-header"><p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">

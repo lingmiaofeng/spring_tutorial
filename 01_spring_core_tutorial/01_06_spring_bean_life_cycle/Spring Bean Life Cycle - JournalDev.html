@@ -395,17 +395,17 @@ public class EmployeeService implements InitializingBean, DisposableBean{
 	}
 	
 	public EmployeeService(){
-		System.out.println("EmployeeService no-args constructor called");
+		logger.info("EmployeeService no-args constructor called");
 	}
 
 	@Override
 	public void destroy() throws Exception {
-		System.out.println("EmployeeService Closing resources");
+		logger.info("EmployeeService Closing resources");
 	}
 
 	@Override
 	public void afterPropertiesSet() throws Exception {
-		System.out.println("EmployeeService initializing to dummy value");
+		logger.info("EmployeeService initializing to dummy value");
 		if(employee.getName() == null){
 			employee.setName("Pankaj");
 		}
@@ -428,17 +428,17 @@ public class MyEmployeeService{
 	}
 	
 	public MyEmployeeService(){
-		System.out.println("MyEmployeeService no-args constructor called");
+		logger.info("MyEmployeeService no-args constructor called");
 	}
 
 	//pre-destroy method
 	public void destroy() throws Exception {
-		System.out.println("MyEmployeeService Closing resources");
+		logger.info("MyEmployeeService Closing resources");
 	}
 
 	//post-init method
 	public void init() throws Exception {
-		System.out.println("MyEmployeeService initializing to dummy value");
+		logger.info("MyEmployeeService initializing to dummy value");
 		if(employee.getName() == null){
 			employee.setName("Pankaj");
 		}
@@ -453,16 +453,16 @@ public class MyService {
 
 	@PostConstruct
 	public void init(){
-		System.out.println("MyService init method called");
+		logger.info("MyService init method called");
 	}
 	
 	public MyService(){
-		System.out.println("MyService no-args constructor called");
+		logger.info("MyService no-args constructor called");
 	}
 	
 	@PreDestroy
 	public void destory(){
-		System.out.println("MyService destroy method called");
+		logger.info("MyService destroy method called");
 	}
 }
 </pre><h3>Spring Bean Life Cycle – Configuration File</h3><p>Let’s see how we will configure our beans in spring context file.</p><pre class="prettyprint">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
@@ -498,17 +498,17 @@ public class SpringMain {
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("spring.xml");
 
-		System.out.println("Spring Context initialized");
+		logger.info("Spring Context initialized");
 		
 		//MyEmployeeService service = ctx.getBean("myEmployeeService", MyEmployeeService.class);
 		EmployeeService service = ctx.getBean("employeeService", EmployeeService.class);
 
-		System.out.println("Bean retrieved from Spring Context");
+		logger.info("Bean retrieved from Spring Context");
 		
-		System.out.println("Employee Name="+service.getEmployee().getName());
+		logger.info("Employee Name="+service.getEmployee().getName());
 		
 		ctx.close();
-		System.out.println("Spring Context Closed");
+		logger.info("Spring Context Closed");
 	}
 
 }
@@ -559,54 +559,54 @@ public class MyAwareService implements ApplicationContextAware,
 	@Override
 	public void setApplicationContext(ApplicationContext ctx)
 			throws BeansException {
-		System.out.println("setApplicationContext called");
-		System.out.println("setApplicationContext:: Bean Definition Names="
+		logger.info("setApplicationContext called");
+		logger.info("setApplicationContext:: Bean Definition Names="
 				+ Arrays.toString(ctx.getBeanDefinitionNames()));
 	}
 
 	@Override
 	public void setBeanName(String beanName) {
-		System.out.println("setBeanName called");
-		System.out.println("setBeanName:: Bean Name defined in context="
+		logger.info("setBeanName called");
+		logger.info("setBeanName:: Bean Name defined in context="
 				+ beanName);
 	}
 
 	@Override
 	public void setBeanClassLoader(ClassLoader classLoader) {
-		System.out.println("setBeanClassLoader called");
-		System.out.println("setBeanClassLoader:: ClassLoader Name="
+		logger.info("setBeanClassLoader called");
+		logger.info("setBeanClassLoader:: ClassLoader Name="
 				+ classLoader.getClass().getName());
 	}
 
 	@Override
 	public void setResourceLoader(ResourceLoader resourceLoader) {
-		System.out.println("setResourceLoader called");
+		logger.info("setResourceLoader called");
 		Resource resource = resourceLoader.getResource("classpath:spring.xml");
-		System.out.println("setResourceLoader:: Resource File Name="
+		logger.info("setResourceLoader:: Resource File Name="
 				+ resource.getFilename());
 	}
 
 	@Override
 	public void setImportMetadata(AnnotationMetadata annotationMetadata) {
-		System.out.println("setImportMetadata called");
+		logger.info("setImportMetadata called");
 	}
 
 	@Override
 	public void setEnvironment(Environment env) {
-		System.out.println("setEnvironment called");
+		logger.info("setEnvironment called");
 	}
 
 	@Override
 	public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-		System.out.println("setBeanFactory called");
-		System.out.println("setBeanFactory:: employee bean <a href="http://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples">singleton</a>="
+		logger.info("setBeanFactory called");
+		logger.info("setBeanFactory:: employee bean <a href="http://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples">singleton</a>="
 				+ beanFactory.isSingleton("employee"));
 	}
 
 	@Override
 	public void setApplicationEventPublisher(
 			ApplicationEventPublisher applicationEventPublisher) {
-		System.out.println("setApplicationEventPublisher called");
+		logger.info("setApplicationEventPublisher called");
 	}
 
 }
